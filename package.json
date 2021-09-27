@@ -12,15 +12,16 @@
   "devDependencies": {},
   "dependencies": {
     "knex": "0.21.18",
-    "pg": "^8.7.1",
+    "pg": "8.5.1",
     "pg-connection-string": "^2.5.0",
-    "sqlite3": "5.0.0",
     "strapi": "3.6.8",
     "strapi-admin": "3.6.8",
     "strapi-connector-bookshelf": "3.6.8",
     "strapi-plugin-content-manager": "3.6.8",
     "strapi-plugin-content-type-builder": "3.6.8",
+    "strapi-plugin-documentation": "^3.6.8",
     "strapi-plugin-email": "3.6.8",
+    "strapi-plugin-graphql": "3.6.8",
     "strapi-plugin-i18n": "3.6.8",
     "strapi-plugin-upload": "3.6.8",
     "strapi-plugin-users-permissions": "3.6.8",
@@ -31,7 +32,7 @@
     "name": "A Strapi developer"
   },
   "strapi": {
-    "uuid": "40e0950e-e6d5-4530-82fb-998c200efe09"
+    "uuid": "aa4504e3-d3bd-4a81-a89a-eb1bd7d8ce14"
   },
   "engines": {
     "node": ">=10.16.0 <=14.x.x",
