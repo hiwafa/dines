@@ -1,0 +1,35 @@
+{
+  "kind": "collectionType",
+  "collectionName": "restaurants",
+  "info": {
+    "name": "restaurants",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "restaurantName": {
+      "type": "string"
+    },
+    "categories": {
+      "via": "restaurants",
+      "collection": "category",
+      "dominant": true
+    },
+    "foods": {
+      "via": "restaurants",
+      "collection": "foods",
+      "dominant": true
+    },
+    "profile": {
+      "model": "profiles"
+    },
+    "slogan": {
+      "type": "string"
+    }
+  }
+}
