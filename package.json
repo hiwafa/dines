@@ -1,5 +1,5 @@
 {
-  "name": "backend",
+  "name": "dines-backend",
   "private": true,
   "version": "0.1.0",
   "description": "A Strapi application",
@@ -20,9 +20,7 @@
     "strapi-connector-bookshelf": "3.6.8",
     "strapi-plugin-content-manager": "3.6.8",
     "strapi-plugin-content-type-builder": "3.6.8",
-    "strapi-plugin-documentation": "3.6.8",
     "strapi-plugin-email": "3.6.8",
-    "strapi-plugin-graphql": "3.6.8",
     "strapi-plugin-i18n": "3.6.8",
     "strapi-plugin-upload": "3.6.8",
     "strapi-plugin-users-permissions": "3.6.8",
@@ -33,7 +31,7 @@
     "name": "A Strapi developer"
   },
   "strapi": {
-    "uuid": "b4f9cf67-d701-4a04-8d9c-40bb9f3902d8"
+    "uuid": "40e0950e-e6d5-4530-82fb-998c200efe09"
   },
   "engines": {
     "node": ">=10.16.0 <=14.x.x",
