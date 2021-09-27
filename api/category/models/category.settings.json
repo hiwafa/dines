@@ -1,0 +1,28 @@
+{
+  "kind": "collectionType",
+  "collectionName": "categories",
+  "info": {
+    "name": "category",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "categoryName": {
+      "type": "string"
+    },
+    "foods": {
+      "via": "categories",
+      "collection": "foods",
+      "dominant": true
+    },
+    "restaurants": {
+      "via": "categories",
+      "collection": "restaurants"
+    }
+  }
+}
