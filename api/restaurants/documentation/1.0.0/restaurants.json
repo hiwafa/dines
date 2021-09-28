@@ -1,18 +1,18 @@
 {
   "paths": {
-    "/foods": {
+    "/restaurants": {
       "get": {
         "deprecated": false,
-        "description": "Find all the foods's records",
+        "description": "Find all the restaurants's records",
         "responses": {
           "200": {
-            "description": "Retrieve foods document(s)",
+            "description": "Retrieve restaurants document(s)",
             "content": {
               "application/json": {
                 "schema": {
                   "type": "array",
                   "items": {
-                    "$ref": "#/components/schemas/Foods"
+                    "$ref": "#/components/schemas/Restaurants"
                   }
                 }
               }
@@ -51,7 +51,7 @@
         },
         "summary": "",
         "tags": [
-          "Foods"
+          "Restaurants"
         ],
         "parameters": [
           {
@@ -194,14 +194,14 @@
       },
       "post": {
         "deprecated": false,
-        "description": "Create a new foods record",
+        "description": "Create a new restaurants record",
         "responses": {
           "200": {
-            "description": "Retrieve foods document(s)",
+            "description": "Retrieve restaurants document(s)",
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/Foods"
+                  "$ref": "#/components/schemas/Restaurants"
                 }
               }
             }
@@ -239,7 +239,7 @@
         },
         "summary": "",
         "tags": [
-          "Foods"
+          "Restaurants"
         ],
         "requestBody": {
           "description": "",
@@ -247,20 +247,20 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/NewFoods"
+                "$ref": "#/components/schemas/NewRestaurants"
               }
             }
           }
         }
       }
     },
-    "/foods/count": {
+    "/restaurants/count": {
       "get": {
         "deprecated": false,
-        "description": "Retrieve the number of foods documents",
+        "description": "Retrieve the number of restaurants documents",
         "responses": {
           "200": {
-            "description": "Retrieve foods document(s)",
+            "description": "Retrieve restaurants document(s)",
             "content": {
               "application/json": {
                 "schema": {
@@ -306,22 +306,22 @@
         },
         "summary": "",
         "tags": [
-          "Foods"
+          "Restaurants"
         ],
         "parameters": []
       }
     },
-    "/foods/{id}": {
+    "/restaurants/{id}": {
       "get": {
         "deprecated": false,
-        "description": "Find one foods record",
+        "description": "Find one restaurants record",
         "responses": {
           "200": {
-            "description": "Retrieve foods document(s)",
+            "description": "Retrieve restaurants document(s)",
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/Foods"
+                  "$ref": "#/components/schemas/Restaurants"
                 }
               }
             }
@@ -359,7 +359,7 @@
         },
         "summary": "",
         "tags": [
-          "Foods"
+          "Restaurants"
         ],
         "parameters": [
           {
@@ -376,14 +376,14 @@
       },
       "put": {
         "deprecated": false,
-        "description": "Update a single foods record",
+        "description": "Update a single restaurants record",
         "responses": {
           "200": {
-            "description": "Retrieve foods document(s)",
+            "description": "Retrieve restaurants document(s)",
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/Foods"
+                  "$ref": "#/components/schemas/Restaurants"
                 }
               }
             }
@@ -421,7 +421,7 @@
         },
         "summary": "",
         "tags": [
-          "Foods"
+          "Restaurants"
         ],
         "requestBody": {
           "description": "",
@@ -429,7 +429,7 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/NewFoods"
+                "$ref": "#/components/schemas/NewRestaurants"
               }
             }
           }
@@ -449,10 +449,10 @@
       },
       "delete": {
         "deprecated": false,
-        "description": "Delete a single foods record",
+        "description": "Delete a single restaurants record",
         "responses": {
           "200": {
-            "description": "deletes a single foods based on the ID supplied",
+            "description": "deletes a single restaurants based on the ID supplied",
             "content": {
               "application/json": {
                 "schema": {
@@ -495,7 +495,7 @@
         },
         "summary": "",
         "tags": [
-          "Foods"
+          "Restaurants"
         ],
         "parameters": [
           {
@@ -514,7 +514,7 @@
   },
   "components": {
     "schemas": {
-      "Foods": {
+      "Restaurants": {
         "required": [
           "id"
         ],
@@ -522,81 +522,11 @@
           "id": {
             "type": "string"
           },
-          "foodName": {
+          "restaurantName": {
             "type": "string"
           },
-          "images": {
-            "type": "array",
-            "items": {
-              "required": [
-                "id",
-                "name",
-                "hash",
-                "mime",
-                "size",
-                "url",
-                "provider"
-              ],
-              "properties": {
-                "id": {
-                  "type": "string"
-                },
-                "name": {
-                  "type": "string"
-                },
-                "alternativeText": {
-                  "type": "string"
-                },
-                "caption": {
-                  "type": "string"
-                },
-                "width": {
-                  "type": "integer"
-                },
-                "height": {
-                  "type": "integer"
-                },
-                "formats": {
-                  "type": "object"
-                },
-                "hash": {
-                  "type": "string"
-                },
-                "ext": {
-                  "type": "string"
-                },
-                "mime": {
-                  "type": "string"
-                },
-                "size": {
-                  "type": "number"
-                },
-                "url": {
-                  "type": "string"
-                },
-                "previewUrl": {
-                  "type": "string"
-                },
-                "provider": {
-                  "type": "string"
-                },
-                "provider_metadata": {
-                  "type": "object"
-                },
-                "related": {
-                  "type": "string"
-                },
-                "created_by": {
-                  "type": "string"
-                },
-                "updated_by": {
-                  "type": "string"
-                }
-              }
-            }
-          },
-          "price": {
-            "type": "number"
+          "slogan": {
+            "type": "string"
           },
           "categories": {
             "type": "array",
@@ -635,7 +565,7 @@
               }
             }
           },
-          "restaurants": {
+          "foods": {
             "type": "array",
             "items": {
               "required": [
@@ -645,11 +575,17 @@
                 "id": {
                   "type": "string"
                 },
-                "restaurantName": {
+                "foodName": {
                   "type": "string"
                 },
-                "slogan": {
-                  "type": "string"
+                "images": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "price": {
+                  "type": "number"
                 },
                 "categories": {
                   "type": "array",
@@ -657,7 +593,7 @@
                     "type": "string"
                   }
                 },
-                "foods": {
+                "restaurants": {
                   "type": "array",
                   "items": {
                     "type": "string"
@@ -681,13 +617,13 @@
           }
         }
       },
-      "NewFoods": {
+      "NewRestaurants": {
         "properties": {
-          "foodName": {
+          "restaurantName": {
             "type": "string"
           },
-          "price": {
-            "type": "number"
+          "slogan": {
+            "type": "string"
           },
           "categories": {
             "type": "array",
@@ -695,7 +631,7 @@
               "type": "string"
             }
           },
-          "restaurants": {
+          "foods": {
             "type": "array",
             "items": {
               "type": "string"
@@ -717,7 +653,7 @@
   },
   "tags": [
     {
-      "name": "Foods"
+      "name": "Restaurants"
     }
   ]
 }

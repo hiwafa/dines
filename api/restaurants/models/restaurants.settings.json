@@ -1,9 +1,8 @@
 {
   "kind": "collectionType",
-  "collectionName": "categories",
+  "collectionName": "restaurants",
   "info": {
-    "name": "categories",
-    "description": ""
+    "name": "restaurants"
   },
   "options": {
     "increments": true,
@@ -12,17 +11,21 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "categoryName": {
+    "restaurantName": {
       "type": "string"
+    },
+    "slogan": {
+      "type": "string"
+    },
+    "categories": {
+      "collection": "categories",
+      "via": "restaurants",
+      "dominant": true
     },
     "foods": {
       "collection": "foods",
-      "via": "categories",
+      "via": "restaurants",
       "dominant": true
-    },
-    "restaurants": {
-      "via": "categories",
-      "collection": "restaurants"
     }
   }
 }

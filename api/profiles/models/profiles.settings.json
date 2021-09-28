@@ -1,9 +1,8 @@
 {
   "kind": "collectionType",
-  "collectionName": "foods",
+  "collectionName": "profiles",
   "info": {
-    "name": "foods",
-    "description": ""
+    "name": "profiles"
   },
   "options": {
     "increments": true,
@@ -12,11 +11,11 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "foodName": {
+    "address": {
       "type": "string"
     },
-    "images": {
-      "collection": "file",
+    "logo": {
+      "model": "file",
       "via": "related",
       "allowedTypes": [
         "images",
@@ -26,17 +25,6 @@
       "plugin": "upload",
       "required": false,
       "pluginOptions": {}
-    },
-    "price": {
-      "type": "decimal"
-    },
-    "categories": {
-      "via": "foods",
-      "collection": "categories"
-    },
-    "restaurants": {
-      "via": "foods",
-      "collection": "restaurants"
     }
   }
 }
