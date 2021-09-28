@@ -611,6 +611,34 @@
               }
             }
           },
+          "profile": {
+            "required": [
+              "id"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "address": {
+                "type": "string"
+              },
+              "logo": {
+                "type": "string"
+              },
+              "slideshow": {
+                "type": "component"
+              },
+              "published_at": {
+                "type": "string"
+              },
+              "created_by": {
+                "type": "string"
+              },
+              "updated_by": {
+                "type": "string"
+              }
+            }
+          },
           "published_at": {
             "type": "string",
             "format": "date-time"
@@ -636,6 +664,9 @@
             "items": {
               "type": "string"
             }
+          },
+          "profile": {
+            "type": "string"
           },
           "published_at": {
             "type": "string",

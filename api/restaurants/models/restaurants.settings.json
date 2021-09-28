@@ -2,7 +2,8 @@
   "kind": "collectionType",
   "collectionName": "restaurants",
   "info": {
-    "name": "restaurants"
+    "name": "restaurants",
+    "description": ""
   },
   "options": {
     "increments": true,
@@ -26,6 +27,9 @@
       "collection": "foods",
       "via": "restaurants",
       "dominant": true
+    },
+    "profile": {
+      "model": "profiles"
     }
   }
 }
