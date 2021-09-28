@@ -1,0 +1,37 @@
+{
+  "kind": "collectionType",
+  "collectionName": "foods",
+  "info": {
+    "name": "foods",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "foodName": {
+      "type": "string"
+    },
+    "images": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "price": {
+      "type": "decimal"
+    },
+    "food": {
+      "model": "foods"
+    }
+  }
+}
