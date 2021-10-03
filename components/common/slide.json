@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_common_slides",
+  "info": {
+    "name": "slide",
+    "icon": "arrows-alt-h"
+  },
+  "options": {},
+  "attributes": {
+    "text": {
+      "type": "string"
+    },
+    "slide": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    }
+  }
+}

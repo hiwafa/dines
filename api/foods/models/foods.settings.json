@@ -1,0 +1,46 @@
+{
+  "kind": "collectionType",
+  "collectionName": "foods",
+  "info": {
+    "name": "foods"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "foodName": {
+      "type": "string"
+    },
+    "foodDescription": {
+      "type": "text"
+    },
+    "images": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "foodShortDesc": {
+      "type": "string"
+    },
+    "categories": {
+      "collection": "categories",
+      "via": "foods",
+      "dominant": true
+    },
+    "restaurants": {
+      "collection": "restaurants",
+      "via": "foods",
+      "dominant": true
+    }
+  }
+}
