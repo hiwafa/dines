@@ -19,9 +19,8 @@
     "strapi-connector-bookshelf": "3.6.8",
     "strapi-plugin-content-manager": "3.6.8",
     "strapi-plugin-content-type-builder": "3.6.8",
-    "strapi-plugin-documentation": "^3.6.8",
     "strapi-plugin-email": "3.6.8",
-    "strapi-plugin-graphql": "3.6.8",
+    "strapi-plugin-graphql": "^3.6.8",
     "strapi-plugin-i18n": "3.6.8",
     "strapi-plugin-upload": "3.6.8",
     "strapi-plugin-users-permissions": "3.6.8",
@@ -32,7 +31,7 @@
     "name": "A Strapi developer"
   },
   "strapi": {
-    "uuid": "aa4504e3-d3bd-4a81-a89a-eb1bd7d8ce14"
+    "uuid": "73c67b99-5310-42d2-a4c7-76fd8ae0d096"
   },
   "engines": {
     "node": ">=10.16.0 <=14.x.x",
