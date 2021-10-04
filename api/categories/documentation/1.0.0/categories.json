@@ -605,6 +605,9 @@
                     "type": "string"
                   }
                 },
+                "price": {
+                  "type": "number"
+                },
                 "published_at": {
                   "type": "string"
                 },

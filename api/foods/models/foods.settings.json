@@ -42,6 +42,9 @@
       "via": "foods",
       "collection": "restaurants",
       "dominant": true
+    },
+    "price": {
+      "type": "decimal"
     }
   }
 }
