@@ -38,8 +38,8 @@
       "dominant": true
     },
     "restaurants": {
-      "collection": "restaurants",
       "via": "foods",
+      "collection": "restaurants",
       "dominant": true
     }
   }

@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "10/03/2021 11:49:11 PM"
+    "x-generation-date": "10/04/2021 7:20:16 AM"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -4339,7 +4339,7 @@
                 "id": {
                   "type": "string"
                 },
-                "restaurantsName": {
+                "restaurantName": {
                   "type": "string"
                 },
                 "slogan": {
@@ -4590,7 +4590,7 @@
                 "id": {
                   "type": "string"
                 },
-                "restaurantsName": {
+                "restaurantName": {
                   "type": "string"
                 },
                 "slogan": {
@@ -4947,7 +4947,7 @@
           "id": {
             "type": "string"
           },
-          "restaurantsName": {
+          "restaurantName": {
             "type": "string"
           },
           "slogan": {
@@ -5075,7 +5075,7 @@
       },
       "NewRestaurants": {
         "properties": {
-          "restaurantsName": {
+          "restaurantName": {
             "type": "string"
           },
           "slogan": {

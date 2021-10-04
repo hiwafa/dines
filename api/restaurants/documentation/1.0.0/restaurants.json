@@ -522,7 +522,7 @@
           "id": {
             "type": "string"
           },
-          "restaurantsName": {
+          "restaurantName": {
             "type": "string"
           },
           "slogan": {
@@ -650,7 +650,7 @@
       },
       "NewRestaurants": {
         "properties": {
-          "restaurantsName": {
+          "restaurantName": {
             "type": "string"
           },
           "slogan": {
