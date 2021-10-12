@@ -16,9 +16,9 @@ module.exports = ({ env }) => ({
       apiKey: env('SENDGRID_API_KEY'),
     },
     settings: {
-      defaultFrom: 'muhammadwfa@gmail.com',
-      defaultReplyTo: 'muhammadwfa@gmail.com',
-      testAddress: 'muhammadwfa@gmail.com',
+      defaultFrom: 'muhammad@thecodegiant.ca',
+      defaultReplyTo: 'muhammad@thecodegiant.ca',
+      testAddress: 'muhammad@thecodegiant.ca',
     },
   }
 });
