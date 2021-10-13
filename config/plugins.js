@@ -10,4 +10,15 @@ module.exports = ({ env }) => ({
       },
     },
   },
+  email: {
+    provider: 'sendgrid',
+    providerOptions: {
+      apiKey: env('SENDGRID_API_KEY'),
+    },
+    settings: {
+      defaultFrom: 'muhammad@thecodegiant.ca',
+      defaultReplyTo: 'muhammad@thecodegiant.ca',
+      testAddress: 'muhammad@thecodegiant.ca',
+    },
+  }
 });
