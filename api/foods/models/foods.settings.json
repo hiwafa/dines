@@ -16,7 +16,7 @@
       "type": "string"
     },
     "foodDescription": {
-      "type": "string"
+      "type": "text"
     },
     "images": {
       "collection": "file",
