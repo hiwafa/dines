@@ -720,6 +720,34 @@
               }
             }
           },
+          "ingredient": {
+            "required": [
+              "id"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "name": {
+                "type": "string"
+              },
+              "icon": {
+                "type": "string"
+              },
+              "food": {
+                "type": "string"
+              },
+              "published_at": {
+                "type": "string"
+              },
+              "created_by": {
+                "type": "string"
+              },
+              "updated_by": {
+                "type": "string"
+              }
+            }
+          },
           "published_at": {
             "type": "string",
             "format": "date-time"
@@ -757,6 +785,9 @@
             "items": {
               "type": "string"
             }
+          },
+          "ingredient": {
+            "type": "string"
           },
           "published_at": {
             "type": "string",

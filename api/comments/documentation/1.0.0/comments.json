@@ -570,6 +570,9 @@
                   "type": "string"
                 }
               },
+              "ingredient": {
+                "type": "string"
+              },
               "published_at": {
                 "type": "string"
               },

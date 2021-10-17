@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "10/18/2021 12:32:54 AM"
+    "x-generation-date": "10/18/2021 12:41:59 AM"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -5444,6 +5444,9 @@
                     "type": "string"
                   }
                 },
+                "ingredient": {
+                  "type": "string"
+                },
                 "published_at": {
                   "type": "string"
                 },
@@ -5546,6 +5549,9 @@
                 "items": {
                   "type": "string"
                 }
+              },
+              "ingredient": {
+                "type": "string"
               },
               "published_at": {
                 "type": "string"
@@ -5799,6 +5805,34 @@
               }
             }
           },
+          "ingredient": {
+            "required": [
+              "id"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "name": {
+                "type": "string"
+              },
+              "icon": {
+                "type": "string"
+              },
+              "food": {
+                "type": "string"
+              },
+              "published_at": {
+                "type": "string"
+              },
+              "created_by": {
+                "type": "string"
+              },
+              "updated_by": {
+                "type": "string"
+              }
+            }
+          },
           "published_at": {
             "type": "string",
             "format": "date-time"
@@ -5836,6 +5870,9 @@
             "items": {
               "type": "string"
             }
+          },
+          "ingredient": {
+            "type": "string"
           },
           "published_at": {
             "type": "string",
@@ -5927,6 +5964,64 @@
               }
             }
           },
+          "food": {
+            "required": [
+              "id"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "foodName": {
+                "type": "string"
+              },
+              "foodDescription": {
+                "type": "string"
+              },
+              "images": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "foodShortDesc": {
+                "type": "string"
+              },
+              "categories": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "restaurants": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "price": {
+                "type": "number"
+              },
+              "comments": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "ingredient": {
+                "type": "string"
+              },
+              "published_at": {
+                "type": "string"
+              },
+              "created_by": {
+                "type": "string"
+              },
+              "updated_by": {
+                "type": "string"
+              }
+            }
+          },
           "published_at": {
             "type": "string",
             "format": "date-time"
@@ -5936,6 +6031,9 @@
       "NewIngredients": {
         "properties": {
           "name": {
+            "type": "string"
+          },
+          "food": {
             "type": "string"
           },
           "published_at": {
@@ -6344,6 +6442,9 @@
                   "items": {
                     "type": "string"
                   }
+                },
+                "ingredient": {
+                  "type": "string"
                 },
                 "published_at": {
                   "type": "string"

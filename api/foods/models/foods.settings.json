@@ -49,6 +49,10 @@
     "comments": {
       "via": "food",
       "collection": "comments"
+    },
+    "ingredient": {
+      "via": "food",
+      "model": "ingredients"
     }
   }
 }
