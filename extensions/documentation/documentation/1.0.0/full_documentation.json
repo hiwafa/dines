@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "10/18/2021 12:27:44 AM"
+    "x-generation-date": "10/18/2021 12:32:54 AM"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -5355,7 +5355,8 @@
             "type": "array",
             "items": {
               "required": [
-                "id"
+                "id",
+                "slug"
               ],
               "properties": {
                 "id": {
@@ -5381,6 +5382,9 @@
                   "items": {
                     "type": "string"
                   }
+                },
+                "slug": {
+                  "type": "string"
                 },
                 "published_at": {
                   "type": "string"
@@ -5717,7 +5721,8 @@
             "type": "array",
             "items": {
               "required": [
-                "id"
+                "id",
+                "slug"
               ],
               "properties": {
                 "id": {
@@ -5743,6 +5748,9 @@
                   "items": {
                     "type": "string"
                   }
+                },
+                "slug": {
+                  "type": "string"
                 },
                 "published_at": {
                   "type": "string"
@@ -6213,7 +6221,8 @@
       },
       "Restaurants": {
         "required": [
-          "id"
+          "id",
+          "slug"
         ],
         "properties": {
           "id": {
@@ -6348,6 +6357,9 @@
               }
             }
           },
+          "slug": {
+            "type": "string"
+          },
           "published_at": {
             "type": "string",
             "format": "date-time"
@@ -6355,6 +6367,9 @@
         }
       },
       "NewRestaurants": {
+        "required": [
+          "slug"
+        ],
         "properties": {
           "restaurantName": {
             "type": "string"
@@ -6376,6 +6391,9 @@
             "items": {
               "type": "string"
             }
+          },
+          "slug": {
+            "type": "string"
           },
           "published_at": {
             "type": "string",

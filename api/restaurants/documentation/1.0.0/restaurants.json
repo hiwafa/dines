@@ -516,7 +516,8 @@
     "schemas": {
       "Restaurants": {
         "required": [
-          "id"
+          "id",
+          "slug"
         ],
         "properties": {
           "id": {
@@ -651,6 +652,9 @@
               }
             }
           },
+          "slug": {
+            "type": "string"
+          },
           "published_at": {
             "type": "string",
             "format": "date-time"
@@ -658,6 +662,9 @@
         }
       },
       "NewRestaurants": {
+        "required": [
+          "slug"
+        ],
         "properties": {
           "restaurantName": {
             "type": "string"
@@ -679,6 +686,9 @@
             "items": {
               "type": "string"
             }
+          },
+          "slug": {
+            "type": "string"
           },
           "published_at": {
             "type": "string",
