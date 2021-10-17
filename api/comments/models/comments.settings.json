@@ -1,0 +1,27 @@
+{
+  "kind": "collectionType",
+  "collectionName": "comments",
+  "info": {
+    "name": "Comments",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "text": {
+      "type": "text",
+      "required": true
+    },
+    "food": {
+      "model": "foods",
+      "via": "comments"
+    },
+    "approved": {
+      "type": "boolean"
+    }
+  }
+}

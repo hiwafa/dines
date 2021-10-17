@@ -1,18 +1,18 @@
 {
   "paths": {
-    "/categories": {
+    "/comments": {
       "get": {
         "deprecated": false,
-        "description": "Find all the categories's records",
+        "description": "Find all the comments's records",
         "responses": {
           "200": {
-            "description": "Retrieve categories document(s)",
+            "description": "Retrieve comments document(s)",
             "content": {
               "application/json": {
                 "schema": {
                   "type": "array",
                   "items": {
-                    "$ref": "#/components/schemas/Categories"
+                    "$ref": "#/components/schemas/Comments"
                   }
                 }
               }
@@ -51,7 +51,7 @@
         },
         "summary": "",
         "tags": [
-          "Categories"
+          "Comments"
         ],
         "parameters": [
           {
@@ -194,14 +194,14 @@
       },
       "post": {
         "deprecated": false,
-        "description": "Create a new categories record",
+        "description": "Create a new comments record",
         "responses": {
           "200": {
-            "description": "Retrieve categories document(s)",
+            "description": "Retrieve comments document(s)",
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/Categories"
+                  "$ref": "#/components/schemas/Comments"
                 }
               }
             }
@@ -239,7 +239,7 @@
         },
         "summary": "",
         "tags": [
-          "Categories"
+          "Comments"
         ],
         "requestBody": {
           "description": "",
@@ -247,20 +247,20 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/NewCategories"
+                "$ref": "#/components/schemas/NewComments"
               }
             }
           }
         }
       }
     },
-    "/categories/count": {
+    "/comments/count": {
       "get": {
         "deprecated": false,
-        "description": "Retrieve the number of categories documents",
+        "description": "Retrieve the number of comments documents",
         "responses": {
           "200": {
-            "description": "Retrieve categories document(s)",
+            "description": "Retrieve comments document(s)",
             "content": {
               "application/json": {
                 "schema": {
@@ -306,22 +306,22 @@
         },
         "summary": "",
         "tags": [
-          "Categories"
+          "Comments"
         ],
         "parameters": []
       }
     },
-    "/categories/{id}": {
+    "/comments/{id}": {
       "get": {
         "deprecated": false,
-        "description": "Find one categories record",
+        "description": "Find one comments record",
         "responses": {
           "200": {
-            "description": "Retrieve categories document(s)",
+            "description": "Retrieve comments document(s)",
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/Categories"
+                  "$ref": "#/components/schemas/Comments"
                 }
               }
             }
@@ -359,7 +359,7 @@
         },
         "summary": "",
         "tags": [
-          "Categories"
+          "Comments"
         ],
         "parameters": [
           {
@@ -376,14 +376,14 @@
       },
       "put": {
         "deprecated": false,
-        "description": "Update a single categories record",
+        "description": "Update a single comments record",
         "responses": {
           "200": {
-            "description": "Retrieve categories document(s)",
+            "description": "Retrieve comments document(s)",
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/Categories"
+                  "$ref": "#/components/schemas/Comments"
                 }
               }
             }
@@ -421,7 +421,7 @@
         },
         "summary": "",
         "tags": [
-          "Categories"
+          "Comments"
         ],
         "requestBody": {
           "description": "",
@@ -429,7 +429,7 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/NewCategories"
+                "$ref": "#/components/schemas/NewComments"
               }
             }
           }
@@ -449,10 +449,10 @@
       },
       "delete": {
         "deprecated": false,
-        "description": "Delete a single categories record",
+        "description": "Delete a single comments record",
         "responses": {
           "200": {
-            "description": "deletes a single categories based on the ID supplied",
+            "description": "deletes a single comments based on the ID supplied",
             "content": {
               "application/json": {
                 "schema": {
@@ -495,7 +495,7 @@
         },
         "summary": "",
         "tags": [
-          "Categories"
+          "Comments"
         ],
         "parameters": [
           {
@@ -514,117 +514,75 @@
   },
   "components": {
     "schemas": {
-      "Categories": {
+      "Comments": {
         "required": [
-          "id"
+          "id",
+          "text"
         ],
         "properties": {
           "id": {
             "type": "string"
           },
-          "categoryName": {
+          "text": {
             "type": "string"
           },
-          "restaurants": {
-            "type": "array",
-            "items": {
-              "required": [
-                "id"
-              ],
-              "properties": {
-                "id": {
-                  "type": "string"
-                },
-                "restaurantName": {
-                  "type": "string"
-                },
-                "slogan": {
-                  "type": "string"
-                },
-                "categories": {
-                  "type": "array",
-                  "items": {
-                    "type": "string"
-                  }
-                },
-                "profile": {
-                  "type": "string"
-                },
-                "foods": {
-                  "type": "array",
-                  "items": {
-                    "type": "string"
-                  }
-                },
-                "published_at": {
-                  "type": "string"
-                },
-                "created_by": {
-                  "type": "string"
-                },
-                "updated_by": {
+          "food": {
+            "required": [
+              "id"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "foodName": {
+                "type": "string"
+              },
+              "foodDescription": {
+                "type": "string"
+              },
+              "images": {
+                "type": "array",
+                "items": {
                   "type": "string"
                 }
+              },
+              "foodShortDesc": {
+                "type": "string"
+              },
+              "categories": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "restaurants": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "price": {
+                "type": "number"
+              },
+              "comments": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "published_at": {
+                "type": "string"
+              },
+              "created_by": {
+                "type": "string"
+              },
+              "updated_by": {
+                "type": "string"
               }
             }
           },
-          "foods": {
-            "type": "array",
-            "items": {
-              "required": [
-                "id"
-              ],
-              "properties": {
-                "id": {
-                  "type": "string"
-                },
-                "foodName": {
-                  "type": "string"
-                },
-                "foodDescription": {
-                  "type": "string"
-                },
-                "images": {
-                  "type": "array",
-                  "items": {
-                    "type": "string"
-                  }
-                },
-                "foodShortDesc": {
-                  "type": "string"
-                },
-                "categories": {
-                  "type": "array",
-                  "items": {
-                    "type": "string"
-                  }
-                },
-                "restaurants": {
-                  "type": "array",
-                  "items": {
-                    "type": "string"
-                  }
-                },
-                "price": {
-                  "type": "number"
-                },
-                "comments": {
-                  "type": "array",
-                  "items": {
-                    "type": "string"
-                  }
-                },
-                "published_at": {
-                  "type": "string"
-                },
-                "created_by": {
-                  "type": "string"
-                },
-                "updated_by": {
-                  "type": "string"
-                }
-              }
-            }
+          "approved": {
+            "type": "boolean"
           },
           "published_at": {
             "type": "string",
@@ -632,22 +590,19 @@
           }
         }
       },
-      "NewCategories": {
+      "NewComments": {
+        "required": [
+          "text"
+        ],
         "properties": {
-          "categoryName": {
+          "text": {
             "type": "string"
           },
-          "restaurants": {
-            "type": "array",
-            "items": {
-              "type": "string"
-            }
+          "food": {
+            "type": "string"
           },
-          "foods": {
-            "type": "array",
-            "items": {
-              "type": "string"
-            }
+          "approved": {
+            "type": "boolean"
           },
           "published_at": {
             "type": "string",
@@ -665,7 +620,7 @@
   },
   "tags": [
     {
-      "name": "Categories"
+      "name": "Comments"
     }
   ]
 }
