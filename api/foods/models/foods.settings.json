@@ -38,10 +38,9 @@
       "via": "foods",
       "dominant": true
     },
-    "restaurants": {
+    "restaurant": {
       "via": "foods",
-      "collection": "restaurants",
-      "dominant": true
+      "model": "restaurants"
     },
     "price": {
       "type": "decimal"

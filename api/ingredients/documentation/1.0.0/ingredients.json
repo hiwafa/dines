@@ -621,11 +621,8 @@
                   "type": "string"
                 }
               },
-              "restaurants": {
-                "type": "array",
-                "items": {
-                  "type": "string"
-                }
+              "restaurant": {
+                "type": "string"
               },
               "price": {
                 "type": "number"

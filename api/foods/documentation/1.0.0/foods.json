@@ -638,50 +638,47 @@
               }
             }
           },
-          "restaurants": {
-            "type": "array",
-            "items": {
-              "required": [
-                "id",
-                "slug"
-              ],
-              "properties": {
-                "id": {
-                  "type": "string"
-                },
-                "restaurantName": {
-                  "type": "string"
-                },
-                "slogan": {
-                  "type": "string"
-                },
-                "categories": {
-                  "type": "array",
-                  "items": {
-                    "type": "string"
-                  }
-                },
-                "profile": {
-                  "type": "string"
-                },
-                "foods": {
-                  "type": "array",
-                  "items": {
-                    "type": "string"
-                  }
-                },
-                "slug": {
-                  "type": "string"
-                },
-                "published_at": {
-                  "type": "string"
-                },
-                "created_by": {
-                  "type": "string"
-                },
-                "updated_by": {
+          "restaurant": {
+            "required": [
+              "id",
+              "slug"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "restaurantName": {
+                "type": "string"
+              },
+              "slogan": {
+                "type": "string"
+              },
+              "categories": {
+                "type": "array",
+                "items": {
                   "type": "string"
                 }
+              },
+              "profile": {
+                "type": "string"
+              },
+              "slug": {
+                "type": "string"
+              },
+              "foods": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "published_at": {
+                "type": "string"
+              },
+              "created_by": {
+                "type": "string"
+              },
+              "updated_by": {
+                "type": "string"
               }
             }
           },
@@ -771,11 +768,8 @@
               "type": "string"
             }
           },
-          "restaurants": {
-            "type": "array",
-            "items": {
-              "type": "string"
-            }
+          "restaurant": {
+            "type": "string"
           },
           "price": {
             "type": "number"

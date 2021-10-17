@@ -17,8 +17,8 @@
       "required": true
     },
     "food": {
-      "model": "foods",
-      "via": "comments"
+      "via": "comments",
+      "model": "foods"
     },
     "approved": {
       "type": "boolean"

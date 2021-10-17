@@ -26,14 +26,14 @@
     "profile": {
       "model": "profiles"
     },
-    "foods": {
-      "via": "restaurants",
-      "collection": "foods"
-    },
     "slug": {
       "type": "string",
       "required": true,
       "unique": true
+    },
+    "foods": {
+      "via": "restaurant",
+      "collection": "foods"
     }
   }
 }

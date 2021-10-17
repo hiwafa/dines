@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "10/18/2021 12:41:59 AM"
+    "x-generation-date": "10/18/2021 12:46:56 AM"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -5377,14 +5377,14 @@
                 "profile": {
                   "type": "string"
                 },
+                "slug": {
+                  "type": "string"
+                },
                 "foods": {
                   "type": "array",
                   "items": {
                     "type": "string"
                   }
-                },
-                "slug": {
-                  "type": "string"
                 },
                 "published_at": {
                   "type": "string"
@@ -5429,11 +5429,8 @@
                     "type": "string"
                   }
                 },
-                "restaurants": {
-                  "type": "array",
-                  "items": {
-                    "type": "string"
-                  }
+                "restaurant": {
+                  "type": "string"
                 },
                 "price": {
                   "type": "number"
@@ -5535,11 +5532,8 @@
                   "type": "string"
                 }
               },
-              "restaurants": {
-                "type": "array",
-                "items": {
-                  "type": "string"
-                }
+              "restaurant": {
+                "type": "string"
               },
               "price": {
                 "type": "number"
@@ -5723,50 +5717,47 @@
               }
             }
           },
-          "restaurants": {
-            "type": "array",
-            "items": {
-              "required": [
-                "id",
-                "slug"
-              ],
-              "properties": {
-                "id": {
-                  "type": "string"
-                },
-                "restaurantName": {
-                  "type": "string"
-                },
-                "slogan": {
-                  "type": "string"
-                },
-                "categories": {
-                  "type": "array",
-                  "items": {
-                    "type": "string"
-                  }
-                },
-                "profile": {
-                  "type": "string"
-                },
-                "foods": {
-                  "type": "array",
-                  "items": {
-                    "type": "string"
-                  }
-                },
-                "slug": {
-                  "type": "string"
-                },
-                "published_at": {
-                  "type": "string"
-                },
-                "created_by": {
-                  "type": "string"
-                },
-                "updated_by": {
+          "restaurant": {
+            "required": [
+              "id",
+              "slug"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "restaurantName": {
+                "type": "string"
+              },
+              "slogan": {
+                "type": "string"
+              },
+              "categories": {
+                "type": "array",
+                "items": {
                   "type": "string"
                 }
+              },
+              "profile": {
+                "type": "string"
+              },
+              "slug": {
+                "type": "string"
+              },
+              "foods": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "published_at": {
+                "type": "string"
+              },
+              "created_by": {
+                "type": "string"
+              },
+              "updated_by": {
+                "type": "string"
               }
             }
           },
@@ -5856,11 +5847,8 @@
               "type": "string"
             }
           },
-          "restaurants": {
-            "type": "array",
-            "items": {
-              "type": "string"
-            }
+          "restaurant": {
+            "type": "string"
           },
           "price": {
             "type": "number"
@@ -5993,11 +5981,8 @@
                   "type": "string"
                 }
               },
-              "restaurants": {
-                "type": "array",
-                "items": {
-                  "type": "string"
-                }
+              "restaurant": {
+                "type": "string"
               },
               "price": {
                 "type": "number"
@@ -6397,6 +6382,9 @@
               }
             }
           },
+          "slug": {
+            "type": "string"
+          },
           "foods": {
             "type": "array",
             "items": {
@@ -6428,11 +6416,8 @@
                     "type": "string"
                   }
                 },
-                "restaurants": {
-                  "type": "array",
-                  "items": {
-                    "type": "string"
-                  }
+                "restaurant": {
+                  "type": "string"
                 },
                 "price": {
                   "type": "number"
@@ -6457,9 +6442,6 @@
                 }
               }
             }
-          },
-          "slug": {
-            "type": "string"
           },
           "published_at": {
             "type": "string",
@@ -6487,14 +6469,14 @@
           "profile": {
             "type": "string"
           },
+          "slug": {
+            "type": "string"
+          },
           "foods": {
             "type": "array",
             "items": {
               "type": "string"
             }
-          },
-          "slug": {
-            "type": "string"
           },
           "published_at": {
             "type": "string",

@@ -594,6 +594,9 @@
               }
             }
           },
+          "slug": {
+            "type": "string"
+          },
           "foods": {
             "type": "array",
             "items": {
@@ -625,11 +628,8 @@
                     "type": "string"
                   }
                 },
-                "restaurants": {
-                  "type": "array",
-                  "items": {
-                    "type": "string"
-                  }
+                "restaurant": {
+                  "type": "string"
                 },
                 "price": {
                   "type": "number"
@@ -654,9 +654,6 @@
                 }
               }
             }
-          },
-          "slug": {
-            "type": "string"
           },
           "published_at": {
             "type": "string",
@@ -684,14 +681,14 @@
           "profile": {
             "type": "string"
           },
+          "slug": {
+            "type": "string"
+          },
           "foods": {
             "type": "array",
             "items": {
               "type": "string"
             }
-          },
-          "slug": {
-            "type": "string"
           },
           "published_at": {
             "type": "string",
