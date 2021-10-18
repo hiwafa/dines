@@ -534,10 +534,10 @@
               "id": {
                 "type": "string"
               },
-              "foodName": {
+              "name": {
                 "type": "string"
               },
-              "foodDescription": {
+              "description": {
                 "type": "string"
               },
               "images": {
@@ -546,7 +546,7 @@
                   "type": "string"
                 }
               },
-              "foodShortDesc": {
+              "shortDesc": {
                 "type": "string"
               },
               "categories": {
