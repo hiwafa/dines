@@ -645,8 +645,11 @@
                     "type": "string"
                   }
                 },
-                "ingredient": {
-                  "type": "string"
+                "ingredients": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
                 },
                 "published_at": {
                   "type": "string"

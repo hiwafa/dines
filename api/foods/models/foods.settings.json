@@ -49,9 +49,9 @@
       "via": "food",
       "collection": "comments"
     },
-    "ingredient": {
+    "ingredients": {
       "via": "food",
-      "model": "ingredients"
+      "collection": "ingredients"
     }
   }
 }
