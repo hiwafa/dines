@@ -516,8 +516,7 @@
     "schemas": {
       "Restaurants": {
         "required": [
-          "id",
-          "slug"
+          "id"
         ],
         "properties": {
           "id": {
@@ -601,7 +600,7 @@
             }
           },
           "slug": {
-            "type": "string"
+            "type": "uid"
           },
           "foods": {
             "type": "array",
@@ -613,10 +612,10 @@
                 "id": {
                   "type": "string"
                 },
-                "foodName": {
+                "name": {
                   "type": "string"
                 },
-                "foodDescription": {
+                "description": {
                   "type": "string"
                 },
                 "images": {
@@ -625,7 +624,7 @@
                     "type": "string"
                   }
                 },
-                "foodShortDesc": {
+                "shortDesc": {
                   "type": "string"
                 },
                 "categories": {
@@ -661,9 +660,6 @@
               }
             }
           },
-          "slug": {
-            "type": "uid"
-          },
           "published_at": {
             "type": "string",
             "format": "date-time"
@@ -671,9 +667,6 @@
         }
       },
       "NewRestaurants": {
-        "required": [
-          "slug"
-        ],
         "properties": {
           "restaurantName": {
             "type": "string"
@@ -691,16 +684,13 @@
             "type": "string"
           },
           "slug": {
-            "type": "string"
+            "type": "uid"
           },
           "foods": {
             "type": "array",
             "items": {
               "type": "string"
             }
-          },
-          "slug": {
-            "type": "uid"
           },
           "published_at": {
             "type": "string",

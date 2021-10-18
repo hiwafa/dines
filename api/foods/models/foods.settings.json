@@ -12,10 +12,10 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "foodName": {
+    "name": {
       "type": "string"
     },
-    "foodDescription": {
+    "description": {
       "type": "text"
     },
     "images": {
@@ -30,7 +30,7 @@
       "required": false,
       "pluginOptions": {}
     },
-    "foodShortDesc": {
+    "shortDesc": {
       "type": "string"
     },
     "categories": {

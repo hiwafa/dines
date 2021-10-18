@@ -27,17 +27,12 @@
       "model": "profiles"
     },
     "slug": {
-      "type": "string",
-      "required": true,
-      "unique": true
+      "type": "uid",
+      "targetField": "restaurantName"
     },
     "foods": {
       "via": "restaurant",
       "collection": "foods"
-    },
-    "slug": {
-      "type": "uid",
-      "targetField": "restaurantName"
     }
   }
 }

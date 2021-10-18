@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "10/18/2021 12:46:56 AM"
+    "x-generation-date": "10/18/2021 10:54:22 AM"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -5355,8 +5355,7 @@
             "type": "array",
             "items": {
               "required": [
-                "id",
-                "slug"
+                "id"
               ],
               "properties": {
                 "id": {
@@ -5378,16 +5377,13 @@
                   "type": "string"
                 },
                 "slug": {
-                  "type": "string"
+                  "type": "uid"
                 },
                 "foods": {
                   "type": "array",
                   "items": {
                     "type": "string"
                   }
-                },
-                "slug": {
-                  "type": "uid"
                 },
                 "published_at": {
                   "type": "string"
@@ -5411,10 +5407,10 @@
                 "id": {
                   "type": "string"
                 },
-                "foodName": {
+                "name": {
                   "type": "string"
                 },
-                "foodDescription": {
+                "description": {
                   "type": "string"
                 },
                 "images": {
@@ -5423,7 +5419,7 @@
                     "type": "string"
                   }
                 },
-                "foodShortDesc": {
+                "shortDesc": {
                   "type": "string"
                 },
                 "categories": {
@@ -5514,10 +5510,10 @@
               "id": {
                 "type": "string"
               },
-              "foodName": {
+              "name": {
                 "type": "string"
               },
-              "foodDescription": {
+              "description": {
                 "type": "string"
               },
               "images": {
@@ -5526,7 +5522,7 @@
                   "type": "string"
                 }
               },
-              "foodShortDesc": {
+              "shortDesc": {
                 "type": "string"
               },
               "categories": {
@@ -5604,10 +5600,10 @@
           "id": {
             "type": "string"
           },
-          "foodName": {
+          "name": {
             "type": "string"
           },
-          "foodDescription": {
+          "description": {
             "type": "string"
           },
           "images": {
@@ -5680,7 +5676,7 @@
               }
             }
           },
-          "foodShortDesc": {
+          "shortDesc": {
             "type": "string"
           },
           "categories": {
@@ -5722,8 +5718,7 @@
           },
           "restaurant": {
             "required": [
-              "id",
-              "slug"
+              "id"
             ],
             "properties": {
               "id": {
@@ -5745,7 +5740,7 @@
                 "type": "string"
               },
               "slug": {
-                "type": "string"
+                "type": "uid"
               },
               "foods": {
                 "type": "array",
@@ -5786,9 +5781,6 @@
                 },
                 "approved": {
                   "type": "boolean"
-                },
-                "slug": {
-                  "type": "uid"
                 },
                 "published_at": {
                   "type": "string"
@@ -5838,13 +5830,13 @@
       },
       "NewFoods": {
         "properties": {
-          "foodName": {
+          "name": {
             "type": "string"
           },
-          "foodDescription": {
+          "description": {
             "type": "string"
           },
-          "foodShortDesc": {
+          "shortDesc": {
             "type": "string"
           },
           "categories": {
@@ -5966,10 +5958,10 @@
               "id": {
                 "type": "string"
               },
-              "foodName": {
+              "name": {
                 "type": "string"
               },
-              "foodDescription": {
+              "description": {
                 "type": "string"
               },
               "images": {
@@ -5978,7 +5970,7 @@
                   "type": "string"
                 }
               },
-              "foodShortDesc": {
+              "shortDesc": {
                 "type": "string"
               },
               "categories": {
@@ -6324,8 +6316,7 @@
       },
       "Restaurants": {
         "required": [
-          "id",
-          "slug"
+          "id"
         ],
         "properties": {
           "id": {
@@ -6409,7 +6400,7 @@
             }
           },
           "slug": {
-            "type": "string"
+            "type": "uid"
           },
           "foods": {
             "type": "array",
@@ -6421,10 +6412,10 @@
                 "id": {
                   "type": "string"
                 },
-                "foodName": {
+                "name": {
                   "type": "string"
                 },
-                "foodDescription": {
+                "description": {
                   "type": "string"
                 },
                 "images": {
@@ -6433,7 +6424,7 @@
                     "type": "string"
                   }
                 },
-                "foodShortDesc": {
+                "shortDesc": {
                   "type": "string"
                 },
                 "categories": {
@@ -6469,9 +6460,6 @@
               }
             }
           },
-          "slug": {
-            "type": "uid"
-          },
           "published_at": {
             "type": "string",
             "format": "date-time"
@@ -6479,9 +6467,6 @@
         }
       },
       "NewRestaurants": {
-        "required": [
-          "slug"
-        ],
         "properties": {
           "restaurantName": {
             "type": "string"
@@ -6499,16 +6484,13 @@
             "type": "string"
           },
           "slug": {
-            "type": "string"
+            "type": "uid"
           },
           "foods": {
             "type": "array",
             "items": {
               "type": "string"
             }
-          },
-          "slug": {
-            "type": "uid"
           },
           "published_at": {
             "type": "string",
