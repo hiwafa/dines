@@ -516,7 +516,8 @@
     "schemas": {
       "Restaurants": {
         "required": [
-          "id"
+          "id",
+          "slug"
         ],
         "properties": {
           "id": {
@@ -599,6 +600,9 @@
               }
             }
           },
+          "slug": {
+            "type": "string"
+          },
           "foods": {
             "type": "array",
             "items": {
@@ -630,14 +634,20 @@
                     "type": "string"
                   }
                 },
-                "restaurants": {
+                "restaurant": {
+                  "type": "string"
+                },
+                "price": {
+                  "type": "number"
+                },
+                "comments": {
                   "type": "array",
                   "items": {
                     "type": "string"
                   }
                 },
-                "price": {
-                  "type": "number"
+                "ingredient": {
+                  "type": "string"
                 },
                 "published_at": {
                   "type": "string"
@@ -661,6 +671,9 @@
         }
       },
       "NewRestaurants": {
+        "required": [
+          "slug"
+        ],
         "properties": {
           "restaurantName": {
             "type": "string"
@@ -675,6 +688,9 @@
             }
           },
           "profile": {
+            "type": "string"
+          },
+          "slug": {
             "type": "string"
           },
           "foods": {

@@ -638,36 +638,72 @@
               }
             }
           },
-          "restaurants": {
+          "restaurant": {
+            "required": [
+              "id",
+              "slug"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "restaurantName": {
+                "type": "string"
+              },
+              "slogan": {
+                "type": "string"
+              },
+              "categories": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "profile": {
+                "type": "string"
+              },
+              "slug": {
+                "type": "string"
+              },
+              "foods": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "published_at": {
+                "type": "string"
+              },
+              "created_by": {
+                "type": "string"
+              },
+              "updated_by": {
+                "type": "string"
+              }
+            }
+          },
+          "price": {
+            "type": "number"
+          },
+          "comments": {
             "type": "array",
             "items": {
               "required": [
-                "id"
+                "id",
+                "text"
               ],
               "properties": {
                 "id": {
                   "type": "string"
                 },
-                "restaurantName": {
+                "text": {
                   "type": "string"
                 },
-                "slogan": {
+                "food": {
                   "type": "string"
                 },
-                "categories": {
-                  "type": "array",
-                  "items": {
-                    "type": "string"
-                  }
-                },
-                "profile": {
-                  "type": "string"
-                },
-                "foods": {
-                  "type": "array",
-                  "items": {
-                    "type": "string"
-                  }
+                "approved": {
+                  "type": "boolean"
                 },
                 "slug": {
                   "type": "uid"
@@ -684,8 +720,33 @@
               }
             }
           },
-          "price": {
-            "type": "number"
+          "ingredient": {
+            "required": [
+              "id"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "name": {
+                "type": "string"
+              },
+              "icon": {
+                "type": "string"
+              },
+              "food": {
+                "type": "string"
+              },
+              "published_at": {
+                "type": "string"
+              },
+              "created_by": {
+                "type": "string"
+              },
+              "updated_by": {
+                "type": "string"
+              }
+            }
           },
           "published_at": {
             "type": "string",
@@ -710,14 +771,20 @@
               "type": "string"
             }
           },
-          "restaurants": {
+          "restaurant": {
+            "type": "string"
+          },
+          "price": {
+            "type": "number"
+          },
+          "comments": {
             "type": "array",
             "items": {
               "type": "string"
             }
           },
-          "price": {
-            "type": "number"
+          "ingredient": {
+            "type": "string"
           },
           "published_at": {
             "type": "string",

@@ -26,8 +26,13 @@
     "profile": {
       "model": "profiles"
     },
+    "slug": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
     "foods": {
-      "via": "restaurants",
+      "via": "restaurant",
       "collection": "foods"
     },
     "slug": {

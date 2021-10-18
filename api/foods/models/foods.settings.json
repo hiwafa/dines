@@ -38,13 +38,20 @@
       "via": "foods",
       "dominant": true
     },
-    "restaurants": {
+    "restaurant": {
       "via": "foods",
-      "collection": "restaurants",
-      "dominant": true
+      "model": "restaurants"
     },
     "price": {
       "type": "decimal"
+    },
+    "comments": {
+      "via": "food",
+      "collection": "comments"
+    },
+    "ingredient": {
+      "via": "food",
+      "model": "ingredients"
     }
   }
 }

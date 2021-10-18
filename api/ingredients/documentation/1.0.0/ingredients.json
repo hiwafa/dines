@@ -1,18 +1,18 @@
 {
   "paths": {
-    "/categories": {
+    "/ingredients": {
       "get": {
         "deprecated": false,
-        "description": "Find all the categories's records",
+        "description": "Find all the ingredients's records",
         "responses": {
           "200": {
-            "description": "Retrieve categories document(s)",
+            "description": "Retrieve ingredients document(s)",
             "content": {
               "application/json": {
                 "schema": {
                   "type": "array",
                   "items": {
-                    "$ref": "#/components/schemas/Categories"
+                    "$ref": "#/components/schemas/Ingredients"
                   }
                 }
               }
@@ -51,7 +51,7 @@
         },
         "summary": "",
         "tags": [
-          "Categories"
+          "Ingredients"
         ],
         "parameters": [
           {
@@ -194,14 +194,14 @@
       },
       "post": {
         "deprecated": false,
-        "description": "Create a new categories record",
+        "description": "Create a new ingredients record",
         "responses": {
           "200": {
-            "description": "Retrieve categories document(s)",
+            "description": "Retrieve ingredients document(s)",
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/Categories"
+                  "$ref": "#/components/schemas/Ingredients"
                 }
               }
             }
@@ -239,7 +239,7 @@
         },
         "summary": "",
         "tags": [
-          "Categories"
+          "Ingredients"
         ],
         "requestBody": {
           "description": "",
@@ -247,20 +247,20 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/NewCategories"
+                "$ref": "#/components/schemas/NewIngredients"
               }
             }
           }
         }
       }
     },
-    "/categories/count": {
+    "/ingredients/count": {
       "get": {
         "deprecated": false,
-        "description": "Retrieve the number of categories documents",
+        "description": "Retrieve the number of ingredients documents",
         "responses": {
           "200": {
-            "description": "Retrieve categories document(s)",
+            "description": "Retrieve ingredients document(s)",
             "content": {
               "application/json": {
                 "schema": {
@@ -306,22 +306,22 @@
         },
         "summary": "",
         "tags": [
-          "Categories"
+          "Ingredients"
         ],
         "parameters": []
       }
     },
-    "/categories/{id}": {
+    "/ingredients/{id}": {
       "get": {
         "deprecated": false,
-        "description": "Find one categories record",
+        "description": "Find one ingredients record",
         "responses": {
           "200": {
-            "description": "Retrieve categories document(s)",
+            "description": "Retrieve ingredients document(s)",
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/Categories"
+                  "$ref": "#/components/schemas/Ingredients"
                 }
               }
             }
@@ -359,7 +359,7 @@
         },
         "summary": "",
         "tags": [
-          "Categories"
+          "Ingredients"
         ],
         "parameters": [
           {
@@ -376,14 +376,14 @@
       },
       "put": {
         "deprecated": false,
-        "description": "Update a single categories record",
+        "description": "Update a single ingredients record",
         "responses": {
           "200": {
-            "description": "Retrieve categories document(s)",
+            "description": "Retrieve ingredients document(s)",
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/Categories"
+                  "$ref": "#/components/schemas/Ingredients"
                 }
               }
             }
@@ -421,7 +421,7 @@
         },
         "summary": "",
         "tags": [
-          "Categories"
+          "Ingredients"
         ],
         "requestBody": {
           "description": "",
@@ -429,7 +429,7 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/NewCategories"
+                "$ref": "#/components/schemas/NewIngredients"
               }
             }
           }
@@ -449,10 +449,10 @@
       },
       "delete": {
         "deprecated": false,
-        "description": "Delete a single categories record",
+        "description": "Delete a single ingredients record",
         "responses": {
           "200": {
-            "description": "deletes a single categories based on the ID supplied",
+            "description": "deletes a single ingredients based on the ID supplied",
             "content": {
               "application/json": {
                 "schema": {
@@ -495,7 +495,7 @@
         },
         "summary": "",
         "tags": [
-          "Categories"
+          "Ingredients"
         ],
         "parameters": [
           {
@@ -514,7 +514,7 @@
   },
   "components": {
     "schemas": {
-      "Categories": {
+      "Ingredients": {
         "required": [
           "id"
         ],
@@ -522,114 +522,128 @@
           "id": {
             "type": "string"
           },
-          "categoryName": {
+          "name": {
             "type": "string"
           },
-          "restaurants": {
-            "type": "array",
-            "items": {
-              "required": [
-                "id",
-                "slug"
-              ],
-              "properties": {
-                "id": {
-                  "type": "string"
-                },
-                "restaurantName": {
-                  "type": "string"
-                },
-                "slogan": {
-                  "type": "string"
-                },
-                "categories": {
-                  "type": "array",
-                  "items": {
-                    "type": "string"
-                  }
-                },
-                "profile": {
-                  "type": "string"
-                },
-                "slug": {
-                  "type": "string"
-                },
-                "foods": {
-                  "type": "array",
-                  "items": {
-                    "type": "string"
-                  }
-                },
-                "slug": {
-                  "type": "uid"
-                },
-                "published_at": {
-                  "type": "string"
-                },
-                "created_by": {
-                  "type": "string"
-                },
-                "updated_by": {
-                  "type": "string"
-                }
+          "icon": {
+            "required": [
+              "id",
+              "name",
+              "hash",
+              "mime",
+              "size",
+              "url",
+              "provider"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "name": {
+                "type": "string"
+              },
+              "alternativeText": {
+                "type": "string"
+              },
+              "caption": {
+                "type": "string"
+              },
+              "width": {
+                "type": "integer"
+              },
+              "height": {
+                "type": "integer"
+              },
+              "formats": {
+                "type": "object"
+              },
+              "hash": {
+                "type": "string"
+              },
+              "ext": {
+                "type": "string"
+              },
+              "mime": {
+                "type": "string"
+              },
+              "size": {
+                "type": "number"
+              },
+              "url": {
+                "type": "string"
+              },
+              "previewUrl": {
+                "type": "string"
+              },
+              "provider": {
+                "type": "string"
+              },
+              "provider_metadata": {
+                "type": "object"
+              },
+              "related": {
+                "type": "string"
+              },
+              "created_by": {
+                "type": "string"
+              },
+              "updated_by": {
+                "type": "string"
               }
             }
           },
-          "foods": {
-            "type": "array",
-            "items": {
-              "required": [
-                "id"
-              ],
-              "properties": {
-                "id": {
-                  "type": "string"
-                },
-                "foodName": {
-                  "type": "string"
-                },
-                "foodDescription": {
-                  "type": "string"
-                },
-                "images": {
-                  "type": "array",
-                  "items": {
-                    "type": "string"
-                  }
-                },
-                "foodShortDesc": {
-                  "type": "string"
-                },
-                "categories": {
-                  "type": "array",
-                  "items": {
-                    "type": "string"
-                  }
-                },
-                "restaurant": {
-                  "type": "string"
-                },
-                "price": {
-                  "type": "number"
-                },
-                "comments": {
-                  "type": "array",
-                  "items": {
-                    "type": "string"
-                  }
-                },
-                "ingredient": {
-                  "type": "string"
-                },
-                "published_at": {
-                  "type": "string"
-                },
-                "created_by": {
-                  "type": "string"
-                },
-                "updated_by": {
+          "food": {
+            "required": [
+              "id"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "foodName": {
+                "type": "string"
+              },
+              "foodDescription": {
+                "type": "string"
+              },
+              "images": {
+                "type": "array",
+                "items": {
                   "type": "string"
                 }
+              },
+              "foodShortDesc": {
+                "type": "string"
+              },
+              "categories": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "restaurant": {
+                "type": "string"
+              },
+              "price": {
+                "type": "number"
+              },
+              "comments": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "ingredient": {
+                "type": "string"
+              },
+              "published_at": {
+                "type": "string"
+              },
+              "created_by": {
+                "type": "string"
+              },
+              "updated_by": {
+                "type": "string"
               }
             }
           },
@@ -639,22 +653,13 @@
           }
         }
       },
-      "NewCategories": {
+      "NewIngredients": {
         "properties": {
-          "categoryName": {
+          "name": {
             "type": "string"
           },
-          "restaurants": {
-            "type": "array",
-            "items": {
-              "type": "string"
-            }
-          },
-          "foods": {
-            "type": "array",
-            "items": {
-              "type": "string"
-            }
+          "food": {
+            "type": "string"
           },
           "published_at": {
             "type": "string",
@@ -672,7 +677,7 @@
   },
   "tags": [
     {
-      "name": "Categories"
+      "name": "Ingredients"
     }
   ]
 }
