@@ -582,6 +582,12 @@
               "slideshow": {
                 "type": "component"
               },
+              "email": {
+                "type": "string"
+              },
+              "geoLocation": {
+                "type": "string"
+              },
               "published_at": {
                 "type": "string"
               },
@@ -645,6 +651,9 @@
               }
             }
           },
+          "slug": {
+            "type": "uid"
+          },
           "published_at": {
             "type": "string",
             "format": "date-time"
@@ -673,6 +682,9 @@
             "items": {
               "type": "string"
             }
+          },
+          "slug": {
+            "type": "uid"
           },
           "published_at": {
             "type": "string",

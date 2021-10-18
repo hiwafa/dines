@@ -29,6 +29,10 @@
     "foods": {
       "via": "restaurants",
       "collection": "foods"
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "restaurantName"
     }
   }
 }

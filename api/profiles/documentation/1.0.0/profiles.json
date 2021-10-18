@@ -676,6 +676,13 @@
               }
             }
           },
+          "email": {
+            "type": "string",
+            "default": "email@example.com"
+          },
+          "geoLocation": {
+            "type": "string"
+          },
           "published_at": {
             "type": "string",
             "format": "date-time"
@@ -770,6 +777,13 @@
                 }
               }
             }
+          },
+          "email": {
+            "type": "string",
+            "default": "email@example.com"
+          },
+          "geoLocation": {
+            "type": "string"
           },
           "published_at": {
             "type": "string",
