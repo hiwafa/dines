@@ -26,8 +26,8 @@
       "pluginOptions": {}
     },
     "food": {
-      "via": "ingredient",
-      "model": "foods"
+      "model": "foods",
+      "via": "ingredients"
     }
   }
 }
