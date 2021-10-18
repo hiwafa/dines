@@ -9,6 +9,6 @@ module.exports = {
 
     async restaurantFoods(ctx) {
         const { restaurant } = ctx.params;
-        return await strapi.service.foods.find({ restaurant })
+        return await strapi.services.foods.find({ restaurant })
     }
 };
