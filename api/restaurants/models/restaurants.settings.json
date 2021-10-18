@@ -31,9 +31,8 @@
       "collection": "foods"
     },
     "slug": {
-      "type": "string",
-      "default": "slug",
-      "unique": true
+      "type": "uid",
+      "targetField": "restaurantName"
     }
   }
 }

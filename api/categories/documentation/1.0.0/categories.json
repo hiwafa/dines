@@ -557,7 +557,7 @@
                   }
                 },
                 "slug": {
-                  "type": "string"
+                  "type": "uid"
                 },
                 "published_at": {
                   "type": "string"

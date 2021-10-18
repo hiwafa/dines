@@ -646,8 +646,7 @@
             }
           },
           "slug": {
-            "type": "string",
-            "default": "slug"
+            "type": "uid"
           },
           "published_at": {
             "type": "string",
@@ -679,8 +678,7 @@
             }
           },
           "slug": {
-            "type": "string",
-            "default": "slug"
+            "type": "uid"
           },
           "published_at": {
             "type": "string",
