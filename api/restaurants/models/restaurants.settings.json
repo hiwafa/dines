@@ -34,6 +34,10 @@
     "foods": {
       "via": "restaurant",
       "collection": "foods"
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "restaurantName"
     }
   }
 }
