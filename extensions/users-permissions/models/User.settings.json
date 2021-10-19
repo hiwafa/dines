@@ -80,6 +80,10 @@
     "food_ratings": {
       "via": "user",
       "collection": "food-ratings"
+    },
+    "comments": {
+      "via": "user",
+      "collection": "comments"
     }
   }
 }

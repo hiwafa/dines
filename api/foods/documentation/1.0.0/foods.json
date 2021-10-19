@@ -778,6 +778,9 @@
                 "approved": {
                   "type": "boolean"
                 },
+                "user": {
+                  "type": "string"
+                },
                 "published_at": {
                   "type": "string"
                 },
