@@ -1,0 +1,27 @@
+{
+  "kind": "collectionType",
+  "collectionName": "food_ratings",
+  "info": {
+    "name": "foodRatings"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "rateValue": {
+      "type": "decimal"
+    },
+    "user": {
+      "plugin": "users-permissions",
+      "model": "user",
+      "via": "food_ratings"
+    },
+    "food": {
+      "model": "foods",
+      "via": "food_ratings"
+    }
+  }
+}

@@ -76,6 +76,10 @@
     "restaurant_ratings": {
       "via": "user",
       "collection": "restaurant-ratings"
+    },
+    "food_ratings": {
+      "via": "user",
+      "collection": "food-ratings"
     }
   }
 }

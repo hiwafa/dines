@@ -1,12 +1,12 @@
 {
   "paths": {
-    "/restaurant-ratings": {
+    "/food-ratings": {
       "get": {
         "deprecated": false,
-        "description": "Find all the restaurant-ratings's records",
+        "description": "Find all the food-ratings's records",
         "responses": {
           "200": {
-            "description": "Retrieve restaurant-ratings document(s)",
+            "description": "Retrieve food-ratings document(s)",
             "content": {
               "application/json": {
                 "schema": {
@@ -52,7 +52,7 @@
         },
         "summary": "",
         "tags": [
-          "Restaurant-ratings"
+          "Food-ratings"
         ],
         "parameters": [
           {
@@ -195,10 +195,10 @@
       },
       "post": {
         "deprecated": false,
-        "description": "Create a new restaurant-ratings record",
+        "description": "Create a new food-ratings record",
         "responses": {
           "200": {
-            "description": "Retrieve restaurant-ratings document(s)",
+            "description": "Retrieve food-ratings document(s)",
             "content": {
               "application/json": {
                 "schema": {
@@ -244,7 +244,7 @@
         },
         "summary": "",
         "tags": [
-          "Restaurant-ratings"
+          "Food-ratings"
         ],
         "requestBody": {
           "description": "",
@@ -252,20 +252,20 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/NewRestaurant-ratings"
+                "$ref": "#/components/schemas/NewFood-ratings"
               }
             }
           }
         }
       }
     },
-    "/restaurant-ratings/count": {
+    "/food-ratings/count": {
       "get": {
         "deprecated": false,
-        "description": "Retrieve the number of restaurant-ratings documents",
+        "description": "Retrieve the number of food-ratings documents",
         "responses": {
           "200": {
-            "description": "Retrieve restaurant-ratings document(s)",
+            "description": "Retrieve food-ratings document(s)",
             "content": {
               "application/json": {
                 "schema": {
@@ -311,18 +311,18 @@
         },
         "summary": "",
         "tags": [
-          "Restaurant-ratings"
+          "Food-ratings"
         ],
         "parameters": []
       }
     },
-    "/restaurant-ratings/{id}": {
+    "/food-ratings/{id}": {
       "get": {
         "deprecated": false,
-        "description": "Find one restaurant-ratings record",
+        "description": "Find one food-ratings record",
         "responses": {
           "200": {
-            "description": "Retrieve restaurant-ratings document(s)",
+            "description": "Retrieve food-ratings document(s)",
             "content": {
               "application/json": {
                 "schema": {
@@ -368,7 +368,7 @@
         },
         "summary": "",
         "tags": [
-          "Restaurant-ratings"
+          "Food-ratings"
         ],
         "parameters": [
           {
@@ -385,10 +385,10 @@
       },
       "put": {
         "deprecated": false,
-        "description": "Update a single restaurant-ratings record",
+        "description": "Update a single food-ratings record",
         "responses": {
           "200": {
-            "description": "Retrieve restaurant-ratings document(s)",
+            "description": "Retrieve food-ratings document(s)",
             "content": {
               "application/json": {
                 "schema": {
@@ -434,7 +434,7 @@
         },
         "summary": "",
         "tags": [
-          "Restaurant-ratings"
+          "Food-ratings"
         ],
         "requestBody": {
           "description": "",
@@ -442,7 +442,7 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/NewRestaurant-ratings"
+                "$ref": "#/components/schemas/NewFood-ratings"
               }
             }
           }
@@ -462,10 +462,10 @@
       },
       "delete": {
         "deprecated": false,
-        "description": "Delete a single restaurant-ratings record",
+        "description": "Delete a single food-ratings record",
         "responses": {
           "200": {
-            "description": "deletes a single restaurant-ratings based on the ID supplied",
+            "description": "deletes a single food-ratings based on the ID supplied",
             "content": {
               "application/json": {
                 "schema": {
@@ -508,7 +508,7 @@
         },
         "summary": "",
         "tags": [
-          "Restaurant-ratings"
+          "Food-ratings"
         ],
         "parameters": [
           {
@@ -527,7 +527,7 @@
   },
   "components": {
     "schemas": {
-      "Restaurant-ratings": {
+      "Food-ratings": {
         "required": [
           "id"
         ],
@@ -604,7 +604,7 @@
               }
             }
           },
-          "restaurant": {
+          "food": {
             "required": [
               "id"
             ],
@@ -612,10 +612,19 @@
               "id": {
                 "type": "string"
               },
-              "restaurantName": {
+              "name": {
                 "type": "string"
               },
-              "slogan": {
+              "description": {
+                "type": "string"
+              },
+              "images": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "shortDesc": {
                 "type": "string"
               },
               "categories": {
@@ -624,19 +633,25 @@
                   "type": "string"
                 }
               },
-              "profile": {
+              "restaurant": {
                 "type": "string"
               },
-              "slug": {
-                "type": "uid"
+              "price": {
+                "type": "number"
               },
-              "foods": {
+              "comments": {
                 "type": "array",
                 "items": {
                   "type": "string"
                 }
               },
-              "restaurant_ratings": {
+              "ingredients": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "food_ratings": {
                 "type": "array",
                 "items": {
                   "type": "string"
@@ -659,7 +674,7 @@
           }
         }
       },
-      "NewRestaurant-ratings": {
+      "NewFood-ratings": {
         "properties": {
           "rateValue": {
             "type": "number"
@@ -667,7 +682,7 @@
           "user": {
             "type": "string"
           },
-          "restaurant": {
+          "food": {
             "type": "string"
           },
           "published_at": {
