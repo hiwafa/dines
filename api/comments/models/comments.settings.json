@@ -22,6 +22,11 @@
     },
     "approved": {
       "type": "boolean"
+    },
+    "user": {
+      "plugin": "users-permissions",
+      "model": "user",
+      "via": "comments"
     }
   }
 }

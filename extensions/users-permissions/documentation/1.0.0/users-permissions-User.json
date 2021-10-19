@@ -1385,6 +1385,41 @@
                 }
               }
             }
+          },
+          "comments": {
+            "type": "array",
+            "items": {
+              "required": [
+                "id",
+                "text"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "text": {
+                  "type": "string"
+                },
+                "food": {
+                  "type": "string"
+                },
+                "approved": {
+                  "type": "boolean"
+                },
+                "user": {
+                  "type": "string"
+                },
+                "published_at": {
+                  "type": "string"
+                },
+                "created_by": {
+                  "type": "string"
+                },
+                "updated_by": {
+                  "type": "string"
+                }
+              }
+            }
           }
         }
       },
@@ -1437,6 +1472,12 @@
             }
           },
           "food_ratings": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "comments": {
             "type": "array",
             "items": {
               "type": "string"
