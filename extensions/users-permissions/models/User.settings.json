@@ -72,6 +72,10 @@
       "plugin": "upload",
       "required": false,
       "pluginOptions": {}
+    },
+    "restaurant_ratings": {
+      "via": "user",
+      "collection": "restaurant-ratings"
     }
   }
 }
