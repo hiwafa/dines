@@ -51,9 +51,7 @@
           }
         },
         "summary": "",
-        "tags": [
-          "Food-ratings"
-        ],
+        "tags": ["Food-ratings"],
         "parameters": [
           {
             "name": "_limit",
@@ -243,9 +241,7 @@
           }
         },
         "summary": "",
-        "tags": [
-          "Food-ratings"
-        ],
+        "tags": ["Food-ratings"],
         "requestBody": {
           "description": "",
           "required": true,
@@ -310,9 +306,7 @@
           }
         },
         "summary": "",
-        "tags": [
-          "Food-ratings"
-        ],
+        "tags": ["Food-ratings"],
         "parameters": []
       }
     },
@@ -367,9 +361,7 @@
           }
         },
         "summary": "",
-        "tags": [
-          "Food-ratings"
-        ],
+        "tags": ["Food-ratings"],
         "parameters": [
           {
             "name": "id",
@@ -433,9 +425,7 @@
           }
         },
         "summary": "",
-        "tags": [
-          "Food-ratings"
-        ],
+        "tags": ["Food-ratings"],
         "requestBody": {
           "description": "",
           "required": true,
@@ -507,9 +497,7 @@
           }
         },
         "summary": "",
-        "tags": [
-          "Food-ratings"
-        ],
+        "tags": ["Food-ratings"],
         "parameters": [
           {
             "name": "id",
@@ -528,9 +516,7 @@
   "components": {
     "schemas": {
       "Food-ratings": {
-        "required": [
-          "id"
-        ],
+        "required": ["id"],
         "properties": {
           "id": {
             "type": "string"
@@ -539,11 +525,7 @@
             "type": "number"
           },
           "user": {
-            "required": [
-              "id",
-              "username",
-              "email"
-            ],
+            "required": ["id", "username", "email"],
             "properties": {
               "id": {
                 "type": "string"
@@ -605,6 +587,12 @@
               "restaurant": {
                 "type": "string"
               },
+              "replies": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
               "created_by": {
                 "type": "string"
               },
@@ -614,9 +602,7 @@
             }
           },
           "food": {
-            "required": [
-              "id"
-            ],
+            "required": ["id"],
             "properties": {
               "id": {
                 "type": "string"

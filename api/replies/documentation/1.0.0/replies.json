@@ -1,18 +1,18 @@
 {
   "paths": {
-    "/comments": {
+    "/replies": {
       "get": {
         "deprecated": false,
-        "description": "Find all the comments's records",
+        "description": "Find all the replies's records",
         "responses": {
           "200": {
-            "description": "Retrieve comments document(s)",
+            "description": "Retrieve replies document(s)",
             "content": {
               "application/json": {
                 "schema": {
                   "type": "array",
                   "items": {
-                    "$ref": "#/components/schemas/Comments"
+                    "$ref": "#/components/schemas/Replies"
                   }
                 }
               }
@@ -50,7 +50,9 @@
           }
         },
         "summary": "",
-        "tags": ["Comments"],
+        "tags": [
+          "Replies"
+        ],
         "parameters": [
           {
             "name": "_limit",
@@ -192,14 +194,14 @@
       },
       "post": {
         "deprecated": false,
-        "description": "Create a new comments record",
+        "description": "Create a new replies record",
         "responses": {
           "200": {
-            "description": "Retrieve comments document(s)",
+            "description": "Retrieve replies document(s)",
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/Comments"
+                  "$ref": "#/components/schemas/Replies"
                 }
               }
             }
@@ -236,27 +238,29 @@
           }
         },
         "summary": "",
-        "tags": ["Comments"],
+        "tags": [
+          "Replies"
+        ],
         "requestBody": {
           "description": "",
           "required": true,
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/NewComments"
+                "$ref": "#/components/schemas/NewReplies"
               }
             }
           }
         }
       }
     },
-    "/comments/count": {
+    "/replies/count": {
       "get": {
         "deprecated": false,
-        "description": "Retrieve the number of comments documents",
+        "description": "Retrieve the number of replies documents",
         "responses": {
           "200": {
-            "description": "Retrieve comments document(s)",
+            "description": "Retrieve replies document(s)",
             "content": {
               "application/json": {
                 "schema": {
@@ -301,21 +305,23 @@
           }
         },
         "summary": "",
-        "tags": ["Comments"],
+        "tags": [
+          "Replies"
+        ],
         "parameters": []
       }
     },
-    "/comments/{id}": {
+    "/replies/{id}": {
       "get": {
         "deprecated": false,
-        "description": "Find one comments record",
+        "description": "Find one replies record",
         "responses": {
           "200": {
-            "description": "Retrieve comments document(s)",
+            "description": "Retrieve replies document(s)",
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/Comments"
+                  "$ref": "#/components/schemas/Replies"
                 }
               }
             }
@@ -352,7 +358,9 @@
           }
         },
         "summary": "",
-        "tags": ["Comments"],
+        "tags": [
+          "Replies"
+        ],
         "parameters": [
           {
             "name": "id",
@@ -368,14 +376,14 @@
       },
       "put": {
         "deprecated": false,
-        "description": "Update a single comments record",
+        "description": "Update a single replies record",
         "responses": {
           "200": {
-            "description": "Retrieve comments document(s)",
+            "description": "Retrieve replies document(s)",
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/Comments"
+                  "$ref": "#/components/schemas/Replies"
                 }
               }
             }
@@ -412,14 +420,16 @@
           }
         },
         "summary": "",
-        "tags": ["Comments"],
+        "tags": [
+          "Replies"
+        ],
         "requestBody": {
           "description": "",
           "required": true,
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/NewComments"
+                "$ref": "#/components/schemas/NewReplies"
               }
             }
           }
@@ -439,10 +449,10 @@
       },
       "delete": {
         "deprecated": false,
-        "description": "Delete a single comments record",
+        "description": "Delete a single replies record",
         "responses": {
           "200": {
-            "description": "deletes a single comments based on the ID supplied",
+            "description": "deletes a single replies based on the ID supplied",
             "content": {
               "application/json": {
                 "schema": {
@@ -484,7 +494,9 @@
           }
         },
         "summary": "",
-        "tags": ["Comments"],
+        "tags": [
+          "Replies"
+        ],
         "parameters": [
           {
             "name": "id",
@@ -502,8 +514,10 @@
   },
   "components": {
     "schemas": {
-      "Comments": {
-        "required": ["id", "text"],
+      "Replies": {
+        "required": [
+          "id"
+        ],
         "properties": {
           "id": {
             "type": "string"
@@ -511,73 +525,12 @@
           "text": {
             "type": "string"
           },
-          "food": {
-            "required": ["id"],
-            "properties": {
-              "id": {
-                "type": "string"
-              },
-              "name": {
-                "type": "string"
-              },
-              "description": {
-                "type": "string"
-              },
-              "images": {
-                "type": "array",
-                "items": {
-                  "type": "string"
-                }
-              },
-              "shortDesc": {
-                "type": "string"
-              },
-              "categories": {
-                "type": "array",
-                "items": {
-                  "type": "string"
-                }
-              },
-              "restaurant": {
-                "type": "string"
-              },
-              "price": {
-                "type": "number"
-              },
-              "comments": {
-                "type": "array",
-                "items": {
-                  "type": "string"
-                }
-              },
-              "ingredients": {
-                "type": "array",
-                "items": {
-                  "type": "string"
-                }
-              },
-              "food_ratings": {
-                "type": "array",
-                "items": {
-                  "type": "string"
-                }
-              },
-              "published_at": {
-                "type": "string"
-              },
-              "created_by": {
-                "type": "string"
-              },
-              "updated_by": {
-                "type": "string"
-              }
-            }
-          },
-          "approved": {
-            "type": "boolean"
-          },
           "user": {
-            "required": ["id", "username", "email"],
+            "required": [
+              "id",
+              "username",
+              "email"
+            ],
             "properties": {
               "id": {
                 "type": "string"
@@ -653,8 +606,11 @@
               }
             }
           },
-          "reply": {
-            "required": ["id"],
+          "comment": {
+            "required": [
+              "id",
+              "text"
+            ],
             "properties": {
               "id": {
                 "type": "string"
@@ -662,10 +618,16 @@
               "text": {
                 "type": "string"
               },
+              "food": {
+                "type": "string"
+              },
+              "approved": {
+                "type": "boolean"
+              },
               "user": {
                 "type": "string"
               },
-              "comment": {
+              "reply": {
                 "type": "string"
               },
               "published_at": {
@@ -685,22 +647,15 @@
           }
         }
       },
-      "NewComments": {
-        "required": ["text"],
+      "NewReplies": {
         "properties": {
           "text": {
             "type": "string"
           },
-          "food": {
-            "type": "string"
-          },
-          "approved": {
-            "type": "boolean"
-          },
           "user": {
             "type": "string"
           },
-          "reply": {
+          "comment": {
             "type": "string"
           },
           "published_at": {
@@ -719,7 +674,7 @@
   },
   "tags": [
     {
-      "name": "Comments"
+      "name": "Replies"
     }
   ]
 }
