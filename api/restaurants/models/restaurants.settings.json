@@ -33,6 +33,10 @@
     "foods": {
       "via": "restaurant",
       "collection": "foods"
+    },
+    "restaurant_ratings": {
+      "via": "restaurant",
+      "collection": "restaurant-ratings"
     }
   }
 }

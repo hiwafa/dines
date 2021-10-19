@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/restaurant-ratings",
+      "handler": "restaurant-ratings.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/restaurant-ratings/count",
+      "handler": "restaurant-ratings.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/restaurant-ratings/:id",
+      "handler": "restaurant-ratings.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/restaurant-ratings",
+      "handler": "restaurant-ratings.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/restaurant-ratings/:id",
+      "handler": "restaurant-ratings.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/restaurant-ratings/:id",
+      "handler": "restaurant-ratings.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

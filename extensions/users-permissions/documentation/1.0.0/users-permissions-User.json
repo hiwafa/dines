@@ -1323,6 +1323,68 @@
                 }
               }
             }
+          },
+          "restaurant_ratings": {
+            "type": "array",
+            "items": {
+              "required": [
+                "id"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "rateValue": {
+                  "type": "number"
+                },
+                "user": {
+                  "type": "string"
+                },
+                "restaurant": {
+                  "type": "string"
+                },
+                "published_at": {
+                  "type": "string"
+                },
+                "created_by": {
+                  "type": "string"
+                },
+                "updated_by": {
+                  "type": "string"
+                }
+              }
+            }
+          },
+          "food_ratings": {
+            "type": "array",
+            "items": {
+              "required": [
+                "id"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "rateValue": {
+                  "type": "number"
+                },
+                "user": {
+                  "type": "string"
+                },
+                "food": {
+                  "type": "string"
+                },
+                "published_at": {
+                  "type": "string"
+                },
+                "created_by": {
+                  "type": "string"
+                },
+                "updated_by": {
+                  "type": "string"
+                }
+              }
+            }
           }
         }
       },
@@ -1367,6 +1429,18 @@
           },
           "name": {
             "type": "string"
+          },
+          "restaurant_ratings": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "food_ratings": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
           },
           "created_by": {
             "type": "string"
