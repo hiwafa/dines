@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "10/19/2021 10:27:23 PM"
+    "x-generation-date": "10/19/2021 10:58:36 PM"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -95,7 +95,9 @@
           }
         },
         "summary": "",
-        "tags": ["Categories"],
+        "tags": [
+          "Categories"
+        ],
         "parameters": [
           {
             "name": "_limit",
@@ -281,7 +283,9 @@
           }
         },
         "summary": "",
-        "tags": ["Categories"],
+        "tags": [
+          "Categories"
+        ],
         "requestBody": {
           "description": "",
           "required": true,
@@ -346,7 +350,9 @@
           }
         },
         "summary": "",
-        "tags": ["Categories"],
+        "tags": [
+          "Categories"
+        ],
         "parameters": []
       }
     },
@@ -397,7 +403,9 @@
           }
         },
         "summary": "",
-        "tags": ["Categories"],
+        "tags": [
+          "Categories"
+        ],
         "parameters": [
           {
             "name": "id",
@@ -457,7 +465,9 @@
           }
         },
         "summary": "",
-        "tags": ["Categories"],
+        "tags": [
+          "Categories"
+        ],
         "requestBody": {
           "description": "",
           "required": true,
@@ -529,7 +539,9 @@
           }
         },
         "summary": "",
-        "tags": ["Categories"],
+        "tags": [
+          "Categories"
+        ],
         "parameters": [
           {
             "name": "id",
@@ -594,7 +606,9 @@
           }
         },
         "summary": "",
-        "tags": ["Comments"],
+        "tags": [
+          "Comments"
+        ],
         "parameters": [
           {
             "name": "_limit",
@@ -780,7 +794,9 @@
           }
         },
         "summary": "",
-        "tags": ["Comments"],
+        "tags": [
+          "Comments"
+        ],
         "requestBody": {
           "description": "",
           "required": true,
@@ -845,7 +861,9 @@
           }
         },
         "summary": "",
-        "tags": ["Comments"],
+        "tags": [
+          "Comments"
+        ],
         "parameters": []
       }
     },
@@ -896,7 +914,9 @@
           }
         },
         "summary": "",
-        "tags": ["Comments"],
+        "tags": [
+          "Comments"
+        ],
         "parameters": [
           {
             "name": "id",
@@ -956,7 +976,9 @@
           }
         },
         "summary": "",
-        "tags": ["Comments"],
+        "tags": [
+          "Comments"
+        ],
         "requestBody": {
           "description": "",
           "required": true,
@@ -1028,7 +1050,9 @@
           }
         },
         "summary": "",
-        "tags": ["Comments"],
+        "tags": [
+          "Comments"
+        ],
         "parameters": [
           {
             "name": "id",
@@ -1094,7 +1118,9 @@
           }
         },
         "summary": "",
-        "tags": ["Food-ratings"],
+        "tags": [
+          "Food-ratings"
+        ],
         "parameters": [
           {
             "name": "_limit",
@@ -1284,7 +1310,9 @@
           }
         },
         "summary": "",
-        "tags": ["Food-ratings"],
+        "tags": [
+          "Food-ratings"
+        ],
         "requestBody": {
           "description": "",
           "required": true,
@@ -1349,7 +1377,9 @@
           }
         },
         "summary": "",
-        "tags": ["Food-ratings"],
+        "tags": [
+          "Food-ratings"
+        ],
         "parameters": []
       }
     },
@@ -1404,7 +1434,9 @@
           }
         },
         "summary": "",
-        "tags": ["Food-ratings"],
+        "tags": [
+          "Food-ratings"
+        ],
         "parameters": [
           {
             "name": "id",
@@ -1468,7 +1500,9 @@
           }
         },
         "summary": "",
-        "tags": ["Food-ratings"],
+        "tags": [
+          "Food-ratings"
+        ],
         "requestBody": {
           "description": "",
           "required": true,
@@ -1540,7 +1574,9 @@
           }
         },
         "summary": "",
-        "tags": ["Food-ratings"],
+        "tags": [
+          "Food-ratings"
+        ],
         "parameters": [
           {
             "name": "id",
@@ -1605,7 +1641,9 @@
           }
         },
         "summary": "",
-        "tags": ["Foods"],
+        "tags": [
+          "Foods"
+        ],
         "parameters": [
           {
             "name": "_limit",
@@ -1791,7 +1829,9 @@
           }
         },
         "summary": "",
-        "tags": ["Foods"],
+        "tags": [
+          "Foods"
+        ],
         "requestBody": {
           "description": "",
           "required": true,
@@ -1856,7 +1896,9 @@
           }
         },
         "summary": "",
-        "tags": ["Foods"],
+        "tags": [
+          "Foods"
+        ],
         "parameters": []
       }
     },
@@ -1907,7 +1949,9 @@
           }
         },
         "summary": "",
-        "tags": ["Foods"],
+        "tags": [
+          "Foods"
+        ],
         "parameters": [
           {
             "name": "id",
@@ -1967,7 +2011,9 @@
           }
         },
         "summary": "",
-        "tags": ["Foods"],
+        "tags": [
+          "Foods"
+        ],
         "requestBody": {
           "description": "",
           "required": true,
@@ -2039,7 +2085,9 @@
           }
         },
         "summary": "",
-        "tags": ["Foods"],
+        "tags": [
+          "Foods"
+        ],
         "parameters": [
           {
             "name": "id",
@@ -2105,7 +2153,9 @@
           }
         },
         "summary": "",
-        "tags": ["Foods"],
+        "tags": [
+          "Foods"
+        ],
         "parameters": [
           {
             "name": "restaurant",
@@ -2170,7 +2220,9 @@
           }
         },
         "summary": "",
-        "tags": ["Ingredients"],
+        "tags": [
+          "Ingredients"
+        ],
         "parameters": [
           {
             "name": "_limit",
@@ -2356,7 +2408,9 @@
           }
         },
         "summary": "",
-        "tags": ["Ingredients"],
+        "tags": [
+          "Ingredients"
+        ],
         "requestBody": {
           "description": "",
           "required": true,
@@ -2421,7 +2475,9 @@
           }
         },
         "summary": "",
-        "tags": ["Ingredients"],
+        "tags": [
+          "Ingredients"
+        ],
         "parameters": []
       }
     },
@@ -2472,7 +2528,9 @@
           }
         },
         "summary": "",
-        "tags": ["Ingredients"],
+        "tags": [
+          "Ingredients"
+        ],
         "parameters": [
           {
             "name": "id",
@@ -2532,7 +2590,9 @@
           }
         },
         "summary": "",
-        "tags": ["Ingredients"],
+        "tags": [
+          "Ingredients"
+        ],
         "requestBody": {
           "description": "",
           "required": true,
@@ -2604,7 +2664,9 @@
           }
         },
         "summary": "",
-        "tags": ["Ingredients"],
+        "tags": [
+          "Ingredients"
+        ],
         "parameters": [
           {
             "name": "id",
@@ -2669,7 +2731,9 @@
           }
         },
         "summary": "",
-        "tags": ["Profiles"],
+        "tags": [
+          "Profiles"
+        ],
         "parameters": [
           {
             "name": "_limit",
@@ -2855,7 +2919,9 @@
           }
         },
         "summary": "",
-        "tags": ["Profiles"],
+        "tags": [
+          "Profiles"
+        ],
         "requestBody": {
           "description": "",
           "required": true,
@@ -2920,7 +2986,9 @@
           }
         },
         "summary": "",
-        "tags": ["Profiles"],
+        "tags": [
+          "Profiles"
+        ],
         "parameters": []
       }
     },
@@ -2971,7 +3039,9 @@
           }
         },
         "summary": "",
-        "tags": ["Profiles"],
+        "tags": [
+          "Profiles"
+        ],
         "parameters": [
           {
             "name": "id",
@@ -3031,7 +3101,9 @@
           }
         },
         "summary": "",
-        "tags": ["Profiles"],
+        "tags": [
+          "Profiles"
+        ],
         "requestBody": {
           "description": "",
           "required": true,
@@ -3103,7 +3175,9 @@
           }
         },
         "summary": "",
-        "tags": ["Profiles"],
+        "tags": [
+          "Profiles"
+        ],
         "parameters": [
           {
             "name": "id",
@@ -3168,7 +3242,9 @@
           }
         },
         "summary": "",
-        "tags": ["Replies"],
+        "tags": [
+          "Replies"
+        ],
         "parameters": [
           {
             "name": "_limit",
@@ -3354,7 +3430,9 @@
           }
         },
         "summary": "",
-        "tags": ["Replies"],
+        "tags": [
+          "Replies"
+        ],
         "requestBody": {
           "description": "",
           "required": true,
@@ -3419,7 +3497,9 @@
           }
         },
         "summary": "",
-        "tags": ["Replies"],
+        "tags": [
+          "Replies"
+        ],
         "parameters": []
       }
     },
@@ -3470,7 +3550,9 @@
           }
         },
         "summary": "",
-        "tags": ["Replies"],
+        "tags": [
+          "Replies"
+        ],
         "parameters": [
           {
             "name": "id",
@@ -3530,7 +3612,9 @@
           }
         },
         "summary": "",
-        "tags": ["Replies"],
+        "tags": [
+          "Replies"
+        ],
         "requestBody": {
           "description": "",
           "required": true,
@@ -3602,7 +3686,9 @@
           }
         },
         "summary": "",
-        "tags": ["Replies"],
+        "tags": [
+          "Replies"
+        ],
         "parameters": [
           {
             "name": "id",
@@ -3668,7 +3754,9 @@
           }
         },
         "summary": "",
-        "tags": ["Restaurant-ratings"],
+        "tags": [
+          "Restaurant-ratings"
+        ],
         "parameters": [
           {
             "name": "_limit",
@@ -3858,7 +3946,9 @@
           }
         },
         "summary": "",
-        "tags": ["Restaurant-ratings"],
+        "tags": [
+          "Restaurant-ratings"
+        ],
         "requestBody": {
           "description": "",
           "required": true,
@@ -3923,7 +4013,9 @@
           }
         },
         "summary": "",
-        "tags": ["Restaurant-ratings"],
+        "tags": [
+          "Restaurant-ratings"
+        ],
         "parameters": []
       }
     },
@@ -3978,7 +4070,9 @@
           }
         },
         "summary": "",
-        "tags": ["Restaurant-ratings"],
+        "tags": [
+          "Restaurant-ratings"
+        ],
         "parameters": [
           {
             "name": "id",
@@ -4042,7 +4136,9 @@
           }
         },
         "summary": "",
-        "tags": ["Restaurant-ratings"],
+        "tags": [
+          "Restaurant-ratings"
+        ],
         "requestBody": {
           "description": "",
           "required": true,
@@ -4114,7 +4210,9 @@
           }
         },
         "summary": "",
-        "tags": ["Restaurant-ratings"],
+        "tags": [
+          "Restaurant-ratings"
+        ],
         "parameters": [
           {
             "name": "id",
@@ -4179,7 +4277,9 @@
           }
         },
         "summary": "",
-        "tags": ["Restaurants"],
+        "tags": [
+          "Restaurants"
+        ],
         "parameters": [
           {
             "name": "_limit",
@@ -4365,7 +4465,9 @@
           }
         },
         "summary": "",
-        "tags": ["Restaurants"],
+        "tags": [
+          "Restaurants"
+        ],
         "requestBody": {
           "description": "",
           "required": true,
@@ -4430,7 +4532,9 @@
           }
         },
         "summary": "",
-        "tags": ["Restaurants"],
+        "tags": [
+          "Restaurants"
+        ],
         "parameters": []
       }
     },
@@ -4481,7 +4585,9 @@
           }
         },
         "summary": "",
-        "tags": ["Restaurants"],
+        "tags": [
+          "Restaurants"
+        ],
         "parameters": [
           {
             "name": "id",
@@ -4541,7 +4647,9 @@
           }
         },
         "summary": "",
-        "tags": ["Restaurants"],
+        "tags": [
+          "Restaurants"
+        ],
         "requestBody": {
           "description": "",
           "required": true,
@@ -4613,7 +4721,9 @@
           }
         },
         "summary": "",
-        "tags": ["Restaurants"],
+        "tags": [
+          "Restaurants"
+        ],
         "parameters": [
           {
             "name": "id",
@@ -4679,7 +4789,9 @@
           }
         },
         "summary": "",
-        "tags": ["Email - Email"],
+        "tags": [
+          "Email - Email"
+        ],
         "requestBody": {
           "description": "",
           "required": true,
@@ -4748,7 +4860,9 @@
           }
         },
         "summary": "",
-        "tags": ["Email - Email"],
+        "tags": [
+          "Email - Email"
+        ],
         "requestBody": {
           "description": "",
           "required": true,
@@ -4817,7 +4931,9 @@
           }
         },
         "summary": "",
-        "tags": ["Email - Email"],
+        "tags": [
+          "Email - Email"
+        ],
         "parameters": []
       }
     },
@@ -4872,7 +4988,9 @@
           }
         },
         "summary": "",
-        "tags": ["Upload - File"],
+        "tags": [
+          "Upload - File"
+        ],
         "requestBody": {
           "description": "",
           "required": true,
@@ -4941,7 +5059,9 @@
           }
         },
         "summary": "",
-        "tags": ["Upload - File"],
+        "tags": [
+          "Upload - File"
+        ],
         "parameters": []
       }
     },
@@ -4996,7 +5116,9 @@
           }
         },
         "summary": "",
-        "tags": ["Upload - File"],
+        "tags": [
+          "Upload - File"
+        ],
         "parameters": []
       }
     },
@@ -5051,7 +5173,9 @@
           }
         },
         "summary": "",
-        "tags": ["Upload - File"],
+        "tags": [
+          "Upload - File"
+        ],
         "parameters": [
           {
             "name": "id",
@@ -5115,7 +5239,9 @@
           }
         },
         "summary": "",
-        "tags": ["Upload - File"],
+        "tags": [
+          "Upload - File"
+        ],
         "parameters": [
           {
             "name": "id",
@@ -5181,7 +5307,9 @@
           }
         },
         "summary": "",
-        "tags": ["Upload - File"],
+        "tags": [
+          "Upload - File"
+        ],
         "parameters": [
           {
             "name": "id",
@@ -5243,7 +5371,9 @@
           }
         },
         "summary": "",
-        "tags": ["UsersPermissions - Role"],
+        "tags": [
+          "UsersPermissions - Role"
+        ],
         "parameters": [
           {
             "name": "id",
@@ -5308,7 +5438,9 @@
           }
         },
         "summary": "",
-        "tags": ["UsersPermissions - Role"],
+        "tags": [
+          "UsersPermissions - Role"
+        ],
         "parameters": [
           {
             "name": "_limit",
@@ -5494,7 +5626,9 @@
           }
         },
         "summary": "",
-        "tags": ["UsersPermissions - Role"],
+        "tags": [
+          "UsersPermissions - Role"
+        ],
         "requestBody": {
           "description": "",
           "required": true,
@@ -5555,7 +5689,9 @@
           }
         },
         "summary": "",
-        "tags": ["UsersPermissions - Role"],
+        "tags": [
+          "UsersPermissions - Role"
+        ],
         "parameters": [
           {
             "name": "role",
@@ -5630,7 +5766,9 @@
           }
         },
         "summary": "",
-        "tags": ["UsersPermissions - Role"],
+        "tags": [
+          "UsersPermissions - Role"
+        ],
         "parameters": [
           {
             "name": "role",
@@ -5695,7 +5833,9 @@
           }
         },
         "summary": "",
-        "tags": ["UsersPermissions - User"],
+        "tags": [
+          "UsersPermissions - User"
+        ],
         "parameters": [
           {
             "name": "id",
@@ -5897,7 +6037,9 @@
           }
         },
         "summary": "",
-        "tags": ["UsersPermissions - User"],
+        "tags": [
+          "UsersPermissions - User"
+        ],
         "parameters": []
       }
     },
@@ -5952,7 +6094,9 @@
           }
         },
         "summary": "",
-        "tags": ["UsersPermissions - User"],
+        "tags": [
+          "UsersPermissions - User"
+        ],
         "requestBody": {
           "description": "",
           "required": true,
@@ -6017,7 +6161,9 @@
           }
         },
         "summary": "",
-        "tags": ["UsersPermissions - User"],
+        "tags": [
+          "UsersPermissions - User"
+        ],
         "requestBody": {
           "description": "",
           "required": true,
@@ -6082,7 +6228,9 @@
           }
         },
         "summary": "",
-        "tags": ["UsersPermissions - User"],
+        "tags": [
+          "UsersPermissions - User"
+        ],
         "parameters": [
           {
             "name": "provider",
@@ -6148,7 +6296,9 @@
           }
         },
         "summary": "",
-        "tags": ["UsersPermissions - User"],
+        "tags": [
+          "UsersPermissions - User"
+        ],
         "requestBody": {
           "description": "",
           "required": true,
@@ -6217,7 +6367,9 @@
           }
         },
         "summary": "",
-        "tags": ["UsersPermissions - User"],
+        "tags": [
+          "UsersPermissions - User"
+        ],
         "requestBody": {
           "description": "",
           "required": true,
@@ -6286,7 +6438,9 @@
           }
         },
         "summary": "",
-        "tags": ["UsersPermissions - User"],
+        "tags": [
+          "UsersPermissions - User"
+        ],
         "parameters": []
       }
     },
@@ -6341,7 +6495,9 @@
           }
         },
         "summary": "",
-        "tags": ["UsersPermissions - User"],
+        "tags": [
+          "UsersPermissions - User"
+        ],
         "requestBody": {
           "description": "",
           "required": true,
@@ -6409,7 +6565,9 @@
           }
         },
         "summary": "",
-        "tags": ["UsersPermissions - User"],
+        "tags": [
+          "UsersPermissions - User"
+        ],
         "parameters": [
           {
             "name": "_limit",
@@ -6597,7 +6755,9 @@
           }
         },
         "summary": "",
-        "tags": ["UsersPermissions - User"],
+        "tags": [
+          "UsersPermissions - User"
+        ],
         "parameters": []
       }
     },
@@ -6648,7 +6808,9 @@
           }
         },
         "summary": "",
-        "tags": ["UsersPermissions - User"],
+        "tags": [
+          "UsersPermissions - User"
+        ],
         "parameters": [
           {
             "name": "id",
@@ -6708,7 +6870,9 @@
           }
         },
         "summary": "",
-        "tags": ["UsersPermissions - User"],
+        "tags": [
+          "UsersPermissions - User"
+        ],
         "parameters": [
           {
             "name": "id",
@@ -6783,7 +6947,9 @@
           }
         },
         "summary": "",
-        "tags": ["UsersPermissions - User"],
+        "tags": [
+          "UsersPermissions - User"
+        ],
         "parameters": [
           {
             "name": "id",
@@ -6802,7 +6968,9 @@
   "components": {
     "schemas": {
       "Categories": {
-        "required": ["id"],
+        "required": [
+          "id"
+        ],
         "properties": {
           "id": {
             "type": "string"
@@ -6813,7 +6981,9 @@
           "restaurants": {
             "type": "array",
             "items": {
-              "required": ["id"],
+              "required": [
+                "id"
+              ],
               "properties": {
                 "id": {
                   "type": "string"
@@ -6866,7 +7036,9 @@
           "foods": {
             "type": "array",
             "items": {
-              "required": ["id"],
+              "required": [
+                "id"
+              ],
               "properties": {
                 "id": {
                   "type": "string"
@@ -6964,7 +7136,10 @@
         }
       },
       "Comments": {
-        "required": ["id", "text"],
+        "required": [
+          "id",
+          "text"
+        ],
         "properties": {
           "id": {
             "type": "string"
@@ -6973,7 +7148,9 @@
             "type": "string"
           },
           "food": {
-            "required": ["id"],
+            "required": [
+              "id"
+            ],
             "properties": {
               "id": {
                 "type": "string"
@@ -7038,7 +7215,11 @@
             "type": "boolean"
           },
           "user": {
-            "required": ["id", "username", "email"],
+            "required": [
+              "id",
+              "username",
+              "email"
+            ],
             "properties": {
               "id": {
                 "type": "string"
@@ -7115,7 +7296,9 @@
             }
           },
           "reply": {
-            "required": ["id"],
+            "required": [
+              "id"
+            ],
             "properties": {
               "id": {
                 "type": "string"
@@ -7147,7 +7330,9 @@
         }
       },
       "NewComments": {
-        "required": ["text"],
+        "required": [
+          "text"
+        ],
         "properties": {
           "text": {
             "type": "string"
@@ -7177,7 +7362,9 @@
         }
       },
       "Food-ratings": {
-        "required": ["id"],
+        "required": [
+          "id"
+        ],
         "properties": {
           "id": {
             "type": "string"
@@ -7186,7 +7373,11 @@
             "type": "number"
           },
           "user": {
-            "required": ["id", "username", "email"],
+            "required": [
+              "id",
+              "username",
+              "email"
+            ],
             "properties": {
               "id": {
                 "type": "string"
@@ -7263,7 +7454,9 @@
             }
           },
           "food": {
-            "required": ["id"],
+            "required": [
+              "id"
+            ],
             "properties": {
               "id": {
                 "type": "string"
@@ -7354,7 +7547,9 @@
         }
       },
       "Foods": {
-        "required": ["id"],
+        "required": [
+          "id"
+        ],
         "properties": {
           "id": {
             "type": "string"
@@ -7441,7 +7636,9 @@
           "categories": {
             "type": "array",
             "items": {
-              "required": ["id"],
+              "required": [
+                "id"
+              ],
               "properties": {
                 "id": {
                   "type": "string"
@@ -7474,7 +7671,9 @@
             }
           },
           "restaurant": {
-            "required": ["id"],
+            "required": [
+              "id"
+            ],
             "properties": {
               "id": {
                 "type": "string"
@@ -7529,7 +7728,10 @@
           "comments": {
             "type": "array",
             "items": {
-              "required": ["id", "text"],
+              "required": [
+                "id",
+                "text"
+              ],
               "properties": {
                 "id": {
                   "type": "string"
@@ -7564,7 +7766,9 @@
           "ingredients": {
             "type": "array",
             "items": {
-              "required": ["id"],
+              "required": [
+                "id"
+              ],
               "properties": {
                 "id": {
                   "type": "string"
@@ -7593,7 +7797,9 @@
           "food_ratings": {
             "type": "array",
             "items": {
-              "required": ["id"],
+              "required": [
+                "id"
+              ],
               "properties": {
                 "id": {
                   "type": "string"
@@ -7679,7 +7885,9 @@
         }
       },
       "Ingredients": {
-        "required": ["id"],
+        "required": [
+          "id"
+        ],
         "properties": {
           "id": {
             "type": "string"
@@ -7755,7 +7963,9 @@
             }
           },
           "food": {
-            "required": ["id"],
+            "required": [
+              "id"
+            ],
             "properties": {
               "id": {
                 "type": "string"
@@ -7843,7 +8053,9 @@
         }
       },
       "Profiles": {
-        "required": ["id"],
+        "required": [
+          "id"
+        ],
         "properties": {
           "id": {
             "type": "string"
@@ -7922,7 +8134,9 @@
             "type": "array",
             "items": {
               "type": "object",
-              "required": ["id"],
+              "required": [
+                "id"
+              ],
               "properties": {
                 "id": {
                   "type": "string"
@@ -8022,7 +8236,9 @@
             "type": "array",
             "items": {
               "type": "object",
-              "required": ["id"],
+              "required": [
+                "id"
+              ],
               "properties": {
                 "id": {
                   "type": "string"
@@ -8120,7 +8336,9 @@
         }
       },
       "Replies": {
-        "required": ["id"],
+        "required": [
+          "id"
+        ],
         "properties": {
           "id": {
             "type": "string"
@@ -8129,7 +8347,11 @@
             "type": "string"
           },
           "user": {
-            "required": ["id", "username", "email"],
+            "required": [
+              "id",
+              "username",
+              "email"
+            ],
             "properties": {
               "id": {
                 "type": "string"
@@ -8188,6 +8410,9 @@
                   "type": "string"
                 }
               },
+              "restaurant": {
+                "type": "string"
+              },
               "replies": {
                 "type": "array",
                 "items": {
@@ -8203,7 +8428,10 @@
             }
           },
           "comment": {
-            "required": ["id", "text"],
+            "required": [
+              "id",
+              "text"
+            ],
             "properties": {
               "id": {
                 "type": "string"
@@ -8264,7 +8492,9 @@
         }
       },
       "Restaurant-ratings": {
-        "required": ["id"],
+        "required": [
+          "id"
+        ],
         "properties": {
           "id": {
             "type": "string"
@@ -8273,7 +8503,11 @@
             "type": "number"
           },
           "user": {
-            "required": ["id", "username", "email"],
+            "required": [
+              "id",
+              "username",
+              "email"
+            ],
             "properties": {
               "id": {
                 "type": "string"
@@ -8350,7 +8584,9 @@
             }
           },
           "restaurant": {
-            "required": ["id"],
+            "required": [
+              "id"
+            ],
             "properties": {
               "id": {
                 "type": "string"
@@ -8429,7 +8665,9 @@
         }
       },
       "Restaurants": {
-        "required": ["id"],
+        "required": [
+          "id"
+        ],
         "properties": {
           "id": {
             "type": "string"
@@ -8443,7 +8681,9 @@
           "categories": {
             "type": "array",
             "items": {
-              "required": ["id"],
+              "required": [
+                "id"
+              ],
               "properties": {
                 "id": {
                   "type": "string"
@@ -8476,7 +8716,9 @@
             }
           },
           "profile": {
-            "required": ["id"],
+            "required": [
+              "id"
+            ],
             "properties": {
               "id": {
                 "type": "string"
@@ -8513,7 +8755,9 @@
           "foods": {
             "type": "array",
             "items": {
-              "required": ["id"],
+              "required": [
+                "id"
+              ],
               "properties": {
                 "id": {
                   "type": "string"
@@ -8578,7 +8822,9 @@
           "restaurant_ratings": {
             "type": "array",
             "items": {
-              "required": ["id"],
+              "required": [
+                "id"
+              ],
               "properties": {
                 "id": {
                   "type": "string"
@@ -8605,7 +8851,11 @@
             }
           },
           "user": {
-            "required": ["id", "username", "email"],
+            "required": [
+              "id",
+              "username",
+              "email"
+            ],
             "properties": {
               "id": {
                 "type": "string"
@@ -8666,6 +8916,12 @@
               },
               "restaurant": {
                 "type": "string"
+              },
+              "replies": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
               },
               "created_by": {
                 "type": "string"
@@ -8729,7 +8985,10 @@
         }
       },
       "UsersPermissionsRole": {
-        "required": ["id", "name"],
+        "required": [
+          "id",
+          "name"
+        ],
         "properties": {
           "id": {
             "type": "string"
@@ -8747,7 +9006,13 @@
           "permissions": {
             "type": "array",
             "items": {
-              "required": ["id", "type", "controller", "action", "enabled"],
+              "required": [
+                "id",
+                "type",
+                "controller",
+                "action",
+                "enabled"
+              ],
               "properties": {
                 "id": {
                   "type": "string"
@@ -8782,7 +9047,11 @@
           "users": {
             "type": "array",
             "items": {
-              "required": ["id", "username", "email"],
+              "required": [
+                "id",
+                "username",
+                "email"
+              ],
               "properties": {
                 "id": {
                   "type": "string"
@@ -8862,7 +9131,9 @@
         }
       },
       "NewUsersPermissionsRole": {
-        "required": ["name"],
+        "required": [
+          "name"
+        ],
         "properties": {
           "name": {
             "type": "string",
@@ -8895,7 +9166,11 @@
         }
       },
       "UsersPermissionsUser": {
-        "required": ["id", "username", "email"],
+        "required": [
+          "id",
+          "username",
+          "email"
+        ],
         "properties": {
           "id": {
             "type": "string"
@@ -8920,7 +9195,10 @@
             "default": false
           },
           "role": {
-            "required": ["id", "name"],
+            "required": [
+              "id",
+              "name"
+            ],
             "properties": {
               "id": {
                 "type": "string"
@@ -9030,7 +9308,9 @@
           "restaurant_ratings": {
             "type": "array",
             "items": {
-              "required": ["id"],
+              "required": [
+                "id"
+              ],
               "properties": {
                 "id": {
                   "type": "string"
@@ -9059,7 +9339,9 @@
           "food_ratings": {
             "type": "array",
             "items": {
-              "required": ["id"],
+              "required": [
+                "id"
+              ],
               "properties": {
                 "id": {
                   "type": "string"
@@ -9088,7 +9370,10 @@
           "comments": {
             "type": "array",
             "items": {
-              "required": ["id", "text"],
+              "required": [
+                "id",
+                "text"
+              ],
               "properties": {
                 "id": {
                   "type": "string"
@@ -9123,7 +9408,9 @@
           "replies": {
             "type": "array",
             "items": {
-              "required": ["id"],
+              "required": [
+                "id"
+              ],
               "properties": {
                 "id": {
                   "type": "string"
@@ -9150,7 +9437,9 @@
             }
           },
           "restaurant": {
-            "required": ["id"],
+            "required": [
+              "id"
+            ],
             "properties": {
               "id": {
                 "type": "string"
@@ -9202,7 +9491,10 @@
         }
       },
       "NewUsersPermissionsUser": {
-        "required": ["username", "email"],
+        "required": [
+          "username",
+          "email"
+        ],
         "properties": {
           "username": {
             "type": "string",
@@ -9276,7 +9568,10 @@
         }
       },
       "Error": {
-        "required": ["code", "message"],
+        "required": [
+          "code",
+          "message"
+        ],
         "properties": {
           "code": {
             "type": "integer",

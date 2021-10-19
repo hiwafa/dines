@@ -589,6 +589,9 @@
                   "type": "string"
                 }
               },
+              "restaurant": {
+                "type": "string"
+              },
               "replies": {
                 "type": "array",
                 "items": {
