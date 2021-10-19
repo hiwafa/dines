@@ -21,7 +21,8 @@
       "model": "foods"
     },
     "approved": {
-      "type": "boolean"
+      "type": "boolean",
+      "default": false
     },
     "user": {
       "plugin": "users-permissions",
@@ -30,7 +31,7 @@
     },
     "reply": {
       "via": "comment",
-      "model": "replies"
+      "model": "comment-replies"
     }
   }
 }
