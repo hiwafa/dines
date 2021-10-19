@@ -51,7 +51,9 @@
           }
         },
         "summary": "",
-        "tags": ["Restaurant-ratings"],
+        "tags": [
+          "Restaurant-ratings"
+        ],
         "parameters": [
           {
             "name": "_limit",
@@ -241,7 +243,9 @@
           }
         },
         "summary": "",
-        "tags": ["Restaurant-ratings"],
+        "tags": [
+          "Restaurant-ratings"
+        ],
         "requestBody": {
           "description": "",
           "required": true,
@@ -306,7 +310,9 @@
           }
         },
         "summary": "",
-        "tags": ["Restaurant-ratings"],
+        "tags": [
+          "Restaurant-ratings"
+        ],
         "parameters": []
       }
     },
@@ -361,7 +367,9 @@
           }
         },
         "summary": "",
-        "tags": ["Restaurant-ratings"],
+        "tags": [
+          "Restaurant-ratings"
+        ],
         "parameters": [
           {
             "name": "id",
@@ -425,7 +433,9 @@
           }
         },
         "summary": "",
-        "tags": ["Restaurant-ratings"],
+        "tags": [
+          "Restaurant-ratings"
+        ],
         "requestBody": {
           "description": "",
           "required": true,
@@ -497,7 +507,9 @@
           }
         },
         "summary": "",
-        "tags": ["Restaurant-ratings"],
+        "tags": [
+          "Restaurant-ratings"
+        ],
         "parameters": [
           {
             "name": "id",
@@ -516,7 +528,9 @@
   "components": {
     "schemas": {
       "Restaurant-ratings": {
-        "required": ["id"],
+        "required": [
+          "id"
+        ],
         "properties": {
           "id": {
             "type": "string"
@@ -525,7 +539,11 @@
             "type": "number"
           },
           "user": {
-            "required": ["id", "username", "email"],
+            "required": [
+              "id",
+              "username",
+              "email"
+            ],
             "properties": {
               "id": {
                 "type": "string"
@@ -584,15 +602,8 @@
                   "type": "string"
                 }
               },
-
               "restaurant": {
                 "type": "string"
-              },
-              "replies": {
-                "type": "array",
-                "items": {
-                  "type": "string"
-                }
               },
               "created_by": {
                 "type": "string"
@@ -603,7 +614,9 @@
             }
           },
           "restaurant": {
-            "required": ["id"],
+            "required": [
+              "id"
+            ],
             "properties": {
               "id": {
                 "type": "string"
