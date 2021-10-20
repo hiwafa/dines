@@ -9,7 +9,8 @@ module.exports = {
 
     async restaurantFoods(ctx) {
         const { restaurant } = ctx.params;
-        let populate = ["comments", "comments.created_by"]
+        let populate;
+        populate = ["comments", "categories", "ingredients", "images", "comments.created_by", "comments.reply"]
         return await strapi.services.foods.find({ restaurant }, populate)
     }
 };
