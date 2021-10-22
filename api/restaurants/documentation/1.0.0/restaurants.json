@@ -528,43 +528,6 @@
           "slogan": {
             "type": "string"
           },
-          "categories": {
-            "type": "array",
-            "items": {
-              "required": [
-                "id"
-              ],
-              "properties": {
-                "id": {
-                  "type": "string"
-                },
-                "name": {
-                  "type": "string"
-                },
-                "restaurants": {
-                  "type": "array",
-                  "items": {
-                    "type": "string"
-                  }
-                },
-                "foods": {
-                  "type": "array",
-                  "items": {
-                    "type": "string"
-                  }
-                },
-                "published_at": {
-                  "type": "string"
-                },
-                "created_by": {
-                  "type": "string"
-                },
-                "updated_by": {
-                  "type": "string"
-                }
-              }
-            }
-          },
           "profile": {
             "required": [
               "id"
@@ -840,6 +803,39 @@
               "updated_by": {
                 "type": "string"
               }
+            },
+          "categories": {
+            "type": "array",
+            "items": {
+              "required": [
+                "id"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "name": {
+                  "type": "string"
+                },
+                "restaurant": {
+                  "type": "string"
+                },
+                "foods": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "published_at": {
+                  "type": "string"
+                },
+                "created_by": {
+                  "type": "string"
+                },
+                "updated_by": {
+                  "type": "string"
+                }
+              }
             }
           },
           "published_at": {
@@ -855,12 +851,6 @@
           },
           "slogan": {
             "type": "string"
-          },
-          "categories": {
-            "type": "array",
-            "items": {
-              "type": "string"
-            }
           },
           "profile": {
             "type": "string"
@@ -883,6 +873,12 @@
           "user": {
             "type": "string"
           },
+          "categories": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
           "published_at": {
             "type": "string",
             "format": "date-time"
@@ -902,4 +898,5 @@
       "name": "Restaurants"
     }
   ]
+}
 }

@@ -18,11 +18,6 @@
     "slogan": {
       "type": "string"
     },
-    "categories": {
-      "via": "restaurants",
-      "collection": "categories",
-      "dominant": true
-    },
     "profile": {
       "model": "profiles"
     },
@@ -52,6 +47,10 @@
       "plugin": "upload",
       "required": false,
       "pluginOptions": {}
+    },
+    "categories": {
+      "via": "restaurant",
+      "collection": "categories"
     }
   }
 }

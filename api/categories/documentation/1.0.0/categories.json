@@ -525,61 +525,58 @@
           "name": {
             "type": "string"
           },
-          "restaurants": {
-            "type": "array",
-            "items": {
-              "required": [
-                "id"
-              ],
-              "properties": {
-                "id": {
-                  "type": "string"
-                },
-                "restaurantName": {
-                  "type": "string"
-                },
-                "slogan": {
-                  "type": "string"
-                },
-                "categories": {
-                  "type": "array",
-                  "items": {
-                    "type": "string"
-                  }
-                },
-                "profile": {
-                  "type": "string"
-                },
-                "slug": {
-                  "type": "uid"
-                },
-                "foods": {
-                  "type": "array",
-                  "items": {
-                    "type": "string"
-                  }
-                },
-                "restaurant_ratings": {
-                  "type": "array",
-                  "items": {
-                    "type": "string"
-                  }
-                },
-                "user": {
-                  "type": "string"
-                },
-                "qrImage": {
-                  "type": "string"
-                },
-                "published_at": {
-                  "type": "string"
-                },
-                "created_by": {
-                  "type": "string"
-                },
-                "updated_by": {
+          "restaurant": {
+            "required": [
+              "id"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "restaurantName": {
+                "type": "string"
+              },
+              "slogan": {
+                "type": "string"
+              },
+              "profile": {
+                "type": "string"
+              },
+              "slug": {
+                "type": "uid"
+              },
+              "foods": {
+                "type": "array",
+                "items": {
                   "type": "string"
                 }
+              },
+              "restaurant_ratings": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "user": {
+                "type": "string"
+              },
+              "qrImage": {
+                "type": "string"
+              },
+              "categories": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "published_at": {
+                "type": "string"
+              },
+              "created_by": {
+                "type": "string"
+              },
+              "updated_by": {
+                "type": "string"
               }
             }
           },
@@ -661,11 +658,8 @@
           "name": {
             "type": "string"
           },
-          "restaurants": {
-            "type": "array",
-            "items": {
-              "type": "string"
-            }
+          "restaurant": {
+            "type": "string"
           },
           "foods": {
             "type": "array",
