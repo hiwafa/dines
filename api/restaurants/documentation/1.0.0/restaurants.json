@@ -803,7 +803,8 @@
               "updated_by": {
                 "type": "string"
               }
-            },
+            }
+          },
           "categories": {
             "type": "array",
             "items": {
@@ -898,5 +899,4 @@
       "name": "Restaurants"
     }
   ]
-}
 }

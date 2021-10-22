@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "10/22/2021 4:00:35 PM"
+    "x-generation-date": "10/23/2021 1:01:53 AM"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -7011,9 +7011,6 @@
               "slug": {
                 "type": "uid"
               },
-              "qrImage": {
-                "type": "string"
-              },
               "foods": {
                 "type": "array",
                 "items": {
@@ -7027,6 +7024,9 @@
                 }
               },
               "user": {
+                "type": "string"
+              },
+              "qrImage": {
                 "type": "string"
               },
               "categories": {
@@ -8863,7 +8863,8 @@
               "updated_by": {
                 "type": "string"
               }
-            },
+            }
+          },
           "categories": {
             "type": "array",
             "items": {
@@ -9550,5 +9551,4 @@
       "name": "UsersPermissions - User"
     }
   ]
-}
 }
