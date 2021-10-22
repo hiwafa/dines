@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "10/21/2021 10:35:27 PM"
+    "x-generation-date": "10/23/2021 1:01:53 AM"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -6988,64 +6988,61 @@
           "id": {
             "type": "string"
           },
-          "categoryName": {
+          "name": {
             "type": "string"
           },
-          "restaurants": {
-            "type": "array",
-            "items": {
-              "required": [
-                "id"
-              ],
-              "properties": {
-                "id": {
-                  "type": "string"
-                },
-                "restaurantName": {
-                  "type": "string"
-                },
-                "slogan": {
-                  "type": "string"
-                },
-                "categories": {
-                  "type": "array",
-                  "items": {
-                    "type": "string"
-                  }
-                },
-                "profile": {
-                  "type": "string"
-                },
-                "slug": {
-                  "type": "uid"
-                },
-                "foods": {
-                  "type": "array",
-                  "items": {
-                    "type": "string"
-                  }
-                },
-                "restaurant_ratings": {
-                  "type": "array",
-                  "items": {
-                    "type": "string"
-                  }
-                },
-                "user": {
-                  "type": "string"
-                },
-                "qrImage": {
-                  "type": "string"
-                },
-                "published_at": {
-                  "type": "string"
-                },
-                "created_by": {
-                  "type": "string"
-                },
-                "updated_by": {
+          "restaurant": {
+            "required": [
+              "id"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "restaurantName": {
+                "type": "string"
+              },
+              "slogan": {
+                "type": "string"
+              },
+              "profile": {
+                "type": "string"
+              },
+              "slug": {
+                "type": "uid"
+              },
+              "foods": {
+                "type": "array",
+                "items": {
                   "type": "string"
                 }
+              },
+              "restaurant_ratings": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "user": {
+                "type": "string"
+              },
+              "qrImage": {
+                "type": "string"
+              },
+              "categories": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "published_at": {
+                "type": "string"
+              },
+              "created_by": {
+                "type": "string"
+              },
+              "updated_by": {
+                "type": "string"
               }
             }
           },
@@ -7124,14 +7121,11 @@
       },
       "NewCategories": {
         "properties": {
-          "categoryName": {
+          "name": {
             "type": "string"
           },
-          "restaurants": {
-            "type": "array",
-            "items": {
-              "type": "string"
-            }
+          "restaurant": {
+            "type": "string"
           },
           "foods": {
             "type": "array",
@@ -7718,14 +7712,11 @@
                 "id": {
                   "type": "string"
                 },
-                "categoryName": {
+                "name": {
                   "type": "string"
                 },
-                "restaurants": {
-                  "type": "array",
-                  "items": {
-                    "type": "string"
-                  }
+                "restaurant": {
+                  "type": "string"
                 },
                 "foods": {
                   "type": "array",
@@ -7759,12 +7750,6 @@
               "slogan": {
                 "type": "string"
               },
-              "categories": {
-                "type": "array",
-                "items": {
-                  "type": "string"
-                }
-              },
               "profile": {
                 "type": "string"
               },
@@ -7788,6 +7773,12 @@
               },
               "qrImage": {
                 "type": "string"
+              },
+              "categories": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
               },
               "published_at": {
                 "type": "string"
@@ -8597,43 +8588,6 @@
           "slogan": {
             "type": "string"
           },
-          "categories": {
-            "type": "array",
-            "items": {
-              "required": [
-                "id"
-              ],
-              "properties": {
-                "id": {
-                  "type": "string"
-                },
-                "categoryName": {
-                  "type": "string"
-                },
-                "restaurants": {
-                  "type": "array",
-                  "items": {
-                    "type": "string"
-                  }
-                },
-                "foods": {
-                  "type": "array",
-                  "items": {
-                    "type": "string"
-                  }
-                },
-                "published_at": {
-                  "type": "string"
-                },
-                "created_by": {
-                  "type": "string"
-                },
-                "updated_by": {
-                  "type": "string"
-                }
-              }
-            }
-          },
           "profile": {
             "required": [
               "id"
@@ -8911,6 +8865,40 @@
               }
             }
           },
+          "categories": {
+            "type": "array",
+            "items": {
+              "required": [
+                "id"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "name": {
+                  "type": "string"
+                },
+                "restaurant": {
+                  "type": "string"
+                },
+                "foods": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "published_at": {
+                  "type": "string"
+                },
+                "created_by": {
+                  "type": "string"
+                },
+                "updated_by": {
+                  "type": "string"
+                }
+              }
+            }
+          },
           "published_at": {
             "type": "string",
             "format": "date-time"
@@ -8924,12 +8912,6 @@
           },
           "slogan": {
             "type": "string"
-          },
-          "categories": {
-            "type": "array",
-            "items": {
-              "type": "string"
-            }
           },
           "profile": {
             "type": "string"
@@ -8951,6 +8933,12 @@
           },
           "user": {
             "type": "string"
+          },
+          "categories": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
           },
           "published_at": {
             "type": "string",

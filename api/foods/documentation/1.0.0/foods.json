@@ -679,14 +679,11 @@
                 "id": {
                   "type": "string"
                 },
-                "categoryName": {
+                "name": {
                   "type": "string"
                 },
-                "restaurants": {
-                  "type": "array",
-                  "items": {
-                    "type": "string"
-                  }
+                "restaurant": {
+                  "type": "string"
                 },
                 "foods": {
                   "type": "array",
@@ -720,12 +717,6 @@
               "slogan": {
                 "type": "string"
               },
-              "categories": {
-                "type": "array",
-                "items": {
-                  "type": "string"
-                }
-              },
               "profile": {
                 "type": "string"
               },
@@ -749,6 +740,12 @@
               },
               "qrImage": {
                 "type": "string"
+              },
+              "categories": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
               },
               "published_at": {
                 "type": "string"
