@@ -15,9 +15,10 @@ module.exports = {
     },
 
     async update(ctx) {
-        let { ingredients } = ctx.request.body;
+        let { ingredients, categories } = ctx.request.body;
         let food = ctx.request.body;
         let ingreds = [];
+        let cats = [];
 
         for (let i = 0; i < ingredients.length; i++) {
             const exist = await strapi.services.ingredients.findOne({ name: ingredients[i] })
@@ -29,7 +30,19 @@ module.exports = {
                 ingreds.push(add.id)
             }
         }
+
+        for (let i = 0; i < categories.length; i++) {
+            const exist = await strapi.services.categories.findOne({ name: categories[i] })
+            if (exist?.id) {
+                cats.push(exist.id);
+            }
+            else {
+                const add = await strapi.services.categories.create({ name: categories[i], restaurant: food.restaurant })
+                cats.push(add.id)
+            }
+        }
         food.ingredients = ingreds
+        food.categories = cats
 
         // update db
         try {
