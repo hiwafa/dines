@@ -34,8 +34,8 @@
       "type": "string"
     },
     "categories": {
-      "collection": "categories",
       "via": "foods",
+      "collection": "categories",
       "dominant": true
     },
     "restaurant": {

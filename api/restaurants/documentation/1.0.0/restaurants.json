@@ -538,7 +538,7 @@
                 "id": {
                   "type": "string"
                 },
-                "categoryName": {
+                "name": {
                   "type": "string"
                 },
                 "restaurants": {

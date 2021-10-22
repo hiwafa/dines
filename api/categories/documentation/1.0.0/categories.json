@@ -522,7 +522,7 @@
           "id": {
             "type": "string"
           },
-          "categoryName": {
+          "name": {
             "type": "string"
           },
           "restaurants": {
@@ -658,7 +658,7 @@
       },
       "NewCategories": {
         "properties": {
-          "categoryName": {
+          "name": {
             "type": "string"
           },
           "restaurants": {

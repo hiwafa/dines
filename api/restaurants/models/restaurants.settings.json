@@ -19,8 +19,8 @@
       "type": "string"
     },
     "categories": {
-      "collection": "categories",
       "via": "restaurants",
+      "collection": "categories",
       "dominant": true
     },
     "profile": {
