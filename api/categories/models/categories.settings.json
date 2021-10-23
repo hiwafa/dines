@@ -16,8 +16,8 @@
       "type": "string"
     },
     "restaurant": {
-      "model": "restaurants",
-      "via": "categories"
+      "via": "categories",
+      "model": "restaurants"
     },
     "foods": {
       "via": "categories",

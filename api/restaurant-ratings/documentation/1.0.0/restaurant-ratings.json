@@ -615,23 +615,18 @@
           },
           "restaurant": {
             "required": [
-              "id"
+              "id",
+              "name"
             ],
             "properties": {
               "id": {
                 "type": "string"
               },
-              "restaurantName": {
+              "name": {
                 "type": "string"
               },
               "slogan": {
                 "type": "string"
-              },
-              "categories": {
-                "type": "array",
-                "items": {
-                  "type": "string"
-                }
               },
               "profile": {
                 "type": "string"
@@ -656,6 +651,12 @@
               },
               "qrImage": {
                 "type": "string"
+              },
+              "categories": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
               },
               "published_at": {
                 "type": "string"

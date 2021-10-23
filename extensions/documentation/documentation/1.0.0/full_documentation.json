@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "10/23/2021 1:01:53 AM"
+    "x-generation-date": "10/23/2021 10:09:28 AM"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -6993,13 +6993,14 @@
           },
           "restaurant": {
             "required": [
-              "id"
+              "id",
+              "name"
             ],
             "properties": {
               "id": {
                 "type": "string"
               },
-              "restaurantName": {
+              "name": {
                 "type": "string"
               },
               "slogan": {
@@ -7738,13 +7739,14 @@
           },
           "restaurant": {
             "required": [
-              "id"
+              "id",
+              "name"
             ],
             "properties": {
               "id": {
                 "type": "string"
               },
-              "restaurantName": {
+              "name": {
                 "type": "string"
               },
               "slogan": {
@@ -8492,23 +8494,18 @@
           },
           "restaurant": {
             "required": [
-              "id"
+              "id",
+              "name"
             ],
             "properties": {
               "id": {
                 "type": "string"
               },
-              "restaurantName": {
+              "name": {
                 "type": "string"
               },
               "slogan": {
                 "type": "string"
-              },
-              "categories": {
-                "type": "array",
-                "items": {
-                  "type": "string"
-                }
               },
               "profile": {
                 "type": "string"
@@ -8533,6 +8530,12 @@
               },
               "qrImage": {
                 "type": "string"
+              },
+              "categories": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
               },
               "published_at": {
                 "type": "string"
@@ -8576,13 +8579,14 @@
       },
       "Restaurants": {
         "required": [
-          "id"
+          "id",
+          "name"
         ],
         "properties": {
           "id": {
             "type": "string"
           },
-          "restaurantName": {
+          "name": {
             "type": "string"
           },
           "slogan": {
@@ -8906,8 +8910,11 @@
         }
       },
       "NewRestaurants": {
+        "required": [
+          "name"
+        ],
         "properties": {
-          "restaurantName": {
+          "name": {
             "type": "string"
           },
           "slogan": {
@@ -9369,23 +9376,18 @@
           },
           "restaurant": {
             "required": [
-              "id"
+              "id",
+              "name"
             ],
             "properties": {
               "id": {
                 "type": "string"
               },
-              "restaurantName": {
+              "name": {
                 "type": "string"
               },
               "slogan": {
                 "type": "string"
-              },
-              "categories": {
-                "type": "array",
-                "items": {
-                  "type": "string"
-                }
               },
               "profile": {
                 "type": "string"
@@ -9410,6 +9412,12 @@
               },
               "qrImage": {
                 "type": "string"
+              },
+              "categories": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
               },
               "published_at": {
                 "type": "string"

@@ -516,13 +516,14 @@
     "schemas": {
       "Restaurants": {
         "required": [
-          "id"
+          "id",
+          "name"
         ],
         "properties": {
           "id": {
             "type": "string"
           },
-          "restaurantName": {
+          "name": {
             "type": "string"
           },
           "slogan": {
@@ -846,8 +847,11 @@
         }
       },
       "NewRestaurants": {
+        "required": [
+          "name"
+        ],
         "properties": {
-          "restaurantName": {
+          "name": {
             "type": "string"
           },
           "slogan": {

@@ -705,13 +705,14 @@
           },
           "restaurant": {
             "required": [
-              "id"
+              "id",
+              "name"
             ],
             "properties": {
               "id": {
                 "type": "string"
               },
-              "restaurantName": {
+              "name": {
                 "type": "string"
               },
               "slogan": {
