@@ -12,8 +12,9 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "restaurantName": {
-      "type": "string"
+    "name": {
+      "type": "string",
+      "required": true
     },
     "slogan": {
       "type": "string"
@@ -22,8 +23,7 @@
       "model": "profiles"
     },
     "slug": {
-      "type": "uid",
-      "targetField": "restaurantName"
+      "type": "uid"
     },
     "foods": {
       "via": "restaurant",
