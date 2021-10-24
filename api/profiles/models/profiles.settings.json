@@ -34,6 +34,9 @@
     },
     "geoLocation": {
       "type": "text"
+    },
+    "slug": {
+      "type": "uid"
     }
   }
 }

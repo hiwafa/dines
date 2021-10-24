@@ -22,9 +22,6 @@
     "profile": {
       "model": "profiles"
     },
-    "slug": {
-      "type": "uid"
-    },
     "foods": {
       "via": "restaurant",
       "collection": "foods"

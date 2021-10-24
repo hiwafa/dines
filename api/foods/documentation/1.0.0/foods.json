@@ -721,9 +721,6 @@
               "profile": {
                 "type": "string"
               },
-              "slug": {
-                "type": "uid"
-              },
               "foods": {
                 "type": "array",
                 "items": {

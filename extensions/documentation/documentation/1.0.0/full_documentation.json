@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "10/24/2021 10:30:47 PM"
+    "x-generation-date": "10/24/2021 10:33:53 PM"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -7009,9 +7009,6 @@
               "profile": {
                 "type": "string"
               },
-              "slug": {
-                "type": "uid"
-              },
               "foods": {
                 "type": "array",
                 "items": {
@@ -7758,9 +7755,6 @@
               "profile": {
                 "type": "string"
               },
-              "slug": {
-                "type": "uid"
-              },
               "foods": {
                 "type": "array",
                 "items": {
@@ -8214,6 +8208,9 @@
           "geoLocation": {
             "type": "string"
           },
+          "slug": {
+            "type": "uid"
+          },
           "published_at": {
             "type": "string",
             "format": "date-time"
@@ -8231,6 +8228,9 @@
           },
           "geoLocation": {
             "type": "string"
+          },
+          "slug": {
+            "type": "uid"
           },
           "published_at": {
             "type": "string",
@@ -8348,9 +8348,6 @@
               "profile": {
                 "type": "string"
               },
-              "slug": {
-                "type": "uid"
-              },
               "foods": {
                 "type": "array",
                 "items": {
@@ -8453,6 +8450,9 @@
               "geoLocation": {
                 "type": "string"
               },
+              "slug": {
+                "type": "uid"
+              },
               "published_at": {
                 "type": "string"
               },
@@ -8463,9 +8463,6 @@
                 "type": "string"
               }
             }
-          },
-          "slug": {
-            "type": "uid"
           },
           "foods": {
             "type": "array",
@@ -8844,9 +8841,6 @@
           },
           "profile": {
             "type": "string"
-          },
-          "slug": {
-            "type": "uid"
           },
           "foods": {
             "type": "array",
@@ -9397,9 +9391,6 @@
               },
               "profile": {
                 "type": "string"
-              },
-              "slug": {
-                "type": "uid"
               },
               "foods": {
                 "type": "array",
