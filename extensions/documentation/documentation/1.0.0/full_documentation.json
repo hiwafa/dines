@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "10/24/2021 10:44:50 PM"
+    "x-generation-date": "10/24/2021 10:47:29 PM"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -5562,7 +5562,8 @@
       "Comments": {
         "required": [
           "id",
-          "text"
+          "text",
+          "type"
         ],
         "properties": {
           "id": {
@@ -5696,6 +5697,18 @@
               }
             }
           },
+          "type": {
+            "type": "string"
+          },
+          "target": {
+            "type": "integer"
+          },
+          "reply": {
+            "type": "string"
+          },
+          "rate": {
+            "type": "integer"
+          },
           "published_at": {
             "type": "string",
             "format": "date-time"
@@ -5704,7 +5717,8 @@
       },
       "NewComments": {
         "required": [
-          "text"
+          "text",
+          "type"
         ],
         "properties": {
           "text": {
@@ -5719,6 +5733,18 @@
           },
           "user": {
             "type": "string"
+          },
+          "type": {
+            "type": "string"
+          },
+          "target": {
+            "type": "integer"
+          },
+          "reply": {
+            "type": "string"
+          },
+          "rate": {
+            "type": "integer"
           },
           "published_at": {
             "type": "string",
@@ -5908,7 +5934,8 @@
             "items": {
               "required": [
                 "id",
-                "text"
+                "text",
+                "type"
               ],
               "properties": {
                 "id": {
@@ -5925,6 +5952,18 @@
                 },
                 "user": {
                   "type": "string"
+                },
+                "type": {
+                  "type": "string"
+                },
+                "target": {
+                  "type": "integer"
+                },
+                "reply": {
+                  "type": "string"
+                },
+                "rate": {
+                  "type": "integer"
                 },
                 "published_at": {
                   "type": "string"
@@ -7105,7 +7144,8 @@
             "items": {
               "required": [
                 "id",
-                "text"
+                "text",
+                "type"
               ],
               "properties": {
                 "id": {
@@ -7122,6 +7162,18 @@
                 },
                 "user": {
                   "type": "string"
+                },
+                "type": {
+                  "type": "string"
+                },
+                "target": {
+                  "type": "integer"
+                },
+                "reply": {
+                  "type": "string"
+                },
+                "rate": {
+                  "type": "integer"
                 },
                 "published_at": {
                   "type": "string"

@@ -517,7 +517,8 @@
       "Comments": {
         "required": [
           "id",
-          "text"
+          "text",
+          "type"
         ],
         "properties": {
           "id": {
@@ -651,6 +652,18 @@
               }
             }
           },
+          "type": {
+            "type": "string"
+          },
+          "target": {
+            "type": "integer"
+          },
+          "reply": {
+            "type": "string"
+          },
+          "rate": {
+            "type": "integer"
+          },
           "published_at": {
             "type": "string",
             "format": "date-time"
@@ -659,7 +672,8 @@
       },
       "NewComments": {
         "required": [
-          "text"
+          "text",
+          "type"
         ],
         "properties": {
           "text": {
@@ -674,6 +688,18 @@
           },
           "user": {
             "type": "string"
+          },
+          "type": {
+            "type": "string"
+          },
+          "target": {
+            "type": "integer"
+          },
+          "reply": {
+            "type": "string"
+          },
+          "rate": {
+            "type": "integer"
           },
           "published_at": {
             "type": "string",

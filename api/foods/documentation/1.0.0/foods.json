@@ -758,7 +758,8 @@
             "items": {
               "required": [
                 "id",
-                "text"
+                "text",
+                "type"
               ],
               "properties": {
                 "id": {
@@ -775,6 +776,18 @@
                 },
                 "user": {
                   "type": "string"
+                },
+                "type": {
+                  "type": "string"
+                },
+                "target": {
+                  "type": "integer"
+                },
+                "reply": {
+                  "type": "string"
+                },
+                "rate": {
+                  "type": "integer"
                 },
                 "published_at": {
                   "type": "string"
