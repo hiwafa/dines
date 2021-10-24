@@ -52,10 +52,6 @@
     "ingredients": {
       "via": "food",
       "collection": "ingredients"
-    },
-    "food_ratings": {
-      "via": "food",
-      "collection": "food-ratings"
     }
   }
 }

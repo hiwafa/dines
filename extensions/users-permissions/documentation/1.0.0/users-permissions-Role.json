@@ -576,12 +576,6 @@
                     "type": "string"
                   }
                 },
-                "food_ratings": {
-                  "type": "array",
-                  "items": {
-                    "type": "string"
-                  }
-                },
                 "comments": {
                   "type": "array",
                   "items": {
