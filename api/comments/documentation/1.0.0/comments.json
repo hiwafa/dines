@@ -669,31 +669,6 @@
               }
             }
           },
-          "reply": {
-            "required": [
-              "id"
-            ],
-            "properties": {
-              "id": {
-                "type": "string"
-              },
-              "text": {
-                "type": "string"
-              },
-              "comment": {
-                "type": "string"
-              },
-              "published_at": {
-                "type": "string"
-              },
-              "created_by": {
-                "type": "string"
-              },
-              "updated_by": {
-                "type": "string"
-              }
-            }
-          },
           "published_at": {
             "type": "string",
             "format": "date-time"
@@ -716,9 +691,6 @@
             "default": false
           },
           "user": {
-            "type": "string"
-          },
-          "reply": {
             "type": "string"
           },
           "published_at": {

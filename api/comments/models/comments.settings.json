@@ -28,10 +28,6 @@
       "plugin": "users-permissions",
       "model": "user",
       "via": "comments"
-    },
-    "reply": {
-      "via": "comment",
-      "model": "comment-replies"
     }
   }
 }
