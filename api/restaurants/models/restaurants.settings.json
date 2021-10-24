@@ -51,6 +51,11 @@
     "categories": {
       "via": "restaurant",
       "collection": "categories"
+    },
+    "banners": {
+      "type": "component",
+      "repeatable": true,
+      "component": "common.slide"
     }
   }
 }

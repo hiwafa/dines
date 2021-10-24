@@ -1469,6 +1469,9 @@
                   "type": "string"
                 }
               },
+              "banners": {
+                "type": "component"
+              },
               "published_at": {
                 "type": "string"
               },

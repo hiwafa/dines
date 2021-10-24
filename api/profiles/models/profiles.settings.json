@@ -27,11 +27,6 @@
       "required": false,
       "pluginOptions": {}
     },
-    "slideshow": {
-      "type": "component",
-      "repeatable": true,
-      "component": "common.slide"
-    },
     "email": {
       "type": "email",
       "default": "email@example.com",
