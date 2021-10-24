@@ -73,14 +73,6 @@
       "required": false,
       "pluginOptions": {}
     },
-    "restaurant_ratings": {
-      "via": "user",
-      "collection": "restaurant-ratings"
-    },
-    "food_ratings": {
-      "via": "user",
-      "collection": "food-ratings"
-    },
     "comments": {
       "via": "user",
       "collection": "comments"

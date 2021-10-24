@@ -1,8 +1,8 @@
 {
   "kind": "collectionType",
-  "collectionName": "profiles",
+  "collectionName": "settings",
   "info": {
-    "name": "profiles",
+    "name": "settings",
     "description": ""
   },
   "options": {
@@ -27,11 +27,6 @@
       "required": false,
       "pluginOptions": {}
     },
-    "slideshow": {
-      "type": "component",
-      "repeatable": true,
-      "component": "common.slide"
-    },
     "email": {
       "type": "email",
       "default": "email@example.com",
@@ -39,6 +34,21 @@
     },
     "geoLocation": {
       "type": "text"
+    },
+    "slug": {
+      "type": "uid"
+    },
+    "qrCode": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
     }
   }
 }

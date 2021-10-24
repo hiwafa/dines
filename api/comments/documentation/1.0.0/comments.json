@@ -517,7 +517,8 @@
       "Comments": {
         "required": [
           "id",
-          "text"
+          "text",
+          "type"
         ],
         "properties": {
           "id": {
@@ -568,12 +569,6 @@
                 }
               },
               "ingredients": {
-                "type": "array",
-                "items": {
-                  "type": "string"
-                }
-              },
-              "food_ratings": {
                 "type": "array",
                 "items": {
                   "type": "string"
@@ -640,18 +635,6 @@
                   "type": "string"
                 }
               },
-              "restaurant_ratings": {
-                "type": "array",
-                "items": {
-                  "type": "string"
-                }
-              },
-              "food_ratings": {
-                "type": "array",
-                "items": {
-                  "type": "string"
-                }
-              },
               "comments": {
                 "type": "array",
                 "items": {
@@ -669,30 +652,17 @@
               }
             }
           },
+          "type": {
+            "type": "string"
+          },
+          "target": {
+            "type": "integer"
+          },
           "reply": {
-            "required": [
-              "id"
-            ],
-            "properties": {
-              "id": {
-                "type": "string"
-              },
-              "text": {
-                "type": "string"
-              },
-              "comment": {
-                "type": "string"
-              },
-              "published_at": {
-                "type": "string"
-              },
-              "created_by": {
-                "type": "string"
-              },
-              "updated_by": {
-                "type": "string"
-              }
-            }
+            "type": "string"
+          },
+          "rate": {
+            "type": "integer"
           },
           "published_at": {
             "type": "string",
@@ -702,7 +672,8 @@
       },
       "NewComments": {
         "required": [
-          "text"
+          "text",
+          "type"
         ],
         "properties": {
           "text": {
@@ -718,8 +689,17 @@
           "user": {
             "type": "string"
           },
+          "type": {
+            "type": "string"
+          },
+          "target": {
+            "type": "integer"
+          },
           "reply": {
             "type": "string"
+          },
+          "rate": {
+            "type": "integer"
           },
           "published_at": {
             "type": "string",

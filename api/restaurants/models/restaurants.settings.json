@@ -19,38 +19,26 @@
     "slogan": {
       "type": "string"
     },
-    "profile": {
+    "setting": {
       "model": "profiles"
-    },
-    "slug": {
-      "type": "uid"
     },
     "foods": {
       "via": "restaurant",
       "collection": "foods"
-    },
-    "restaurant_ratings": {
-      "via": "restaurant",
-      "collection": "restaurant-ratings"
     },
     "user": {
       "plugin": "users-permissions",
       "model": "user",
       "via": "restaurant"
     },
-    "qrImage": {
-      "model": "file",
-      "via": "related",
-      "allowedTypes": [
-        "images"
-      ],
-      "plugin": "upload",
-      "required": false,
-      "pluginOptions": {}
-    },
     "categories": {
       "via": "restaurant",
       "collection": "categories"
+    },
+    "banners": {
+      "type": "component",
+      "repeatable": true,
+      "component": "common.slide"
     }
   }
 }

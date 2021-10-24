@@ -529,7 +529,7 @@
           "slogan": {
             "type": "string"
           },
-          "profile": {
+          "setting": {
             "required": [
               "id"
             ],
@@ -543,13 +543,16 @@
               "logo": {
                 "type": "string"
               },
-              "slideshow": {
-                "type": "component"
-              },
               "email": {
                 "type": "string"
               },
               "geoLocation": {
+                "type": "string"
+              },
+              "slug": {
+                "type": "uid"
+              },
+              "qrCode": {
                 "type": "string"
               },
               "published_at": {
@@ -562,9 +565,6 @@
                 "type": "string"
               }
             }
-          },
-          "slug": {
-            "type": "uid"
           },
           "foods": {
             "type": "array",
@@ -614,43 +614,6 @@
                   "items": {
                     "type": "string"
                   }
-                },
-                "food_ratings": {
-                  "type": "array",
-                  "items": {
-                    "type": "string"
-                  }
-                },
-                "published_at": {
-                  "type": "string"
-                },
-                "created_by": {
-                  "type": "string"
-                },
-                "updated_by": {
-                  "type": "string"
-                }
-              }
-            }
-          },
-          "restaurant_ratings": {
-            "type": "array",
-            "items": {
-              "required": [
-                "id"
-              ],
-              "properties": {
-                "id": {
-                  "type": "string"
-                },
-                "rateValue": {
-                  "type": "number"
-                },
-                "user": {
-                  "type": "string"
-                },
-                "restaurant": {
-                  "type": "string"
                 },
                 "published_at": {
                   "type": "string"
@@ -710,18 +673,6 @@
                   "type": "string"
                 }
               },
-              "restaurant_ratings": {
-                "type": "array",
-                "items": {
-                  "type": "string"
-                }
-              },
-              "food_ratings": {
-                "type": "array",
-                "items": {
-                  "type": "string"
-                }
-              },
               "comments": {
                 "type": "array",
                 "items": {
@@ -729,73 +680,6 @@
                 }
               },
               "restaurant": {
-                "type": "string"
-              },
-              "created_by": {
-                "type": "string"
-              },
-              "updated_by": {
-                "type": "string"
-              }
-            }
-          },
-          "qrImage": {
-            "required": [
-              "id",
-              "name",
-              "hash",
-              "mime",
-              "size",
-              "url",
-              "provider"
-            ],
-            "properties": {
-              "id": {
-                "type": "string"
-              },
-              "name": {
-                "type": "string"
-              },
-              "alternativeText": {
-                "type": "string"
-              },
-              "caption": {
-                "type": "string"
-              },
-              "width": {
-                "type": "integer"
-              },
-              "height": {
-                "type": "integer"
-              },
-              "formats": {
-                "type": "object"
-              },
-              "hash": {
-                "type": "string"
-              },
-              "ext": {
-                "type": "string"
-              },
-              "mime": {
-                "type": "string"
-              },
-              "size": {
-                "type": "number"
-              },
-              "url": {
-                "type": "string"
-              },
-              "previewUrl": {
-                "type": "string"
-              },
-              "provider": {
-                "type": "string"
-              },
-              "provider_metadata": {
-                "type": "object"
-              },
-              "related": {
                 "type": "string"
               },
               "created_by": {
@@ -840,6 +724,90 @@
               }
             }
           },
+          "banners": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": [
+                "id"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "text": {
+                  "type": "string"
+                },
+                "slide": {
+                  "required": [
+                    "id",
+                    "name",
+                    "hash",
+                    "mime",
+                    "size",
+                    "url",
+                    "provider"
+                  ],
+                  "properties": {
+                    "id": {
+                      "type": "string"
+                    },
+                    "name": {
+                      "type": "string"
+                    },
+                    "alternativeText": {
+                      "type": "string"
+                    },
+                    "caption": {
+                      "type": "string"
+                    },
+                    "width": {
+                      "type": "integer"
+                    },
+                    "height": {
+                      "type": "integer"
+                    },
+                    "formats": {
+                      "type": "object"
+                    },
+                    "hash": {
+                      "type": "string"
+                    },
+                    "ext": {
+                      "type": "string"
+                    },
+                    "mime": {
+                      "type": "string"
+                    },
+                    "size": {
+                      "type": "number"
+                    },
+                    "url": {
+                      "type": "string"
+                    },
+                    "previewUrl": {
+                      "type": "string"
+                    },
+                    "provider": {
+                      "type": "string"
+                    },
+                    "provider_metadata": {
+                      "type": "object"
+                    },
+                    "related": {
+                      "type": "string"
+                    },
+                    "created_by": {
+                      "type": "string"
+                    },
+                    "updated_by": {
+                      "type": "string"
+                    }
+                  }
+                }
+              }
+            }
+          },
           "published_at": {
             "type": "string",
             "format": "date-time"
@@ -857,19 +825,10 @@
           "slogan": {
             "type": "string"
           },
-          "profile": {
+          "setting": {
             "type": "string"
           },
-          "slug": {
-            "type": "uid"
-          },
           "foods": {
-            "type": "array",
-            "items": {
-              "type": "string"
-            }
-          },
-          "restaurant_ratings": {
             "type": "array",
             "items": {
               "type": "string"
@@ -882,6 +841,90 @@
             "type": "array",
             "items": {
               "type": "string"
+            }
+          },
+          "banners": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": [
+                "id"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "text": {
+                  "type": "string"
+                },
+                "slide": {
+                  "required": [
+                    "id",
+                    "name",
+                    "hash",
+                    "mime",
+                    "size",
+                    "url",
+                    "provider"
+                  ],
+                  "properties": {
+                    "id": {
+                      "type": "string"
+                    },
+                    "name": {
+                      "type": "string"
+                    },
+                    "alternativeText": {
+                      "type": "string"
+                    },
+                    "caption": {
+                      "type": "string"
+                    },
+                    "width": {
+                      "type": "integer"
+                    },
+                    "height": {
+                      "type": "integer"
+                    },
+                    "formats": {
+                      "type": "object"
+                    },
+                    "hash": {
+                      "type": "string"
+                    },
+                    "ext": {
+                      "type": "string"
+                    },
+                    "mime": {
+                      "type": "string"
+                    },
+                    "size": {
+                      "type": "number"
+                    },
+                    "url": {
+                      "type": "string"
+                    },
+                    "previewUrl": {
+                      "type": "string"
+                    },
+                    "provider": {
+                      "type": "string"
+                    },
+                    "provider_metadata": {
+                      "type": "object"
+                    },
+                    "related": {
+                      "type": "string"
+                    },
+                    "created_by": {
+                      "type": "string"
+                    },
+                    "updated_by": {
+                      "type": "string"
+                    }
+                  }
+                }
+              }
             }
           },
           "published_at": {

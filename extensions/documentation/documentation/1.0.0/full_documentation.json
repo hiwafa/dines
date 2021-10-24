@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "10/23/2021 10:09:28 AM"
+    "x-generation-date": "10/24/2021 10:47:29 PM"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -556,530 +556,6 @@
         ]
       }
     },
-    "/comment-replies": {
-      "get": {
-        "deprecated": false,
-        "description": "Find all the comment-replies's records",
-        "responses": {
-          "200": {
-            "description": "Retrieve comment-replies document(s)",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "properties": {
-                    "foo": {
-                      "type": "string"
-                    }
-                  }
-                }
-              }
-            }
-          },
-          "403": {
-            "description": "Forbidden",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          },
-          "404": {
-            "description": "Not found",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          },
-          "default": {
-            "description": "unexpected error",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          }
-        },
-        "summary": "",
-        "tags": [
-          "Comment-replies"
-        ],
-        "parameters": [
-          {
-            "name": "_limit",
-            "in": "query",
-            "required": false,
-            "description": "Maximum number of results possible",
-            "schema": {
-              "type": "integer"
-            },
-            "deprecated": false
-          },
-          {
-            "name": "_sort",
-            "in": "query",
-            "required": false,
-            "description": "Sort according to a specific field.",
-            "schema": {
-              "type": "string"
-            },
-            "deprecated": false
-          },
-          {
-            "name": "_start",
-            "in": "query",
-            "required": false,
-            "description": "Skip a specific number of entries (especially useful for pagination)",
-            "schema": {
-              "type": "integer"
-            },
-            "deprecated": false
-          },
-          {
-            "name": "=",
-            "in": "query",
-            "required": false,
-            "description": "Get entries that matches exactly your input",
-            "schema": {
-              "type": "string"
-            },
-            "deprecated": false
-          },
-          {
-            "name": "_ne",
-            "in": "query",
-            "required": false,
-            "description": "Get records that are not equals to something",
-            "schema": {
-              "type": "string"
-            },
-            "deprecated": false
-          },
-          {
-            "name": "_lt",
-            "in": "query",
-            "required": false,
-            "description": "Get record that are lower than a value",
-            "schema": {
-              "type": "string"
-            },
-            "deprecated": false
-          },
-          {
-            "name": "_lte",
-            "in": "query",
-            "required": false,
-            "description": "Get records that are lower than or equal to a value",
-            "schema": {
-              "type": "string"
-            },
-            "deprecated": false
-          },
-          {
-            "name": "_gt",
-            "in": "query",
-            "required": false,
-            "description": "Get records that are greater than a value",
-            "schema": {
-              "type": "string"
-            },
-            "deprecated": false
-          },
-          {
-            "name": "_gte",
-            "in": "query",
-            "required": false,
-            "description": "Get records that are greater than  or equal a value",
-            "schema": {
-              "type": "string"
-            },
-            "deprecated": false
-          },
-          {
-            "name": "_contains",
-            "in": "query",
-            "required": false,
-            "description": "Get records that contains a value",
-            "schema": {
-              "type": "string"
-            },
-            "deprecated": false
-          },
-          {
-            "name": "_containss",
-            "in": "query",
-            "required": false,
-            "description": "Get records that contains (case sensitive) a value",
-            "schema": {
-              "type": "string"
-            },
-            "deprecated": false
-          },
-          {
-            "name": "_in",
-            "in": "query",
-            "required": false,
-            "description": "Get records that matches any value in the array of values",
-            "schema": {
-              "type": "array",
-              "items": {
-                "type": "string"
-              }
-            },
-            "deprecated": false
-          },
-          {
-            "name": "_nin",
-            "in": "query",
-            "required": false,
-            "description": "Get records that doesn't match any value in the array of values",
-            "schema": {
-              "type": "array",
-              "items": {
-                "type": "string"
-              }
-            },
-            "deprecated": false
-          }
-        ]
-      },
-      "post": {
-        "deprecated": false,
-        "description": "Create a new comment-replies record",
-        "responses": {
-          "200": {
-            "description": "Retrieve comment-replies document(s)",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "properties": {
-                    "foo": {
-                      "type": "string"
-                    }
-                  }
-                }
-              }
-            }
-          },
-          "403": {
-            "description": "Forbidden",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          },
-          "404": {
-            "description": "Not found",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          },
-          "default": {
-            "description": "unexpected error",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          }
-        },
-        "summary": "",
-        "tags": [
-          "Comment-replies"
-        ],
-        "requestBody": {
-          "description": "",
-          "required": true,
-          "content": {
-            "application/json": {
-              "schema": {
-                "$ref": "#/components/schemas/NewComment-replies"
-              }
-            }
-          }
-        }
-      }
-    },
-    "/comment-replies/count": {
-      "get": {
-        "deprecated": false,
-        "description": "Retrieve the number of comment-replies documents",
-        "responses": {
-          "200": {
-            "description": "Retrieve comment-replies document(s)",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "properties": {
-                    "foo": {
-                      "type": "string"
-                    }
-                  }
-                }
-              }
-            }
-          },
-          "403": {
-            "description": "Forbidden",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          },
-          "404": {
-            "description": "Not found",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          },
-          "default": {
-            "description": "unexpected error",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          }
-        },
-        "summary": "",
-        "tags": [
-          "Comment-replies"
-        ],
-        "parameters": []
-      }
-    },
-    "/comment-replies/{id}": {
-      "get": {
-        "deprecated": false,
-        "description": "Find one comment-replies record",
-        "responses": {
-          "200": {
-            "description": "Retrieve comment-replies document(s)",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "properties": {
-                    "foo": {
-                      "type": "string"
-                    }
-                  }
-                }
-              }
-            }
-          },
-          "403": {
-            "description": "Forbidden",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          },
-          "404": {
-            "description": "Not found",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          },
-          "default": {
-            "description": "unexpected error",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          }
-        },
-        "summary": "",
-        "tags": [
-          "Comment-replies"
-        ],
-        "parameters": [
-          {
-            "name": "id",
-            "in": "path",
-            "description": "",
-            "deprecated": false,
-            "required": true,
-            "schema": {
-              "type": "string"
-            }
-          }
-        ]
-      },
-      "put": {
-        "deprecated": false,
-        "description": "Update a single comment-replies record",
-        "responses": {
-          "200": {
-            "description": "Retrieve comment-replies document(s)",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "properties": {
-                    "foo": {
-                      "type": "string"
-                    }
-                  }
-                }
-              }
-            }
-          },
-          "403": {
-            "description": "Forbidden",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          },
-          "404": {
-            "description": "Not found",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          },
-          "default": {
-            "description": "unexpected error",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          }
-        },
-        "summary": "",
-        "tags": [
-          "Comment-replies"
-        ],
-        "requestBody": {
-          "description": "",
-          "required": true,
-          "content": {
-            "application/json": {
-              "schema": {
-                "$ref": "#/components/schemas/NewComment-replies"
-              }
-            }
-          }
-        },
-        "parameters": [
-          {
-            "name": "id",
-            "in": "path",
-            "description": "",
-            "deprecated": false,
-            "required": true,
-            "schema": {
-              "type": "string"
-            }
-          }
-        ]
-      },
-      "delete": {
-        "deprecated": false,
-        "description": "Delete a single comment-replies record",
-        "responses": {
-          "200": {
-            "description": "deletes a single comment-replies based on the ID supplied",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "type": "integer",
-                  "format": "int64"
-                }
-              }
-            }
-          },
-          "403": {
-            "description": "Forbidden",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          },
-          "404": {
-            "description": "Not found",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          },
-          "default": {
-            "description": "unexpected error",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          }
-        },
-        "summary": "",
-        "tags": [
-          "Comment-replies"
-        ],
-        "parameters": [
-          {
-            "name": "id",
-            "in": "path",
-            "description": "",
-            "deprecated": false,
-            "required": true,
-            "schema": {
-              "type": "string"
-            }
-          }
-        ]
-      }
-    },
     "/comments": {
       "get": {
         "deprecated": false,
@@ -1576,530 +1052,6 @@
         "summary": "",
         "tags": [
           "Comments"
-        ],
-        "parameters": [
-          {
-            "name": "id",
-            "in": "path",
-            "description": "",
-            "deprecated": false,
-            "required": true,
-            "schema": {
-              "type": "string"
-            }
-          }
-        ]
-      }
-    },
-    "/food-ratings": {
-      "get": {
-        "deprecated": false,
-        "description": "Find all the food-ratings's records",
-        "responses": {
-          "200": {
-            "description": "Retrieve food-ratings document(s)",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "properties": {
-                    "foo": {
-                      "type": "string"
-                    }
-                  }
-                }
-              }
-            }
-          },
-          "403": {
-            "description": "Forbidden",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          },
-          "404": {
-            "description": "Not found",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          },
-          "default": {
-            "description": "unexpected error",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          }
-        },
-        "summary": "",
-        "tags": [
-          "Food-ratings"
-        ],
-        "parameters": [
-          {
-            "name": "_limit",
-            "in": "query",
-            "required": false,
-            "description": "Maximum number of results possible",
-            "schema": {
-              "type": "integer"
-            },
-            "deprecated": false
-          },
-          {
-            "name": "_sort",
-            "in": "query",
-            "required": false,
-            "description": "Sort according to a specific field.",
-            "schema": {
-              "type": "string"
-            },
-            "deprecated": false
-          },
-          {
-            "name": "_start",
-            "in": "query",
-            "required": false,
-            "description": "Skip a specific number of entries (especially useful for pagination)",
-            "schema": {
-              "type": "integer"
-            },
-            "deprecated": false
-          },
-          {
-            "name": "=",
-            "in": "query",
-            "required": false,
-            "description": "Get entries that matches exactly your input",
-            "schema": {
-              "type": "string"
-            },
-            "deprecated": false
-          },
-          {
-            "name": "_ne",
-            "in": "query",
-            "required": false,
-            "description": "Get records that are not equals to something",
-            "schema": {
-              "type": "string"
-            },
-            "deprecated": false
-          },
-          {
-            "name": "_lt",
-            "in": "query",
-            "required": false,
-            "description": "Get record that are lower than a value",
-            "schema": {
-              "type": "string"
-            },
-            "deprecated": false
-          },
-          {
-            "name": "_lte",
-            "in": "query",
-            "required": false,
-            "description": "Get records that are lower than or equal to a value",
-            "schema": {
-              "type": "string"
-            },
-            "deprecated": false
-          },
-          {
-            "name": "_gt",
-            "in": "query",
-            "required": false,
-            "description": "Get records that are greater than a value",
-            "schema": {
-              "type": "string"
-            },
-            "deprecated": false
-          },
-          {
-            "name": "_gte",
-            "in": "query",
-            "required": false,
-            "description": "Get records that are greater than  or equal a value",
-            "schema": {
-              "type": "string"
-            },
-            "deprecated": false
-          },
-          {
-            "name": "_contains",
-            "in": "query",
-            "required": false,
-            "description": "Get records that contains a value",
-            "schema": {
-              "type": "string"
-            },
-            "deprecated": false
-          },
-          {
-            "name": "_containss",
-            "in": "query",
-            "required": false,
-            "description": "Get records that contains (case sensitive) a value",
-            "schema": {
-              "type": "string"
-            },
-            "deprecated": false
-          },
-          {
-            "name": "_in",
-            "in": "query",
-            "required": false,
-            "description": "Get records that matches any value in the array of values",
-            "schema": {
-              "type": "array",
-              "items": {
-                "type": "string"
-              }
-            },
-            "deprecated": false
-          },
-          {
-            "name": "_nin",
-            "in": "query",
-            "required": false,
-            "description": "Get records that doesn't match any value in the array of values",
-            "schema": {
-              "type": "array",
-              "items": {
-                "type": "string"
-              }
-            },
-            "deprecated": false
-          }
-        ]
-      },
-      "post": {
-        "deprecated": false,
-        "description": "Create a new food-ratings record",
-        "responses": {
-          "200": {
-            "description": "Retrieve food-ratings document(s)",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "properties": {
-                    "foo": {
-                      "type": "string"
-                    }
-                  }
-                }
-              }
-            }
-          },
-          "403": {
-            "description": "Forbidden",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          },
-          "404": {
-            "description": "Not found",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          },
-          "default": {
-            "description": "unexpected error",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          }
-        },
-        "summary": "",
-        "tags": [
-          "Food-ratings"
-        ],
-        "requestBody": {
-          "description": "",
-          "required": true,
-          "content": {
-            "application/json": {
-              "schema": {
-                "$ref": "#/components/schemas/NewFood-ratings"
-              }
-            }
-          }
-        }
-      }
-    },
-    "/food-ratings/count": {
-      "get": {
-        "deprecated": false,
-        "description": "Retrieve the number of food-ratings documents",
-        "responses": {
-          "200": {
-            "description": "Retrieve food-ratings document(s)",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "properties": {
-                    "foo": {
-                      "type": "string"
-                    }
-                  }
-                }
-              }
-            }
-          },
-          "403": {
-            "description": "Forbidden",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          },
-          "404": {
-            "description": "Not found",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          },
-          "default": {
-            "description": "unexpected error",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          }
-        },
-        "summary": "",
-        "tags": [
-          "Food-ratings"
-        ],
-        "parameters": []
-      }
-    },
-    "/food-ratings/{id}": {
-      "get": {
-        "deprecated": false,
-        "description": "Find one food-ratings record",
-        "responses": {
-          "200": {
-            "description": "Retrieve food-ratings document(s)",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "properties": {
-                    "foo": {
-                      "type": "string"
-                    }
-                  }
-                }
-              }
-            }
-          },
-          "403": {
-            "description": "Forbidden",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          },
-          "404": {
-            "description": "Not found",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          },
-          "default": {
-            "description": "unexpected error",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          }
-        },
-        "summary": "",
-        "tags": [
-          "Food-ratings"
-        ],
-        "parameters": [
-          {
-            "name": "id",
-            "in": "path",
-            "description": "",
-            "deprecated": false,
-            "required": true,
-            "schema": {
-              "type": "string"
-            }
-          }
-        ]
-      },
-      "put": {
-        "deprecated": false,
-        "description": "Update a single food-ratings record",
-        "responses": {
-          "200": {
-            "description": "Retrieve food-ratings document(s)",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "properties": {
-                    "foo": {
-                      "type": "string"
-                    }
-                  }
-                }
-              }
-            }
-          },
-          "403": {
-            "description": "Forbidden",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          },
-          "404": {
-            "description": "Not found",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          },
-          "default": {
-            "description": "unexpected error",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          }
-        },
-        "summary": "",
-        "tags": [
-          "Food-ratings"
-        ],
-        "requestBody": {
-          "description": "",
-          "required": true,
-          "content": {
-            "application/json": {
-              "schema": {
-                "$ref": "#/components/schemas/NewFood-ratings"
-              }
-            }
-          }
-        },
-        "parameters": [
-          {
-            "name": "id",
-            "in": "path",
-            "description": "",
-            "deprecated": false,
-            "required": true,
-            "schema": {
-              "type": "string"
-            }
-          }
-        ]
-      },
-      "delete": {
-        "deprecated": false,
-        "description": "Delete a single food-ratings record",
-        "responses": {
-          "200": {
-            "description": "deletes a single food-ratings based on the ID supplied",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "type": "integer",
-                  "format": "int64"
-                }
-              }
-            }
-          },
-          "403": {
-            "description": "Forbidden",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          },
-          "404": {
-            "description": "Not found",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          },
-          "default": {
-            "description": "unexpected error",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          }
-        },
-        "summary": "",
-        "tags": [
-          "Food-ratings"
         ],
         "parameters": [
           {
@@ -3701,530 +2653,6 @@
         "summary": "",
         "tags": [
           "Profiles"
-        ],
-        "parameters": [
-          {
-            "name": "id",
-            "in": "path",
-            "description": "",
-            "deprecated": false,
-            "required": true,
-            "schema": {
-              "type": "string"
-            }
-          }
-        ]
-      }
-    },
-    "/restaurant-ratings": {
-      "get": {
-        "deprecated": false,
-        "description": "Find all the restaurant-ratings's records",
-        "responses": {
-          "200": {
-            "description": "Retrieve restaurant-ratings document(s)",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "properties": {
-                    "foo": {
-                      "type": "string"
-                    }
-                  }
-                }
-              }
-            }
-          },
-          "403": {
-            "description": "Forbidden",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          },
-          "404": {
-            "description": "Not found",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          },
-          "default": {
-            "description": "unexpected error",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          }
-        },
-        "summary": "",
-        "tags": [
-          "Restaurant-ratings"
-        ],
-        "parameters": [
-          {
-            "name": "_limit",
-            "in": "query",
-            "required": false,
-            "description": "Maximum number of results possible",
-            "schema": {
-              "type": "integer"
-            },
-            "deprecated": false
-          },
-          {
-            "name": "_sort",
-            "in": "query",
-            "required": false,
-            "description": "Sort according to a specific field.",
-            "schema": {
-              "type": "string"
-            },
-            "deprecated": false
-          },
-          {
-            "name": "_start",
-            "in": "query",
-            "required": false,
-            "description": "Skip a specific number of entries (especially useful for pagination)",
-            "schema": {
-              "type": "integer"
-            },
-            "deprecated": false
-          },
-          {
-            "name": "=",
-            "in": "query",
-            "required": false,
-            "description": "Get entries that matches exactly your input",
-            "schema": {
-              "type": "string"
-            },
-            "deprecated": false
-          },
-          {
-            "name": "_ne",
-            "in": "query",
-            "required": false,
-            "description": "Get records that are not equals to something",
-            "schema": {
-              "type": "string"
-            },
-            "deprecated": false
-          },
-          {
-            "name": "_lt",
-            "in": "query",
-            "required": false,
-            "description": "Get record that are lower than a value",
-            "schema": {
-              "type": "string"
-            },
-            "deprecated": false
-          },
-          {
-            "name": "_lte",
-            "in": "query",
-            "required": false,
-            "description": "Get records that are lower than or equal to a value",
-            "schema": {
-              "type": "string"
-            },
-            "deprecated": false
-          },
-          {
-            "name": "_gt",
-            "in": "query",
-            "required": false,
-            "description": "Get records that are greater than a value",
-            "schema": {
-              "type": "string"
-            },
-            "deprecated": false
-          },
-          {
-            "name": "_gte",
-            "in": "query",
-            "required": false,
-            "description": "Get records that are greater than  or equal a value",
-            "schema": {
-              "type": "string"
-            },
-            "deprecated": false
-          },
-          {
-            "name": "_contains",
-            "in": "query",
-            "required": false,
-            "description": "Get records that contains a value",
-            "schema": {
-              "type": "string"
-            },
-            "deprecated": false
-          },
-          {
-            "name": "_containss",
-            "in": "query",
-            "required": false,
-            "description": "Get records that contains (case sensitive) a value",
-            "schema": {
-              "type": "string"
-            },
-            "deprecated": false
-          },
-          {
-            "name": "_in",
-            "in": "query",
-            "required": false,
-            "description": "Get records that matches any value in the array of values",
-            "schema": {
-              "type": "array",
-              "items": {
-                "type": "string"
-              }
-            },
-            "deprecated": false
-          },
-          {
-            "name": "_nin",
-            "in": "query",
-            "required": false,
-            "description": "Get records that doesn't match any value in the array of values",
-            "schema": {
-              "type": "array",
-              "items": {
-                "type": "string"
-              }
-            },
-            "deprecated": false
-          }
-        ]
-      },
-      "post": {
-        "deprecated": false,
-        "description": "Create a new restaurant-ratings record",
-        "responses": {
-          "200": {
-            "description": "Retrieve restaurant-ratings document(s)",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "properties": {
-                    "foo": {
-                      "type": "string"
-                    }
-                  }
-                }
-              }
-            }
-          },
-          "403": {
-            "description": "Forbidden",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          },
-          "404": {
-            "description": "Not found",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          },
-          "default": {
-            "description": "unexpected error",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          }
-        },
-        "summary": "",
-        "tags": [
-          "Restaurant-ratings"
-        ],
-        "requestBody": {
-          "description": "",
-          "required": true,
-          "content": {
-            "application/json": {
-              "schema": {
-                "$ref": "#/components/schemas/NewRestaurant-ratings"
-              }
-            }
-          }
-        }
-      }
-    },
-    "/restaurant-ratings/count": {
-      "get": {
-        "deprecated": false,
-        "description": "Retrieve the number of restaurant-ratings documents",
-        "responses": {
-          "200": {
-            "description": "Retrieve restaurant-ratings document(s)",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "properties": {
-                    "foo": {
-                      "type": "string"
-                    }
-                  }
-                }
-              }
-            }
-          },
-          "403": {
-            "description": "Forbidden",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          },
-          "404": {
-            "description": "Not found",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          },
-          "default": {
-            "description": "unexpected error",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          }
-        },
-        "summary": "",
-        "tags": [
-          "Restaurant-ratings"
-        ],
-        "parameters": []
-      }
-    },
-    "/restaurant-ratings/{id}": {
-      "get": {
-        "deprecated": false,
-        "description": "Find one restaurant-ratings record",
-        "responses": {
-          "200": {
-            "description": "Retrieve restaurant-ratings document(s)",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "properties": {
-                    "foo": {
-                      "type": "string"
-                    }
-                  }
-                }
-              }
-            }
-          },
-          "403": {
-            "description": "Forbidden",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          },
-          "404": {
-            "description": "Not found",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          },
-          "default": {
-            "description": "unexpected error",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          }
-        },
-        "summary": "",
-        "tags": [
-          "Restaurant-ratings"
-        ],
-        "parameters": [
-          {
-            "name": "id",
-            "in": "path",
-            "description": "",
-            "deprecated": false,
-            "required": true,
-            "schema": {
-              "type": "string"
-            }
-          }
-        ]
-      },
-      "put": {
-        "deprecated": false,
-        "description": "Update a single restaurant-ratings record",
-        "responses": {
-          "200": {
-            "description": "Retrieve restaurant-ratings document(s)",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "properties": {
-                    "foo": {
-                      "type": "string"
-                    }
-                  }
-                }
-              }
-            }
-          },
-          "403": {
-            "description": "Forbidden",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          },
-          "404": {
-            "description": "Not found",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          },
-          "default": {
-            "description": "unexpected error",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          }
-        },
-        "summary": "",
-        "tags": [
-          "Restaurant-ratings"
-        ],
-        "requestBody": {
-          "description": "",
-          "required": true,
-          "content": {
-            "application/json": {
-              "schema": {
-                "$ref": "#/components/schemas/NewRestaurant-ratings"
-              }
-            }
-          }
-        },
-        "parameters": [
-          {
-            "name": "id",
-            "in": "path",
-            "description": "",
-            "deprecated": false,
-            "required": true,
-            "schema": {
-              "type": "string"
-            }
-          }
-        ]
-      },
-      "delete": {
-        "deprecated": false,
-        "description": "Delete a single restaurant-ratings record",
-        "responses": {
-          "200": {
-            "description": "deletes a single restaurant-ratings based on the ID supplied",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "type": "integer",
-                  "format": "int64"
-                }
-              }
-            }
-          },
-          "403": {
-            "description": "Forbidden",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          },
-          "404": {
-            "description": "Not found",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          },
-          "default": {
-            "description": "unexpected error",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          }
-        },
-        "summary": "",
-        "tags": [
-          "Restaurant-ratings"
         ],
         "parameters": [
           {
@@ -7006,19 +5434,10 @@
               "slogan": {
                 "type": "string"
               },
-              "profile": {
+              "setting": {
                 "type": "string"
               },
-              "slug": {
-                "type": "uid"
-              },
               "foods": {
-                "type": "array",
-                "items": {
-                  "type": "string"
-                }
-              },
-              "restaurant_ratings": {
                 "type": "array",
                 "items": {
                   "type": "string"
@@ -7027,14 +5446,14 @@
               "user": {
                 "type": "string"
               },
-              "qrImage": {
-                "type": "string"
-              },
               "categories": {
                 "type": "array",
                 "items": {
                   "type": "string"
                 }
+              },
+              "banners": {
+                "type": "component"
               },
               "published_at": {
                 "type": "string"
@@ -7096,12 +5515,6 @@
                     "type": "string"
                   }
                 },
-                "food_ratings": {
-                  "type": "array",
-                  "items": {
-                    "type": "string"
-                  }
-                },
                 "published_at": {
                   "type": "string"
                 },
@@ -7146,82 +5559,11 @@
           }
         }
       },
-      "Comment-replies": {
-        "required": [
-          "id"
-        ],
-        "properties": {
-          "id": {
-            "type": "string"
-          },
-          "text": {
-            "type": "string"
-          },
-          "comment": {
-            "required": [
-              "id",
-              "text"
-            ],
-            "properties": {
-              "id": {
-                "type": "string"
-              },
-              "text": {
-                "type": "string"
-              },
-              "food": {
-                "type": "string"
-              },
-              "approved": {
-                "type": "boolean"
-              },
-              "user": {
-                "type": "string"
-              },
-              "reply": {
-                "type": "string"
-              },
-              "published_at": {
-                "type": "string"
-              },
-              "created_by": {
-                "type": "string"
-              },
-              "updated_by": {
-                "type": "string"
-              }
-            }
-          },
-          "published_at": {
-            "type": "string",
-            "format": "date-time"
-          }
-        }
-      },
-      "NewComment-replies": {
-        "properties": {
-          "text": {
-            "type": "string"
-          },
-          "comment": {
-            "type": "string"
-          },
-          "published_at": {
-            "type": "string",
-            "format": "date-time"
-          },
-          "created_by": {
-            "type": "string"
-          },
-          "updated_by": {
-            "type": "string"
-          }
-        }
-      },
       "Comments": {
         "required": [
           "id",
-          "text"
+          "text",
+          "type"
         ],
         "properties": {
           "id": {
@@ -7272,12 +5614,6 @@
                 }
               },
               "ingredients": {
-                "type": "array",
-                "items": {
-                  "type": "string"
-                }
-              },
-              "food_ratings": {
                 "type": "array",
                 "items": {
                   "type": "string"
@@ -7344,18 +5680,6 @@
                   "type": "string"
                 }
               },
-              "restaurant_ratings": {
-                "type": "array",
-                "items": {
-                  "type": "string"
-                }
-              },
-              "food_ratings": {
-                "type": "array",
-                "items": {
-                  "type": "string"
-                }
-              },
               "comments": {
                 "type": "array",
                 "items": {
@@ -7373,30 +5697,17 @@
               }
             }
           },
+          "type": {
+            "type": "string"
+          },
+          "target": {
+            "type": "integer"
+          },
           "reply": {
-            "required": [
-              "id"
-            ],
-            "properties": {
-              "id": {
-                "type": "string"
-              },
-              "text": {
-                "type": "string"
-              },
-              "comment": {
-                "type": "string"
-              },
-              "published_at": {
-                "type": "string"
-              },
-              "created_by": {
-                "type": "string"
-              },
-              "updated_by": {
-                "type": "string"
-              }
-            }
+            "type": "string"
+          },
+          "rate": {
+            "type": "integer"
           },
           "published_at": {
             "type": "string",
@@ -7406,7 +5717,8 @@
       },
       "NewComments": {
         "required": [
-          "text"
+          "text",
+          "type"
         ],
         "properties": {
           "text": {
@@ -7422,187 +5734,17 @@
           "user": {
             "type": "string"
           },
+          "type": {
+            "type": "string"
+          },
+          "target": {
+            "type": "integer"
+          },
           "reply": {
             "type": "string"
           },
-          "published_at": {
-            "type": "string",
-            "format": "date-time"
-          },
-          "created_by": {
-            "type": "string"
-          },
-          "updated_by": {
-            "type": "string"
-          }
-        }
-      },
-      "Food-ratings": {
-        "required": [
-          "id"
-        ],
-        "properties": {
-          "id": {
-            "type": "string"
-          },
-          "rateValue": {
-            "type": "number"
-          },
-          "user": {
-            "required": [
-              "id",
-              "username",
-              "email"
-            ],
-            "properties": {
-              "id": {
-                "type": "string"
-              },
-              "username": {
-                "type": "string"
-              },
-              "email": {
-                "type": "string"
-              },
-              "provider": {
-                "type": "string"
-              },
-              "password": {
-                "type": "string"
-              },
-              "resetPasswordToken": {
-                "type": "string"
-              },
-              "confirmationToken": {
-                "type": "string"
-              },
-              "confirmed": {
-                "type": "boolean"
-              },
-              "blocked": {
-                "type": "boolean"
-              },
-              "role": {
-                "type": "string"
-              },
-              "name": {
-                "type": "string"
-              },
-              "image": {
-                "type": "array",
-                "items": {
-                  "type": "string"
-                }
-              },
-              "restaurant_ratings": {
-                "type": "array",
-                "items": {
-                  "type": "string"
-                }
-              },
-              "food_ratings": {
-                "type": "array",
-                "items": {
-                  "type": "string"
-                }
-              },
-              "comments": {
-                "type": "array",
-                "items": {
-                  "type": "string"
-                }
-              },
-              "restaurant": {
-                "type": "string"
-              },
-              "created_by": {
-                "type": "string"
-              },
-              "updated_by": {
-                "type": "string"
-              }
-            }
-          },
-          "food": {
-            "required": [
-              "id"
-            ],
-            "properties": {
-              "id": {
-                "type": "string"
-              },
-              "name": {
-                "type": "string"
-              },
-              "description": {
-                "type": "string"
-              },
-              "images": {
-                "type": "array",
-                "items": {
-                  "type": "string"
-                }
-              },
-              "shortDesc": {
-                "type": "string"
-              },
-              "categories": {
-                "type": "array",
-                "items": {
-                  "type": "string"
-                }
-              },
-              "restaurant": {
-                "type": "string"
-              },
-              "price": {
-                "type": "number"
-              },
-              "comments": {
-                "type": "array",
-                "items": {
-                  "type": "string"
-                }
-              },
-              "ingredients": {
-                "type": "array",
-                "items": {
-                  "type": "string"
-                }
-              },
-              "food_ratings": {
-                "type": "array",
-                "items": {
-                  "type": "string"
-                }
-              },
-              "published_at": {
-                "type": "string"
-              },
-              "created_by": {
-                "type": "string"
-              },
-              "updated_by": {
-                "type": "string"
-              }
-            }
-          },
-          "published_at": {
-            "type": "string",
-            "format": "date-time"
-          }
-        }
-      },
-      "NewFood-ratings": {
-        "properties": {
-          "rateValue": {
-            "type": "number"
-          },
-          "user": {
-            "type": "string"
-          },
-          "food": {
-            "type": "string"
+          "rate": {
+            "type": "integer"
           },
           "published_at": {
             "type": "string",
@@ -7752,19 +5894,10 @@
               "slogan": {
                 "type": "string"
               },
-              "profile": {
+              "setting": {
                 "type": "string"
               },
-              "slug": {
-                "type": "uid"
-              },
               "foods": {
-                "type": "array",
-                "items": {
-                  "type": "string"
-                }
-              },
-              "restaurant_ratings": {
                 "type": "array",
                 "items": {
                   "type": "string"
@@ -7773,14 +5906,14 @@
               "user": {
                 "type": "string"
               },
-              "qrImage": {
-                "type": "string"
-              },
               "categories": {
                 "type": "array",
                 "items": {
                   "type": "string"
                 }
+              },
+              "banners": {
+                "type": "component"
               },
               "published_at": {
                 "type": "string"
@@ -7801,7 +5934,8 @@
             "items": {
               "required": [
                 "id",
-                "text"
+                "text",
+                "type"
               ],
               "properties": {
                 "id": {
@@ -7819,8 +5953,17 @@
                 "user": {
                   "type": "string"
                 },
+                "type": {
+                  "type": "string"
+                },
+                "target": {
+                  "type": "integer"
+                },
                 "reply": {
                   "type": "string"
+                },
+                "rate": {
+                  "type": "integer"
                 },
                 "published_at": {
                   "type": "string"
@@ -7848,37 +5991,6 @@
                   "type": "string"
                 },
                 "icon": {
-                  "type": "string"
-                },
-                "food": {
-                  "type": "string"
-                },
-                "published_at": {
-                  "type": "string"
-                },
-                "created_by": {
-                  "type": "string"
-                },
-                "updated_by": {
-                  "type": "string"
-                }
-              }
-            }
-          },
-          "food_ratings": {
-            "type": "array",
-            "items": {
-              "required": [
-                "id"
-              ],
-              "properties": {
-                "id": {
-                  "type": "string"
-                },
-                "rateValue": {
-                  "type": "number"
-                },
-                "user": {
                   "type": "string"
                 },
                 "food": {
@@ -7932,12 +6044,6 @@
             }
           },
           "ingredients": {
-            "type": "array",
-            "items": {
-              "type": "string"
-            }
-          },
-          "food_ratings": {
             "type": "array",
             "items": {
               "type": "string"
@@ -8080,12 +6186,6 @@
                   "type": "string"
                 }
               },
-              "food_ratings": {
-                "type": "array",
-                "items": {
-                  "type": "string"
-                }
-              },
               "published_at": {
                 "type": "string"
               },
@@ -8201,608 +6301,17 @@
               }
             }
           },
-          "slideshow": {
-            "type": "array",
-            "items": {
-              "type": "object",
-              "required": [
-                "id"
-              ],
-              "properties": {
-                "id": {
-                  "type": "string"
-                },
-                "text": {
-                  "type": "string"
-                },
-                "slide": {
-                  "required": [
-                    "id",
-                    "name",
-                    "hash",
-                    "mime",
-                    "size",
-                    "url",
-                    "provider"
-                  ],
-                  "properties": {
-                    "id": {
-                      "type": "string"
-                    },
-                    "name": {
-                      "type": "string"
-                    },
-                    "alternativeText": {
-                      "type": "string"
-                    },
-                    "caption": {
-                      "type": "string"
-                    },
-                    "width": {
-                      "type": "integer"
-                    },
-                    "height": {
-                      "type": "integer"
-                    },
-                    "formats": {
-                      "type": "object"
-                    },
-                    "hash": {
-                      "type": "string"
-                    },
-                    "ext": {
-                      "type": "string"
-                    },
-                    "mime": {
-                      "type": "string"
-                    },
-                    "size": {
-                      "type": "number"
-                    },
-                    "url": {
-                      "type": "string"
-                    },
-                    "previewUrl": {
-                      "type": "string"
-                    },
-                    "provider": {
-                      "type": "string"
-                    },
-                    "provider_metadata": {
-                      "type": "object"
-                    },
-                    "related": {
-                      "type": "string"
-                    },
-                    "created_by": {
-                      "type": "string"
-                    },
-                    "updated_by": {
-                      "type": "string"
-                    }
-                  }
-                }
-              }
-            }
-          },
           "email": {
             "type": "string",
             "default": "email@example.com"
           },
           "geoLocation": {
             "type": "string"
-          },
-          "published_at": {
-            "type": "string",
-            "format": "date-time"
-          }
-        }
-      },
-      "NewProfiles": {
-        "properties": {
-          "address": {
-            "type": "string"
-          },
-          "slideshow": {
-            "type": "array",
-            "items": {
-              "type": "object",
-              "required": [
-                "id"
-              ],
-              "properties": {
-                "id": {
-                  "type": "string"
-                },
-                "text": {
-                  "type": "string"
-                },
-                "slide": {
-                  "required": [
-                    "id",
-                    "name",
-                    "hash",
-                    "mime",
-                    "size",
-                    "url",
-                    "provider"
-                  ],
-                  "properties": {
-                    "id": {
-                      "type": "string"
-                    },
-                    "name": {
-                      "type": "string"
-                    },
-                    "alternativeText": {
-                      "type": "string"
-                    },
-                    "caption": {
-                      "type": "string"
-                    },
-                    "width": {
-                      "type": "integer"
-                    },
-                    "height": {
-                      "type": "integer"
-                    },
-                    "formats": {
-                      "type": "object"
-                    },
-                    "hash": {
-                      "type": "string"
-                    },
-                    "ext": {
-                      "type": "string"
-                    },
-                    "mime": {
-                      "type": "string"
-                    },
-                    "size": {
-                      "type": "number"
-                    },
-                    "url": {
-                      "type": "string"
-                    },
-                    "previewUrl": {
-                      "type": "string"
-                    },
-                    "provider": {
-                      "type": "string"
-                    },
-                    "provider_metadata": {
-                      "type": "object"
-                    },
-                    "related": {
-                      "type": "string"
-                    },
-                    "created_by": {
-                      "type": "string"
-                    },
-                    "updated_by": {
-                      "type": "string"
-                    }
-                  }
-                }
-              }
-            }
-          },
-          "email": {
-            "type": "string",
-            "default": "email@example.com"
-          },
-          "geoLocation": {
-            "type": "string"
-          },
-          "published_at": {
-            "type": "string",
-            "format": "date-time"
-          },
-          "created_by": {
-            "type": "string"
-          },
-          "updated_by": {
-            "type": "string"
-          }
-        }
-      },
-      "Restaurant-ratings": {
-        "required": [
-          "id"
-        ],
-        "properties": {
-          "id": {
-            "type": "string"
-          },
-          "rateValue": {
-            "type": "number"
-          },
-          "user": {
-            "required": [
-              "id",
-              "username",
-              "email"
-            ],
-            "properties": {
-              "id": {
-                "type": "string"
-              },
-              "username": {
-                "type": "string"
-              },
-              "email": {
-                "type": "string"
-              },
-              "provider": {
-                "type": "string"
-              },
-              "password": {
-                "type": "string"
-              },
-              "resetPasswordToken": {
-                "type": "string"
-              },
-              "confirmationToken": {
-                "type": "string"
-              },
-              "confirmed": {
-                "type": "boolean"
-              },
-              "blocked": {
-                "type": "boolean"
-              },
-              "role": {
-                "type": "string"
-              },
-              "name": {
-                "type": "string"
-              },
-              "image": {
-                "type": "array",
-                "items": {
-                  "type": "string"
-                }
-              },
-              "restaurant_ratings": {
-                "type": "array",
-                "items": {
-                  "type": "string"
-                }
-              },
-              "food_ratings": {
-                "type": "array",
-                "items": {
-                  "type": "string"
-                }
-              },
-              "comments": {
-                "type": "array",
-                "items": {
-                  "type": "string"
-                }
-              },
-              "restaurant": {
-                "type": "string"
-              },
-              "created_by": {
-                "type": "string"
-              },
-              "updated_by": {
-                "type": "string"
-              }
-            }
-          },
-          "restaurant": {
-            "required": [
-              "id",
-              "name"
-            ],
-            "properties": {
-              "id": {
-                "type": "string"
-              },
-              "name": {
-                "type": "string"
-              },
-              "slogan": {
-                "type": "string"
-              },
-              "profile": {
-                "type": "string"
-              },
-              "slug": {
-                "type": "uid"
-              },
-              "foods": {
-                "type": "array",
-                "items": {
-                  "type": "string"
-                }
-              },
-              "restaurant_ratings": {
-                "type": "array",
-                "items": {
-                  "type": "string"
-                }
-              },
-              "user": {
-                "type": "string"
-              },
-              "qrImage": {
-                "type": "string"
-              },
-              "categories": {
-                "type": "array",
-                "items": {
-                  "type": "string"
-                }
-              },
-              "published_at": {
-                "type": "string"
-              },
-              "created_by": {
-                "type": "string"
-              },
-              "updated_by": {
-                "type": "string"
-              }
-            }
-          },
-          "published_at": {
-            "type": "string",
-            "format": "date-time"
-          }
-        }
-      },
-      "NewRestaurant-ratings": {
-        "properties": {
-          "rateValue": {
-            "type": "number"
-          },
-          "user": {
-            "type": "string"
-          },
-          "restaurant": {
-            "type": "string"
-          },
-          "published_at": {
-            "type": "string",
-            "format": "date-time"
-          },
-          "created_by": {
-            "type": "string"
-          },
-          "updated_by": {
-            "type": "string"
-          }
-        }
-      },
-      "Restaurants": {
-        "required": [
-          "id",
-          "name"
-        ],
-        "properties": {
-          "id": {
-            "type": "string"
-          },
-          "name": {
-            "type": "string"
-          },
-          "slogan": {
-            "type": "string"
-          },
-          "profile": {
-            "required": [
-              "id"
-            ],
-            "properties": {
-              "id": {
-                "type": "string"
-              },
-              "address": {
-                "type": "string"
-              },
-              "logo": {
-                "type": "string"
-              },
-              "slideshow": {
-                "type": "component"
-              },
-              "email": {
-                "type": "string"
-              },
-              "geoLocation": {
-                "type": "string"
-              },
-              "published_at": {
-                "type": "string"
-              },
-              "created_by": {
-                "type": "string"
-              },
-              "updated_by": {
-                "type": "string"
-              }
-            }
           },
           "slug": {
             "type": "uid"
           },
-          "foods": {
-            "type": "array",
-            "items": {
-              "required": [
-                "id"
-              ],
-              "properties": {
-                "id": {
-                  "type": "string"
-                },
-                "name": {
-                  "type": "string"
-                },
-                "description": {
-                  "type": "string"
-                },
-                "images": {
-                  "type": "array",
-                  "items": {
-                    "type": "string"
-                  }
-                },
-                "shortDesc": {
-                  "type": "string"
-                },
-                "categories": {
-                  "type": "array",
-                  "items": {
-                    "type": "string"
-                  }
-                },
-                "restaurant": {
-                  "type": "string"
-                },
-                "price": {
-                  "type": "number"
-                },
-                "comments": {
-                  "type": "array",
-                  "items": {
-                    "type": "string"
-                  }
-                },
-                "ingredients": {
-                  "type": "array",
-                  "items": {
-                    "type": "string"
-                  }
-                },
-                "food_ratings": {
-                  "type": "array",
-                  "items": {
-                    "type": "string"
-                  }
-                },
-                "published_at": {
-                  "type": "string"
-                },
-                "created_by": {
-                  "type": "string"
-                },
-                "updated_by": {
-                  "type": "string"
-                }
-              }
-            }
-          },
-          "restaurant_ratings": {
-            "type": "array",
-            "items": {
-              "required": [
-                "id"
-              ],
-              "properties": {
-                "id": {
-                  "type": "string"
-                },
-                "rateValue": {
-                  "type": "number"
-                },
-                "user": {
-                  "type": "string"
-                },
-                "restaurant": {
-                  "type": "string"
-                },
-                "published_at": {
-                  "type": "string"
-                },
-                "created_by": {
-                  "type": "string"
-                },
-                "updated_by": {
-                  "type": "string"
-                }
-              }
-            }
-          },
-          "user": {
-            "required": [
-              "id",
-              "username",
-              "email"
-            ],
-            "properties": {
-              "id": {
-                "type": "string"
-              },
-              "username": {
-                "type": "string"
-              },
-              "email": {
-                "type": "string"
-              },
-              "provider": {
-                "type": "string"
-              },
-              "password": {
-                "type": "string"
-              },
-              "resetPasswordToken": {
-                "type": "string"
-              },
-              "confirmationToken": {
-                "type": "string"
-              },
-              "confirmed": {
-                "type": "boolean"
-              },
-              "blocked": {
-                "type": "boolean"
-              },
-              "role": {
-                "type": "string"
-              },
-              "name": {
-                "type": "string"
-              },
-              "image": {
-                "type": "array",
-                "items": {
-                  "type": "string"
-                }
-              },
-              "restaurant_ratings": {
-                "type": "array",
-                "items": {
-                  "type": "string"
-                }
-              },
-              "food_ratings": {
-                "type": "array",
-                "items": {
-                  "type": "string"
-                }
-              },
-              "comments": {
-                "type": "array",
-                "items": {
-                  "type": "string"
-                }
-              },
-              "restaurant": {
-                "type": "string"
-              },
-              "created_by": {
-                "type": "string"
-              },
-              "updated_by": {
-                "type": "string"
-              }
-            }
-          },
-          "qrImage": {
+          "qrCode": {
             "required": [
               "id",
               "name",
@@ -8869,6 +6378,215 @@
               }
             }
           },
+          "published_at": {
+            "type": "string",
+            "format": "date-time"
+          }
+        }
+      },
+      "NewProfiles": {
+        "properties": {
+          "address": {
+            "type": "string"
+          },
+          "email": {
+            "type": "string",
+            "default": "email@example.com"
+          },
+          "geoLocation": {
+            "type": "string"
+          },
+          "slug": {
+            "type": "uid"
+          },
+          "published_at": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "created_by": {
+            "type": "string"
+          },
+          "updated_by": {
+            "type": "string"
+          }
+        }
+      },
+      "Restaurants": {
+        "required": [
+          "id",
+          "name"
+        ],
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "name": {
+            "type": "string"
+          },
+          "slogan": {
+            "type": "string"
+          },
+          "setting": {
+            "required": [
+              "id"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "address": {
+                "type": "string"
+              },
+              "logo": {
+                "type": "string"
+              },
+              "email": {
+                "type": "string"
+              },
+              "geoLocation": {
+                "type": "string"
+              },
+              "slug": {
+                "type": "uid"
+              },
+              "qrCode": {
+                "type": "string"
+              },
+              "published_at": {
+                "type": "string"
+              },
+              "created_by": {
+                "type": "string"
+              },
+              "updated_by": {
+                "type": "string"
+              }
+            }
+          },
+          "foods": {
+            "type": "array",
+            "items": {
+              "required": [
+                "id"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "name": {
+                  "type": "string"
+                },
+                "description": {
+                  "type": "string"
+                },
+                "images": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "shortDesc": {
+                  "type": "string"
+                },
+                "categories": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "restaurant": {
+                  "type": "string"
+                },
+                "price": {
+                  "type": "number"
+                },
+                "comments": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "ingredients": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "published_at": {
+                  "type": "string"
+                },
+                "created_by": {
+                  "type": "string"
+                },
+                "updated_by": {
+                  "type": "string"
+                }
+              }
+            }
+          },
+          "user": {
+            "required": [
+              "id",
+              "username",
+              "email"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "username": {
+                "type": "string"
+              },
+              "email": {
+                "type": "string"
+              },
+              "provider": {
+                "type": "string"
+              },
+              "password": {
+                "type": "string"
+              },
+              "resetPasswordToken": {
+                "type": "string"
+              },
+              "confirmationToken": {
+                "type": "string"
+              },
+              "confirmed": {
+                "type": "boolean"
+              },
+              "blocked": {
+                "type": "boolean"
+              },
+              "role": {
+                "type": "string"
+              },
+              "name": {
+                "type": "string"
+              },
+              "image": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "comments": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "restaurant": {
+                "type": "string"
+              },
+              "created_by": {
+                "type": "string"
+              },
+              "updated_by": {
+                "type": "string"
+              }
+            }
+          },
           "categories": {
             "type": "array",
             "items": {
@@ -8903,6 +6621,90 @@
               }
             }
           },
+          "banners": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": [
+                "id"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "text": {
+                  "type": "string"
+                },
+                "slide": {
+                  "required": [
+                    "id",
+                    "name",
+                    "hash",
+                    "mime",
+                    "size",
+                    "url",
+                    "provider"
+                  ],
+                  "properties": {
+                    "id": {
+                      "type": "string"
+                    },
+                    "name": {
+                      "type": "string"
+                    },
+                    "alternativeText": {
+                      "type": "string"
+                    },
+                    "caption": {
+                      "type": "string"
+                    },
+                    "width": {
+                      "type": "integer"
+                    },
+                    "height": {
+                      "type": "integer"
+                    },
+                    "formats": {
+                      "type": "object"
+                    },
+                    "hash": {
+                      "type": "string"
+                    },
+                    "ext": {
+                      "type": "string"
+                    },
+                    "mime": {
+                      "type": "string"
+                    },
+                    "size": {
+                      "type": "number"
+                    },
+                    "url": {
+                      "type": "string"
+                    },
+                    "previewUrl": {
+                      "type": "string"
+                    },
+                    "provider": {
+                      "type": "string"
+                    },
+                    "provider_metadata": {
+                      "type": "object"
+                    },
+                    "related": {
+                      "type": "string"
+                    },
+                    "created_by": {
+                      "type": "string"
+                    },
+                    "updated_by": {
+                      "type": "string"
+                    }
+                  }
+                }
+              }
+            }
+          },
           "published_at": {
             "type": "string",
             "format": "date-time"
@@ -8920,19 +6722,10 @@
           "slogan": {
             "type": "string"
           },
-          "profile": {
+          "setting": {
             "type": "string"
           },
-          "slug": {
-            "type": "uid"
-          },
           "foods": {
-            "type": "array",
-            "items": {
-              "type": "string"
-            }
-          },
-          "restaurant_ratings": {
             "type": "array",
             "items": {
               "type": "string"
@@ -8945,6 +6738,90 @@
             "type": "array",
             "items": {
               "type": "string"
+            }
+          },
+          "banners": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": [
+                "id"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "text": {
+                  "type": "string"
+                },
+                "slide": {
+                  "required": [
+                    "id",
+                    "name",
+                    "hash",
+                    "mime",
+                    "size",
+                    "url",
+                    "provider"
+                  ],
+                  "properties": {
+                    "id": {
+                      "type": "string"
+                    },
+                    "name": {
+                      "type": "string"
+                    },
+                    "alternativeText": {
+                      "type": "string"
+                    },
+                    "caption": {
+                      "type": "string"
+                    },
+                    "width": {
+                      "type": "integer"
+                    },
+                    "height": {
+                      "type": "integer"
+                    },
+                    "formats": {
+                      "type": "object"
+                    },
+                    "hash": {
+                      "type": "string"
+                    },
+                    "ext": {
+                      "type": "string"
+                    },
+                    "mime": {
+                      "type": "string"
+                    },
+                    "size": {
+                      "type": "number"
+                    },
+                    "url": {
+                      "type": "string"
+                    },
+                    "previewUrl": {
+                      "type": "string"
+                    },
+                    "provider": {
+                      "type": "string"
+                    },
+                    "provider_metadata": {
+                      "type": "object"
+                    },
+                    "related": {
+                      "type": "string"
+                    },
+                    "created_by": {
+                      "type": "string"
+                    },
+                    "updated_by": {
+                      "type": "string"
+                    }
+                  }
+                }
+              }
             }
           },
           "published_at": {
@@ -9062,18 +6939,6 @@
                   "type": "string"
                 },
                 "image": {
-                  "type": "array",
-                  "items": {
-                    "type": "string"
-                  }
-                },
-                "restaurant_ratings": {
-                  "type": "array",
-                  "items": {
-                    "type": "string"
-                  }
-                },
-                "food_ratings": {
                   "type": "array",
                   "items": {
                     "type": "string"
@@ -9274,74 +7139,13 @@
               }
             }
           },
-          "restaurant_ratings": {
-            "type": "array",
-            "items": {
-              "required": [
-                "id"
-              ],
-              "properties": {
-                "id": {
-                  "type": "string"
-                },
-                "rateValue": {
-                  "type": "number"
-                },
-                "user": {
-                  "type": "string"
-                },
-                "restaurant": {
-                  "type": "string"
-                },
-                "published_at": {
-                  "type": "string"
-                },
-                "created_by": {
-                  "type": "string"
-                },
-                "updated_by": {
-                  "type": "string"
-                }
-              }
-            }
-          },
-          "food_ratings": {
-            "type": "array",
-            "items": {
-              "required": [
-                "id"
-              ],
-              "properties": {
-                "id": {
-                  "type": "string"
-                },
-                "rateValue": {
-                  "type": "number"
-                },
-                "user": {
-                  "type": "string"
-                },
-                "food": {
-                  "type": "string"
-                },
-                "published_at": {
-                  "type": "string"
-                },
-                "created_by": {
-                  "type": "string"
-                },
-                "updated_by": {
-                  "type": "string"
-                }
-              }
-            }
-          },
           "comments": {
             "type": "array",
             "items": {
               "required": [
                 "id",
-                "text"
+                "text",
+                "type"
               ],
               "properties": {
                 "id": {
@@ -9359,8 +7163,17 @@
                 "user": {
                   "type": "string"
                 },
+                "type": {
+                  "type": "string"
+                },
+                "target": {
+                  "type": "integer"
+                },
                 "reply": {
                   "type": "string"
+                },
+                "rate": {
+                  "type": "integer"
                 },
                 "published_at": {
                   "type": "string"
@@ -9389,19 +7202,10 @@
               "slogan": {
                 "type": "string"
               },
-              "profile": {
+              "setting": {
                 "type": "string"
               },
-              "slug": {
-                "type": "uid"
-              },
               "foods": {
-                "type": "array",
-                "items": {
-                  "type": "string"
-                }
-              },
-              "restaurant_ratings": {
                 "type": "array",
                 "items": {
                   "type": "string"
@@ -9410,14 +7214,14 @@
               "user": {
                 "type": "string"
               },
-              "qrImage": {
-                "type": "string"
-              },
               "categories": {
                 "type": "array",
                 "items": {
                   "type": "string"
                 }
+              },
+              "banners": {
+                "type": "component"
               },
               "published_at": {
                 "type": "string"
@@ -9473,18 +7277,6 @@
           },
           "name": {
             "type": "string"
-          },
-          "restaurant_ratings": {
-            "type": "array",
-            "items": {
-              "type": "string"
-            }
-          },
-          "food_ratings": {
-            "type": "array",
-            "items": {
-              "type": "string"
-            }
           },
           "comments": {
             "type": "array",

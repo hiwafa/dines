@@ -29,9 +29,18 @@
       "model": "user",
       "via": "comments"
     },
+    "type": {
+      "type": "string",
+      "required": true
+    },
+    "target": {
+      "type": "biginteger"
+    },
     "reply": {
-      "via": "comment",
-      "model": "comment-replies"
+      "type": "string"
+    },
+    "rate": {
+      "type": "integer"
     }
   }
 }

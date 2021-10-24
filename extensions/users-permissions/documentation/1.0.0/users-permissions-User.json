@@ -1324,74 +1324,13 @@
               }
             }
           },
-          "restaurant_ratings": {
-            "type": "array",
-            "items": {
-              "required": [
-                "id"
-              ],
-              "properties": {
-                "id": {
-                  "type": "string"
-                },
-                "rateValue": {
-                  "type": "number"
-                },
-                "user": {
-                  "type": "string"
-                },
-                "restaurant": {
-                  "type": "string"
-                },
-                "published_at": {
-                  "type": "string"
-                },
-                "created_by": {
-                  "type": "string"
-                },
-                "updated_by": {
-                  "type": "string"
-                }
-              }
-            }
-          },
-          "food_ratings": {
-            "type": "array",
-            "items": {
-              "required": [
-                "id"
-              ],
-              "properties": {
-                "id": {
-                  "type": "string"
-                },
-                "rateValue": {
-                  "type": "number"
-                },
-                "user": {
-                  "type": "string"
-                },
-                "food": {
-                  "type": "string"
-                },
-                "published_at": {
-                  "type": "string"
-                },
-                "created_by": {
-                  "type": "string"
-                },
-                "updated_by": {
-                  "type": "string"
-                }
-              }
-            }
-          },
           "comments": {
             "type": "array",
             "items": {
               "required": [
                 "id",
-                "text"
+                "text",
+                "type"
               ],
               "properties": {
                 "id": {
@@ -1409,8 +1348,17 @@
                 "user": {
                   "type": "string"
                 },
+                "type": {
+                  "type": "string"
+                },
+                "target": {
+                  "type": "integer"
+                },
                 "reply": {
                   "type": "string"
+                },
+                "rate": {
+                  "type": "integer"
                 },
                 "published_at": {
                   "type": "string"
@@ -1439,19 +1387,10 @@
               "slogan": {
                 "type": "string"
               },
-              "profile": {
+              "setting": {
                 "type": "string"
               },
-              "slug": {
-                "type": "uid"
-              },
               "foods": {
-                "type": "array",
-                "items": {
-                  "type": "string"
-                }
-              },
-              "restaurant_ratings": {
                 "type": "array",
                 "items": {
                   "type": "string"
@@ -1460,14 +1399,14 @@
               "user": {
                 "type": "string"
               },
-              "qrImage": {
-                "type": "string"
-              },
               "categories": {
                 "type": "array",
                 "items": {
                   "type": "string"
                 }
+              },
+              "banners": {
+                "type": "component"
               },
               "published_at": {
                 "type": "string"
@@ -1523,18 +1462,6 @@
           },
           "name": {
             "type": "string"
-          },
-          "restaurant_ratings": {
-            "type": "array",
-            "items": {
-              "type": "string"
-            }
-          },
-          "food_ratings": {
-            "type": "array",
-            "items": {
-              "type": "string"
-            }
           },
           "comments": {
             "type": "array",

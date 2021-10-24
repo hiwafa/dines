@@ -540,19 +540,10 @@
               "slogan": {
                 "type": "string"
               },
-              "profile": {
+              "setting": {
                 "type": "string"
               },
-              "slug": {
-                "type": "uid"
-              },
               "foods": {
-                "type": "array",
-                "items": {
-                  "type": "string"
-                }
-              },
-              "restaurant_ratings": {
                 "type": "array",
                 "items": {
                   "type": "string"
@@ -561,14 +552,14 @@
               "user": {
                 "type": "string"
               },
-              "qrImage": {
-                "type": "string"
-              },
               "categories": {
                 "type": "array",
                 "items": {
                   "type": "string"
                 }
+              },
+              "banners": {
+                "type": "component"
               },
               "published_at": {
                 "type": "string"
@@ -625,12 +616,6 @@
                   }
                 },
                 "ingredients": {
-                  "type": "array",
-                  "items": {
-                    "type": "string"
-                  }
-                },
-                "food_ratings": {
                   "type": "array",
                   "items": {
                     "type": "string"
