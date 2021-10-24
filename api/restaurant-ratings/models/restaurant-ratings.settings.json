@@ -18,10 +18,6 @@
       "plugin": "users-permissions",
       "model": "user",
       "via": "restaurant_ratings"
-    },
-    "restaurant": {
-      "via": "restaurant_ratings",
-      "model": "restaurants"
     }
   }
 }

@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "10/24/2021 10:33:53 PM"
+    "x-generation-date": "10/24/2021 10:38:11 PM"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -7015,12 +7015,6 @@
                   "type": "string"
                 }
               },
-              "restaurant_ratings": {
-                "type": "array",
-                "items": {
-                  "type": "string"
-                }
-              },
               "user": {
                 "type": "string"
               },
@@ -7761,12 +7755,6 @@
                   "type": "string"
                 }
               },
-              "restaurant_ratings": {
-                "type": "array",
-                "items": {
-                  "type": "string"
-                }
-              },
               "user": {
                 "type": "string"
               },
@@ -8330,62 +8318,6 @@
               }
             }
           },
-          "restaurant": {
-            "required": [
-              "id",
-              "name"
-            ],
-            "properties": {
-              "id": {
-                "type": "string"
-              },
-              "name": {
-                "type": "string"
-              },
-              "slogan": {
-                "type": "string"
-              },
-              "profile": {
-                "type": "string"
-              },
-              "foods": {
-                "type": "array",
-                "items": {
-                  "type": "string"
-                }
-              },
-              "restaurant_ratings": {
-                "type": "array",
-                "items": {
-                  "type": "string"
-                }
-              },
-              "user": {
-                "type": "string"
-              },
-              "qrImage": {
-                "type": "string"
-              },
-              "categories": {
-                "type": "array",
-                "items": {
-                  "type": "string"
-                }
-              },
-              "banners": {
-                "type": "component"
-              },
-              "published_at": {
-                "type": "string"
-              },
-              "created_by": {
-                "type": "string"
-              },
-              "updated_by": {
-                "type": "string"
-              }
-            }
-          },
           "published_at": {
             "type": "string",
             "format": "date-time"
@@ -8398,9 +8330,6 @@
             "type": "number"
           },
           "user": {
-            "type": "string"
-          },
-          "restaurant": {
             "type": "string"
           },
           "published_at": {
@@ -8518,37 +8447,6 @@
                   "items": {
                     "type": "string"
                   }
-                },
-                "published_at": {
-                  "type": "string"
-                },
-                "created_by": {
-                  "type": "string"
-                },
-                "updated_by": {
-                  "type": "string"
-                }
-              }
-            }
-          },
-          "restaurant_ratings": {
-            "type": "array",
-            "items": {
-              "required": [
-                "id"
-              ],
-              "properties": {
-                "id": {
-                  "type": "string"
-                },
-                "rateValue": {
-                  "type": "number"
-                },
-                "user": {
-                  "type": "string"
-                },
-                "restaurant": {
-                  "type": "string"
                 },
                 "published_at": {
                   "type": "string"
@@ -8843,12 +8741,6 @@
             "type": "string"
           },
           "foods": {
-            "type": "array",
-            "items": {
-              "type": "string"
-            }
-          },
-          "restaurant_ratings": {
             "type": "array",
             "items": {
               "type": "string"
@@ -9290,9 +9182,6 @@
                 "user": {
                   "type": "string"
                 },
-                "restaurant": {
-                  "type": "string"
-                },
                 "published_at": {
                   "type": "string"
                 },
@@ -9393,12 +9282,6 @@
                 "type": "string"
               },
               "foods": {
-                "type": "array",
-                "items": {
-                  "type": "string"
-                }
-              },
-              "restaurant_ratings": {
                 "type": "array",
                 "items": {
                   "type": "string"

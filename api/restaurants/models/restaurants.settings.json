@@ -26,10 +26,6 @@
       "via": "restaurant",
       "collection": "foods"
     },
-    "restaurant_ratings": {
-      "via": "restaurant",
-      "collection": "restaurant-ratings"
-    },
     "user": {
       "plugin": "users-permissions",
       "model": "user",

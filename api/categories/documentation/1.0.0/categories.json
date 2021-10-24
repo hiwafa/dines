@@ -549,12 +549,6 @@
                   "type": "string"
                 }
               },
-              "restaurant_ratings": {
-                "type": "array",
-                "items": {
-                  "type": "string"
-                }
-              },
               "user": {
                 "type": "string"
               },

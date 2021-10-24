@@ -1340,9 +1340,6 @@
                 "user": {
                   "type": "string"
                 },
-                "restaurant": {
-                  "type": "string"
-                },
                 "published_at": {
                   "type": "string"
                 },
@@ -1443,12 +1440,6 @@
                 "type": "string"
               },
               "foods": {
-                "type": "array",
-                "items": {
-                  "type": "string"
-                }
-              },
-              "restaurant_ratings": {
                 "type": "array",
                 "items": {
                   "type": "string"

@@ -613,62 +613,6 @@
               }
             }
           },
-          "restaurant": {
-            "required": [
-              "id",
-              "name"
-            ],
-            "properties": {
-              "id": {
-                "type": "string"
-              },
-              "name": {
-                "type": "string"
-              },
-              "slogan": {
-                "type": "string"
-              },
-              "profile": {
-                "type": "string"
-              },
-              "foods": {
-                "type": "array",
-                "items": {
-                  "type": "string"
-                }
-              },
-              "restaurant_ratings": {
-                "type": "array",
-                "items": {
-                  "type": "string"
-                }
-              },
-              "user": {
-                "type": "string"
-              },
-              "qrImage": {
-                "type": "string"
-              },
-              "categories": {
-                "type": "array",
-                "items": {
-                  "type": "string"
-                }
-              },
-              "banners": {
-                "type": "component"
-              },
-              "published_at": {
-                "type": "string"
-              },
-              "created_by": {
-                "type": "string"
-              },
-              "updated_by": {
-                "type": "string"
-              }
-            }
-          },
           "published_at": {
             "type": "string",
             "format": "date-time"
@@ -681,9 +625,6 @@
             "type": "number"
           },
           "user": {
-            "type": "string"
-          },
-          "restaurant": {
             "type": "string"
           },
           "published_at": {
