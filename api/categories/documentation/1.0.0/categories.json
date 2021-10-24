@@ -540,7 +540,7 @@
               "slogan": {
                 "type": "string"
               },
-              "profile": {
+              "setting": {
                 "type": "string"
               },
               "foods": {
@@ -550,9 +550,6 @@
                 }
               },
               "user": {
-                "type": "string"
-              },
-              "qrImage": {
                 "type": "string"
               },
               "categories": {

@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "10/24/2021 10:38:11 PM"
+    "x-generation-date": "10/24/2021 10:40:58 PM"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -7006,7 +7006,7 @@
               "slogan": {
                 "type": "string"
               },
-              "profile": {
+              "setting": {
                 "type": "string"
               },
               "foods": {
@@ -7016,9 +7016,6 @@
                 }
               },
               "user": {
-                "type": "string"
-              },
-              "qrImage": {
                 "type": "string"
               },
               "categories": {
@@ -7746,7 +7743,7 @@
               "slogan": {
                 "type": "string"
               },
-              "profile": {
+              "setting": {
                 "type": "string"
               },
               "foods": {
@@ -7756,9 +7753,6 @@
                 }
               },
               "user": {
-                "type": "string"
-              },
-              "qrImage": {
                 "type": "string"
               },
               "categories": {
@@ -8199,6 +8193,73 @@
           "slug": {
             "type": "uid"
           },
+          "qrCode": {
+            "required": [
+              "id",
+              "name",
+              "hash",
+              "mime",
+              "size",
+              "url",
+              "provider"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "name": {
+                "type": "string"
+              },
+              "alternativeText": {
+                "type": "string"
+              },
+              "caption": {
+                "type": "string"
+              },
+              "width": {
+                "type": "integer"
+              },
+              "height": {
+                "type": "integer"
+              },
+              "formats": {
+                "type": "object"
+              },
+              "hash": {
+                "type": "string"
+              },
+              "ext": {
+                "type": "string"
+              },
+              "mime": {
+                "type": "string"
+              },
+              "size": {
+                "type": "number"
+              },
+              "url": {
+                "type": "string"
+              },
+              "previewUrl": {
+                "type": "string"
+              },
+              "provider": {
+                "type": "string"
+              },
+              "provider_metadata": {
+                "type": "object"
+              },
+              "related": {
+                "type": "string"
+              },
+              "created_by": {
+                "type": "string"
+              },
+              "updated_by": {
+                "type": "string"
+              }
+            }
+          },
           "published_at": {
             "type": "string",
             "format": "date-time"
@@ -8359,7 +8420,7 @@
           "slogan": {
             "type": "string"
           },
-          "profile": {
+          "setting": {
             "required": [
               "id"
             ],
@@ -8381,6 +8442,9 @@
               },
               "slug": {
                 "type": "uid"
+              },
+              "qrCode": {
+                "type": "string"
               },
               "published_at": {
                 "type": "string"
@@ -8535,73 +8599,6 @@
               }
             }
           },
-          "qrImage": {
-            "required": [
-              "id",
-              "name",
-              "hash",
-              "mime",
-              "size",
-              "url",
-              "provider"
-            ],
-            "properties": {
-              "id": {
-                "type": "string"
-              },
-              "name": {
-                "type": "string"
-              },
-              "alternativeText": {
-                "type": "string"
-              },
-              "caption": {
-                "type": "string"
-              },
-              "width": {
-                "type": "integer"
-              },
-              "height": {
-                "type": "integer"
-              },
-              "formats": {
-                "type": "object"
-              },
-              "hash": {
-                "type": "string"
-              },
-              "ext": {
-                "type": "string"
-              },
-              "mime": {
-                "type": "string"
-              },
-              "size": {
-                "type": "number"
-              },
-              "url": {
-                "type": "string"
-              },
-              "previewUrl": {
-                "type": "string"
-              },
-              "provider": {
-                "type": "string"
-              },
-              "provider_metadata": {
-                "type": "object"
-              },
-              "related": {
-                "type": "string"
-              },
-              "created_by": {
-                "type": "string"
-              },
-              "updated_by": {
-                "type": "string"
-              }
-            }
-          },
           "categories": {
             "type": "array",
             "items": {
@@ -8737,7 +8734,7 @@
           "slogan": {
             "type": "string"
           },
-          "profile": {
+          "setting": {
             "type": "string"
           },
           "foods": {
@@ -9278,7 +9275,7 @@
               "slogan": {
                 "type": "string"
               },
-              "profile": {
+              "setting": {
                 "type": "string"
               },
               "foods": {
@@ -9288,9 +9285,6 @@
                 }
               },
               "user": {
-                "type": "string"
-              },
-              "qrImage": {
                 "type": "string"
               },
               "categories": {

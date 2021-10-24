@@ -19,7 +19,7 @@
     "slogan": {
       "type": "string"
     },
-    "profile": {
+    "setting": {
       "model": "profiles"
     },
     "foods": {
@@ -30,16 +30,6 @@
       "plugin": "users-permissions",
       "model": "user",
       "via": "restaurant"
-    },
-    "qrImage": {
-      "model": "file",
-      "via": "related",
-      "allowedTypes": [
-        "images"
-      ],
-      "plugin": "upload",
-      "required": false,
-      "pluginOptions": {}
     },
     "categories": {
       "via": "restaurant",
