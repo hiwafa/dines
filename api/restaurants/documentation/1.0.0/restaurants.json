@@ -892,12 +892,6 @@
                 "type": {
                   "type": "string"
                 },
-                "target": {
-                  "type": "integer"
-                },
-                "reply": {
-                  "type": "string"
-                },
                 "rate": {
                   "type": "integer"
                 },

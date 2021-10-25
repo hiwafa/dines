@@ -33,12 +33,6 @@
       "type": "string",
       "required": true
     },
-    "target": {
-      "type": "biginteger"
-    },
-    "reply": {
-      "type": "string"
-    },
     "rate": {
       "type": "integer",
       "min": 1,
