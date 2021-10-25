@@ -808,6 +808,57 @@
               }
             }
           },
+          "comments": {
+            "type": "array",
+            "items": {
+              "required": [
+                "id",
+                "text",
+                "type"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "text": {
+                  "type": "string"
+                },
+                "food": {
+                  "type": "string"
+                },
+                "approved": {
+                  "type": "boolean"
+                },
+                "user": {
+                  "type": "string"
+                },
+                "type": {
+                  "type": "string"
+                },
+                "target": {
+                  "type": "integer"
+                },
+                "reply": {
+                  "type": "string"
+                },
+                "rate": {
+                  "type": "integer"
+                },
+                "restaurant": {
+                  "type": "string"
+                },
+                "published_at": {
+                  "type": "string"
+                },
+                "created_by": {
+                  "type": "string"
+                },
+                "updated_by": {
+                  "type": "string"
+                }
+              }
+            }
+          },
           "published_at": {
             "type": "string",
             "format": "date-time"
@@ -925,6 +976,12 @@
                   }
                 }
               }
+            }
+          },
+          "comments": {
+            "type": "array",
+            "items": {
+              "type": "string"
             }
           },
           "published_at": {

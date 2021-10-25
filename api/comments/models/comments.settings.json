@@ -41,6 +41,10 @@
     },
     "rate": {
       "type": "integer"
+    },
+    "restaurant": {
+      "via": "comments",
+      "model": "restaurants"
     }
   }
 }
