@@ -18,6 +18,14 @@
     },
     {
       "method": "GET",
+      "path": "/restaurants/counts",
+      "handler": "restaurants.counts",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
       "path": "/restaurants/:id",
       "handler": "restaurants.findOne",
       "config": {
