@@ -5,4 +5,11 @@
  * to customize this controller
  */
 
-module.exports = {};
+module.exports = {
+    async find(ctx) {
+        const { restaurant, type, approved } = ctx.query;
+        let populate;
+        populate = ["user", "food"]
+        return await strapi.services.comments.find({ restaurant, type, approved }, populate)
+    }
+};

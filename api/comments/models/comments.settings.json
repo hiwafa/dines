@@ -33,14 +33,14 @@
       "type": "string",
       "required": true
     },
-    "target": {
-      "type": "biginteger"
-    },
-    "reply": {
-      "type": "string"
-    },
     "rate": {
-      "type": "integer"
+      "type": "integer",
+      "min": 1,
+      "max": 5
+    },
+    "restaurant": {
+      "via": "comments",
+      "model": "restaurants"
     }
   }
 }

@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "10/24/2021 10:47:29 PM"
+    "x-generation-date": "10/25/2021 10:04:22 PM"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -2979,6 +2979,63 @@
         "parameters": []
       }
     },
+    "/restaurants/counts": {
+      "get": {
+        "deprecated": false,
+        "description": "",
+        "responses": {
+          "200": {
+            "description": "Retrieve restaurants document(s)",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "properties": {
+                    "foo": {
+                      "type": "string"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "403": {
+            "description": "Forbidden",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Not found",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "default": {
+            "description": "unexpected error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          }
+        },
+        "summary": "",
+        "tags": [
+          "Restaurants"
+        ],
+        "parameters": []
+      }
+    },
     "/restaurants/{id}": {
       "get": {
         "deprecated": false,
@@ -5455,6 +5512,12 @@
               "banners": {
                 "type": "component"
               },
+              "comments": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
               "published_at": {
                 "type": "string"
               },
@@ -5700,14 +5763,61 @@
           "type": {
             "type": "string"
           },
-          "target": {
-            "type": "integer"
-          },
-          "reply": {
-            "type": "string"
-          },
           "rate": {
             "type": "integer"
+          },
+          "restaurant": {
+            "required": [
+              "id",
+              "name"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "name": {
+                "type": "string"
+              },
+              "slogan": {
+                "type": "string"
+              },
+              "setting": {
+                "type": "string"
+              },
+              "foods": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "user": {
+                "type": "string"
+              },
+              "categories": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "banners": {
+                "type": "component"
+              },
+              "comments": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "published_at": {
+                "type": "string"
+              },
+              "created_by": {
+                "type": "string"
+              },
+              "updated_by": {
+                "type": "string"
+              }
+            }
           },
           "published_at": {
             "type": "string",
@@ -5737,14 +5847,11 @@
           "type": {
             "type": "string"
           },
-          "target": {
-            "type": "integer"
-          },
-          "reply": {
-            "type": "string"
-          },
           "rate": {
             "type": "integer"
+          },
+          "restaurant": {
+            "type": "string"
           },
           "published_at": {
             "type": "string",
@@ -5915,6 +6022,12 @@
               "banners": {
                 "type": "component"
               },
+              "comments": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
               "published_at": {
                 "type": "string"
               },
@@ -5956,14 +6069,11 @@
                 "type": {
                   "type": "string"
                 },
-                "target": {
-                  "type": "integer"
-                },
-                "reply": {
-                  "type": "string"
-                },
                 "rate": {
                   "type": "integer"
+                },
+                "restaurant": {
+                  "type": "string"
                 },
                 "published_at": {
                   "type": "string"
@@ -6705,6 +6815,51 @@
               }
             }
           },
+          "comments": {
+            "type": "array",
+            "items": {
+              "required": [
+                "id",
+                "text",
+                "type"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "text": {
+                  "type": "string"
+                },
+                "food": {
+                  "type": "string"
+                },
+                "approved": {
+                  "type": "boolean"
+                },
+                "user": {
+                  "type": "string"
+                },
+                "type": {
+                  "type": "string"
+                },
+                "rate": {
+                  "type": "integer"
+                },
+                "restaurant": {
+                  "type": "string"
+                },
+                "published_at": {
+                  "type": "string"
+                },
+                "created_by": {
+                  "type": "string"
+                },
+                "updated_by": {
+                  "type": "string"
+                }
+              }
+            }
+          },
           "published_at": {
             "type": "string",
             "format": "date-time"
@@ -6822,6 +6977,12 @@
                   }
                 }
               }
+            }
+          },
+          "comments": {
+            "type": "array",
+            "items": {
+              "type": "string"
             }
           },
           "published_at": {
@@ -7166,14 +7327,11 @@
                 "type": {
                   "type": "string"
                 },
-                "target": {
-                  "type": "integer"
-                },
-                "reply": {
-                  "type": "string"
-                },
                 "rate": {
                   "type": "integer"
+                },
+                "restaurant": {
+                  "type": "string"
                 },
                 "published_at": {
                   "type": "string"
@@ -7222,6 +7380,12 @@
               },
               "banners": {
                 "type": "component"
+              },
+              "comments": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
               },
               "published_at": {
                 "type": "string"

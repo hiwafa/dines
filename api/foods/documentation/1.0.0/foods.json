@@ -739,6 +739,12 @@
               "banners": {
                 "type": "component"
               },
+              "comments": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
               "published_at": {
                 "type": "string"
               },
@@ -780,14 +786,11 @@
                 "type": {
                   "type": "string"
                 },
-                "target": {
-                  "type": "integer"
-                },
-                "reply": {
-                  "type": "string"
-                },
                 "rate": {
                   "type": "integer"
+                },
+                "restaurant": {
+                  "type": "string"
                 },
                 "published_at": {
                   "type": "string"

@@ -655,14 +655,61 @@
           "type": {
             "type": "string"
           },
-          "target": {
-            "type": "integer"
-          },
-          "reply": {
-            "type": "string"
-          },
           "rate": {
             "type": "integer"
+          },
+          "restaurant": {
+            "required": [
+              "id",
+              "name"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "name": {
+                "type": "string"
+              },
+              "slogan": {
+                "type": "string"
+              },
+              "setting": {
+                "type": "string"
+              },
+              "foods": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "user": {
+                "type": "string"
+              },
+              "categories": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "banners": {
+                "type": "component"
+              },
+              "comments": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "published_at": {
+                "type": "string"
+              },
+              "created_by": {
+                "type": "string"
+              },
+              "updated_by": {
+                "type": "string"
+              }
+            }
           },
           "published_at": {
             "type": "string",
@@ -692,14 +739,11 @@
           "type": {
             "type": "string"
           },
-          "target": {
-            "type": "integer"
-          },
-          "reply": {
-            "type": "string"
-          },
           "rate": {
             "type": "integer"
+          },
+          "restaurant": {
+            "type": "string"
           },
           "published_at": {
             "type": "string",
