@@ -41,8 +41,8 @@
       "component": "common.slide"
     },
     "comments": {
-      "collection": "comments",
-      "via": "restaurant"
+      "via": "restaurant",
+      "collection": "comments"
     }
   }
 }
