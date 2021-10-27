@@ -41,6 +41,9 @@
     "restaurant": {
       "via": "comments",
       "model": "restaurants"
+    },
+    "reply": {
+      "type": "string"
     }
   }
 }
