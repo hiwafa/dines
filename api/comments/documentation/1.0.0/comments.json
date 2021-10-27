@@ -711,6 +711,9 @@
               }
             }
           },
+          "reply": {
+            "type": "string"
+          },
           "published_at": {
             "type": "string",
             "format": "date-time"
@@ -743,6 +746,9 @@
             "type": "integer"
           },
           "restaurant": {
+            "type": "string"
+          },
+          "reply": {
             "type": "string"
           },
           "published_at": {

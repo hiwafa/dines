@@ -792,6 +792,9 @@
                 "restaurant": {
                   "type": "string"
                 },
+                "reply": {
+                  "type": "string"
+                },
                 "published_at": {
                   "type": "string"
                 },
