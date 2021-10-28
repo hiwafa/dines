@@ -612,6 +612,9 @@
               "qrCode": {
                 "type": "string"
               },
+              "restaurant": {
+                "type": "string"
+              },
               "published_at": {
                 "type": "string"
               },
