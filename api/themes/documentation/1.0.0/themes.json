@@ -1,18 +1,18 @@
 {
   "paths": {
-    "/restaurants": {
+    "/themes": {
       "get": {
         "deprecated": false,
-        "description": "Find all the restaurants's records",
+        "description": "Find all the themes's records",
         "responses": {
           "200": {
-            "description": "Retrieve restaurants document(s)",
+            "description": "Retrieve themes document(s)",
             "content": {
               "application/json": {
                 "schema": {
                   "type": "array",
                   "items": {
-                    "$ref": "#/components/schemas/Restaurants"
+                    "$ref": "#/components/schemas/Themes"
                   }
                 }
               }
@@ -51,7 +51,7 @@
         },
         "summary": "",
         "tags": [
-          "Restaurants"
+          "Themes"
         ],
         "parameters": [
           {
@@ -194,14 +194,14 @@
       },
       "post": {
         "deprecated": false,
-        "description": "Create a new restaurants record",
+        "description": "Create a new themes record",
         "responses": {
           "200": {
-            "description": "Retrieve restaurants document(s)",
+            "description": "Retrieve themes document(s)",
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/Restaurants"
+                  "$ref": "#/components/schemas/Themes"
                 }
               }
             }
@@ -239,7 +239,7 @@
         },
         "summary": "",
         "tags": [
-          "Restaurants"
+          "Themes"
         ],
         "requestBody": {
           "description": "",
@@ -247,20 +247,20 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/NewRestaurants"
+                "$ref": "#/components/schemas/NewThemes"
               }
             }
           }
         }
       }
     },
-    "/restaurants/count": {
+    "/themes/count": {
       "get": {
         "deprecated": false,
-        "description": "Retrieve the number of restaurants documents",
+        "description": "Retrieve the number of themes documents",
         "responses": {
           "200": {
-            "description": "Retrieve restaurants document(s)",
+            "description": "Retrieve themes document(s)",
             "content": {
               "application/json": {
                 "schema": {
@@ -306,26 +306,22 @@
         },
         "summary": "",
         "tags": [
-          "Restaurants"
+          "Themes"
         ],
         "parameters": []
       }
     },
-    "/restaurants/counts": {
+    "/themes/{id}": {
       "get": {
         "deprecated": false,
-        "description": "",
+        "description": "Find one themes record",
         "responses": {
           "200": {
-            "description": "Retrieve restaurants document(s)",
+            "description": "Retrieve themes document(s)",
             "content": {
               "application/json": {
                 "schema": {
-                  "properties": {
-                    "foo": {
-                      "type": "string"
-                    }
-                  }
+                  "$ref": "#/components/schemas/Themes"
                 }
               }
             }
@@ -363,60 +359,7 @@
         },
         "summary": "",
         "tags": [
-          "Restaurants"
-        ],
-        "parameters": []
-      }
-    },
-    "/restaurants/{id}": {
-      "get": {
-        "deprecated": false,
-        "description": "Find one restaurants record",
-        "responses": {
-          "200": {
-            "description": "Retrieve restaurants document(s)",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Restaurants"
-                }
-              }
-            }
-          },
-          "403": {
-            "description": "Forbidden",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          },
-          "404": {
-            "description": "Not found",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          },
-          "default": {
-            "description": "unexpected error",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          }
-        },
-        "summary": "",
-        "tags": [
-          "Restaurants"
+          "Themes"
         ],
         "parameters": [
           {
@@ -433,14 +376,14 @@
       },
       "put": {
         "deprecated": false,
-        "description": "Update a single restaurants record",
+        "description": "Update a single themes record",
         "responses": {
           "200": {
-            "description": "Retrieve restaurants document(s)",
+            "description": "Retrieve themes document(s)",
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/Restaurants"
+                  "$ref": "#/components/schemas/Themes"
                 }
               }
             }
@@ -478,7 +421,7 @@
         },
         "summary": "",
         "tags": [
-          "Restaurants"
+          "Themes"
         ],
         "requestBody": {
           "description": "",
@@ -486,7 +429,7 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/NewRestaurants"
+                "$ref": "#/components/schemas/NewThemes"
               }
             }
           }
@@ -506,10 +449,10 @@
       },
       "delete": {
         "deprecated": false,
-        "description": "Delete a single restaurants record",
+        "description": "Delete a single themes record",
         "responses": {
           "200": {
-            "description": "deletes a single restaurants based on the ID supplied",
+            "description": "deletes a single themes based on the ID supplied",
             "content": {
               "application/json": {
                 "schema": {
@@ -552,7 +495,7 @@
         },
         "summary": "",
         "tags": [
-          "Restaurants"
+          "Themes"
         ],
         "parameters": [
           {
@@ -571,10 +514,9 @@
   },
   "components": {
     "schemas": {
-      "Restaurants": {
+      "Themes": {
         "required": [
-          "id",
-          "name"
+          "id"
         ],
         "properties": {
           "id": {
@@ -583,8 +525,75 @@
           "name": {
             "type": "string"
           },
-          "slogan": {
+          "description": {
             "type": "string"
+          },
+          "image": {
+            "required": [
+              "id",
+              "name",
+              "hash",
+              "mime",
+              "size",
+              "url",
+              "provider"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "name": {
+                "type": "string"
+              },
+              "alternativeText": {
+                "type": "string"
+              },
+              "caption": {
+                "type": "string"
+              },
+              "width": {
+                "type": "integer"
+              },
+              "height": {
+                "type": "integer"
+              },
+              "formats": {
+                "type": "object"
+              },
+              "hash": {
+                "type": "string"
+              },
+              "ext": {
+                "type": "string"
+              },
+              "mime": {
+                "type": "string"
+              },
+              "size": {
+                "type": "number"
+              },
+              "url": {
+                "type": "string"
+              },
+              "previewUrl": {
+                "type": "string"
+              },
+              "provider": {
+                "type": "string"
+              },
+              "provider_metadata": {
+                "type": "object"
+              },
+              "related": {
+                "type": "string"
+              },
+              "created_by": {
+                "type": "string"
+              },
+              "updated_by": {
+                "type": "string"
+              }
+            }
           },
           "setting": {
             "required": [
@@ -629,420 +638,22 @@
               }
             }
           },
-          "foods": {
-            "type": "array",
-            "items": {
-              "required": [
-                "id"
-              ],
-              "properties": {
-                "id": {
-                  "type": "string"
-                },
-                "name": {
-                  "type": "string"
-                },
-                "description": {
-                  "type": "string"
-                },
-                "images": {
-                  "type": "array",
-                  "items": {
-                    "type": "string"
-                  }
-                },
-                "shortDesc": {
-                  "type": "string"
-                },
-                "categories": {
-                  "type": "array",
-                  "items": {
-                    "type": "string"
-                  }
-                },
-                "restaurant": {
-                  "type": "string"
-                },
-                "price": {
-                  "type": "number"
-                },
-                "comments": {
-                  "type": "array",
-                  "items": {
-                    "type": "string"
-                  }
-                },
-                "ingredients": {
-                  "type": "array",
-                  "items": {
-                    "type": "string"
-                  }
-                },
-                "published_at": {
-                  "type": "string"
-                },
-                "created_by": {
-                  "type": "string"
-                },
-                "updated_by": {
-                  "type": "string"
-                }
-              }
-            }
-          },
-          "user": {
-            "required": [
-              "id",
-              "username",
-              "email"
-            ],
-            "properties": {
-              "id": {
-                "type": "string"
-              },
-              "username": {
-                "type": "string"
-              },
-              "email": {
-                "type": "string"
-              },
-              "provider": {
-                "type": "string"
-              },
-              "password": {
-                "type": "string"
-              },
-              "resetPasswordToken": {
-                "type": "string"
-              },
-              "confirmationToken": {
-                "type": "string"
-              },
-              "confirmed": {
-                "type": "boolean"
-              },
-              "blocked": {
-                "type": "boolean"
-              },
-              "role": {
-                "type": "string"
-              },
-              "name": {
-                "type": "string"
-              },
-              "image": {
-                "type": "array",
-                "items": {
-                  "type": "string"
-                }
-              },
-              "comments": {
-                "type": "array",
-                "items": {
-                  "type": "string"
-                }
-              },
-              "restaurant": {
-                "type": "string"
-              },
-              "created_by": {
-                "type": "string"
-              },
-              "updated_by": {
-                "type": "string"
-              }
-            }
-          },
-          "categories": {
-            "type": "array",
-            "items": {
-              "required": [
-                "id"
-              ],
-              "properties": {
-                "id": {
-                  "type": "string"
-                },
-                "name": {
-                  "type": "string"
-                },
-                "restaurant": {
-                  "type": "string"
-                },
-                "foods": {
-                  "type": "array",
-                  "items": {
-                    "type": "string"
-                  }
-                },
-                "published_at": {
-                  "type": "string"
-                },
-                "created_by": {
-                  "type": "string"
-                },
-                "updated_by": {
-                  "type": "string"
-                }
-              }
-            }
-          },
-          "banners": {
-            "type": "array",
-            "items": {
-              "type": "object",
-              "required": [
-                "id"
-              ],
-              "properties": {
-                "id": {
-                  "type": "string"
-                },
-                "text": {
-                  "type": "string"
-                },
-                "slide": {
-                  "required": [
-                    "id",
-                    "name",
-                    "hash",
-                    "mime",
-                    "size",
-                    "url",
-                    "provider"
-                  ],
-                  "properties": {
-                    "id": {
-                      "type": "string"
-                    },
-                    "name": {
-                      "type": "string"
-                    },
-                    "alternativeText": {
-                      "type": "string"
-                    },
-                    "caption": {
-                      "type": "string"
-                    },
-                    "width": {
-                      "type": "integer"
-                    },
-                    "height": {
-                      "type": "integer"
-                    },
-                    "formats": {
-                      "type": "object"
-                    },
-                    "hash": {
-                      "type": "string"
-                    },
-                    "ext": {
-                      "type": "string"
-                    },
-                    "mime": {
-                      "type": "string"
-                    },
-                    "size": {
-                      "type": "number"
-                    },
-                    "url": {
-                      "type": "string"
-                    },
-                    "previewUrl": {
-                      "type": "string"
-                    },
-                    "provider": {
-                      "type": "string"
-                    },
-                    "provider_metadata": {
-                      "type": "object"
-                    },
-                    "related": {
-                      "type": "string"
-                    },
-                    "created_by": {
-                      "type": "string"
-                    },
-                    "updated_by": {
-                      "type": "string"
-                    }
-                  }
-                }
-              }
-            }
-          },
-          "comments": {
-            "type": "array",
-            "items": {
-              "required": [
-                "id",
-                "text",
-                "type"
-              ],
-              "properties": {
-                "id": {
-                  "type": "string"
-                },
-                "text": {
-                  "type": "string"
-                },
-                "food": {
-                  "type": "string"
-                },
-                "approved": {
-                  "type": "boolean"
-                },
-                "user": {
-                  "type": "string"
-                },
-                "type": {
-                  "type": "string"
-                },
-                "rate": {
-                  "type": "integer"
-                },
-                "restaurant": {
-                  "type": "string"
-                },
-                "reply": {
-                  "type": "string"
-                },
-                "published_at": {
-                  "type": "string"
-                },
-                "created_by": {
-                  "type": "string"
-                },
-                "updated_by": {
-                  "type": "string"
-                }
-              }
-            }
-          },
           "published_at": {
             "type": "string",
             "format": "date-time"
           }
         }
       },
-      "NewRestaurants": {
-        "required": [
-          "name"
-        ],
+      "NewThemes": {
         "properties": {
           "name": {
             "type": "string"
           },
-          "slogan": {
+          "description": {
             "type": "string"
           },
           "setting": {
             "type": "string"
-          },
-          "foods": {
-            "type": "array",
-            "items": {
-              "type": "string"
-            }
-          },
-          "user": {
-            "type": "string"
-          },
-          "categories": {
-            "type": "array",
-            "items": {
-              "type": "string"
-            }
-          },
-          "banners": {
-            "type": "array",
-            "items": {
-              "type": "object",
-              "required": [
-                "id"
-              ],
-              "properties": {
-                "id": {
-                  "type": "string"
-                },
-                "text": {
-                  "type": "string"
-                },
-                "slide": {
-                  "required": [
-                    "id",
-                    "name",
-                    "hash",
-                    "mime",
-                    "size",
-                    "url",
-                    "provider"
-                  ],
-                  "properties": {
-                    "id": {
-                      "type": "string"
-                    },
-                    "name": {
-                      "type": "string"
-                    },
-                    "alternativeText": {
-                      "type": "string"
-                    },
-                    "caption": {
-                      "type": "string"
-                    },
-                    "width": {
-                      "type": "integer"
-                    },
-                    "height": {
-                      "type": "integer"
-                    },
-                    "formats": {
-                      "type": "object"
-                    },
-                    "hash": {
-                      "type": "string"
-                    },
-                    "ext": {
-                      "type": "string"
-                    },
-                    "mime": {
-                      "type": "string"
-                    },
-                    "size": {
-                      "type": "number"
-                    },
-                    "url": {
-                      "type": "string"
-                    },
-                    "previewUrl": {
-                      "type": "string"
-                    },
-                    "provider": {
-                      "type": "string"
-                    },
-                    "provider_metadata": {
-                      "type": "object"
-                    },
-                    "related": {
-                      "type": "string"
-                    },
-                    "created_by": {
-                      "type": "string"
-                    },
-                    "updated_by": {
-                      "type": "string"
-                    }
-                  }
-                }
-              }
-            }
-          },
-          "comments": {
-            "type": "array",
-            "items": {
-              "type": "string"
-            }
           },
           "published_at": {
             "type": "string",
@@ -1060,7 +671,7 @@
   },
   "tags": [
     {
-      "name": "Restaurants"
+      "name": "Themes"
     }
   ]
 }

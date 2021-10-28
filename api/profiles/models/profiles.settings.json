@@ -53,6 +53,10 @@
     "restaurant": {
       "via": "setting",
       "model": "restaurants"
+    },
+    "theme": {
+      "via": "setting",
+      "model": "themes"
     }
   }
 }
