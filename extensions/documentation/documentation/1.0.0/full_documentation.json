@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "10/28/2021 1:19:32 AM"
+    "x-generation-date": "10/28/2021 11:07:38 AM"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -6497,6 +6497,59 @@
               }
             }
           },
+          "restaurant": {
+            "required": [
+              "id",
+              "name"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "name": {
+                "type": "string"
+              },
+              "slogan": {
+                "type": "string"
+              },
+              "setting": {
+                "type": "string"
+              },
+              "foods": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "user": {
+                "type": "string"
+              },
+              "categories": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "banners": {
+                "type": "component"
+              },
+              "comments": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "published_at": {
+                "type": "string"
+              },
+              "created_by": {
+                "type": "string"
+              },
+              "updated_by": {
+                "type": "string"
+              }
+            }
+          },
           "published_at": {
             "type": "string",
             "format": "date-time"
@@ -6517,6 +6570,9 @@
           },
           "slug": {
             "type": "uid"
+          },
+          "restaurant": {
+            "type": "string"
           },
           "published_at": {
             "type": "string",
@@ -6569,6 +6625,9 @@
                 "type": "uid"
               },
               "qrCode": {
+                "type": "string"
+              },
+              "restaurant": {
                 "type": "string"
               },
               "published_at": {

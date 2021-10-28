@@ -49,6 +49,10 @@
       "plugin": "upload",
       "required": false,
       "pluginOptions": {}
+    },
+    "restaurant": {
+      "via": "setting",
+      "model": "restaurants"
     }
   }
 }
