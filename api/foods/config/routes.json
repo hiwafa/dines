@@ -35,7 +35,7 @@
     {
       "method": "POST",
       "path": "/foods",
-      "handler": "foods.create",
+      "handler": "foods.createFood",
       "config": {
         "policies": []
       }
@@ -43,7 +43,7 @@
     {
       "method": "PUT",
       "path": "/foods/:id",
-      "handler": "foods.update",
+      "handler": "foods.updateFood",
       "config": {
         "policies": []
       }
