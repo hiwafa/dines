@@ -383,7 +383,11 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/Foods"
+                  "properties": {
+                    "foo": {
+                      "type": "string"
+                    }
+                  }
                 }
               }
             }
@@ -429,7 +433,11 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/NewFoods"
+                "properties": {
+                  "foo": {
+                    "type": "string"
+                  }
+                }
               }
             }
           }

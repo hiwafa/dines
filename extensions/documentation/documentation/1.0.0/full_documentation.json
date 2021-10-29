@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "10/28/2021 12:02:26 PM"
+    "x-generation-date": "10/29/2021 9:57:33 PM"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -1450,7 +1450,11 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/Foods"
+                  "properties": {
+                    "foo": {
+                      "type": "string"
+                    }
+                  }
                 }
               }
             }
@@ -1496,7 +1500,11 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/NewFoods"
+                "properties": {
+                  "foo": {
+                    "type": "string"
+                  }
+                }
               }
             }
           }
