@@ -35,7 +35,7 @@
     {
       "method": "POST",
       "path": "/foods",
-      "handler": "foods.create",
+      "handler": "foods.createFood",
       "config": {
         "policies": []
       }
