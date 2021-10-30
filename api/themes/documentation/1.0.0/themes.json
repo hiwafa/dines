@@ -595,46 +595,49 @@
               }
             }
           },
-          "setting": {
-            "required": [
-              "id"
-            ],
-            "properties": {
-              "id": {
-                "type": "string"
-              },
-              "address": {
-                "type": "string"
-              },
-              "logo": {
-                "type": "string"
-              },
-              "email": {
-                "type": "string"
-              },
-              "geoLocation": {
-                "type": "string"
-              },
-              "slug": {
-                "type": "uid"
-              },
-              "qrCode": {
-                "type": "string"
-              },
-              "restaurant": {
-                "type": "string"
-              },
-              "theme": {
-                "type": "string"
-              },
-              "published_at": {
-                "type": "string"
-              },
-              "created_by": {
-                "type": "string"
-              },
-              "updated_by": {
-                "type": "string"
+          "settings": {
+            "type": "array",
+            "items": {
+              "required": [
+                "id"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "address": {
+                  "type": "string"
+                },
+                "logo": {
+                  "type": "string"
+                },
+                "email": {
+                  "type": "string"
+                },
+                "geoLocation": {
+                  "type": "string"
+                },
+                "slug": {
+                  "type": "uid"
+                },
+                "qrCode": {
+                  "type": "string"
+                },
+                "restaurant": {
+                  "type": "string"
+                },
+                "theme": {
+                  "type": "string"
+                },
+                "published_at": {
+                  "type": "string"
+                },
+                "created_by": {
+                  "type": "string"
+                },
+                "updated_by": {
+                  "type": "string"
+                }
               }
             }
           },
@@ -652,8 +655,11 @@
           "description": {
             "type": "string"
           },
-          "setting": {
-            "type": "string"
+          "settings": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
           },
           "published_at": {
             "type": "string",

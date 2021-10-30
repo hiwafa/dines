@@ -55,7 +55,7 @@
       "model": "restaurants"
     },
     "theme": {
-      "via": "setting",
+      "via": "settings",
       "model": "themes"
     }
   }

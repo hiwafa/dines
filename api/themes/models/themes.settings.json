@@ -2,7 +2,8 @@
   "kind": "collectionType",
   "collectionName": "themes",
   "info": {
-    "name": "themes"
+    "name": "themes",
+    "description": ""
   },
   "options": {
     "increments": true,
@@ -29,8 +30,8 @@
       "required": false,
       "pluginOptions": {}
     },
-    "setting": {
-      "model": "profiles",
+    "settings": {
+      "collection": "profiles",
       "via": "theme"
     }
   }
