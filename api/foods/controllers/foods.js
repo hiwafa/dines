@@ -68,6 +68,11 @@ module.exports = {
       entity = await strapi.services.foods.create(ctx.request.body);
     }
     return sanitizeEntity(entity, { model: strapi.models.foods });
+    },
+    async delete(ctx){
+    const { id } = ctx.params;
+    const entity = await strapi.services.foods.delete({ id });
+    return sanitizeEntity(entity, { model: strapi.models.foods });
     }
 
 };
