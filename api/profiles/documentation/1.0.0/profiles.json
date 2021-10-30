@@ -739,8 +739,11 @@
               "image": {
                 "type": "string"
               },
-              "setting": {
-                "type": "string"
+              "settings": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
               },
               "published_at": {
                 "type": "string"
