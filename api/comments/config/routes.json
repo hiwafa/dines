@@ -10,6 +10,14 @@
     },
     {
       "method": "GET",
+      "path": "/comments/byrestaurant",
+      "handler": "comments.byRestaurant",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
       "path": "/comments/count",
       "handler": "comments.count",
       "config": {
