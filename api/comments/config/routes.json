@@ -25,6 +25,14 @@
       }
     },
     {
+      "method": "GET",
+      "path": "/comments/byRestaurant",
+      "handler": "comments.byRestaurant",
+      "config": {
+        "policies": []
+      }
+    },
+    {
       "method": "POST",
       "path": "/comments",
       "handler": "comments.create",

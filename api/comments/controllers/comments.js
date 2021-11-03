@@ -6,7 +6,7 @@
  */
 
 module.exports = {
-    async find(ctx) {
+    async byRestaurant(ctx) {
         const { restaurant, type, approved } = ctx.query;
         let populate;
         populate = ["user", "food"]
