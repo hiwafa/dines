@@ -10,6 +10,14 @@
     },
     {
       "method": "GET",
+      "path": "/comments/byrestaurant",
+      "handler": "comments.byRestaurant",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
       "path": "/comments/count",
       "handler": "comments.count",
       "config": {
@@ -20,14 +28,6 @@
       "method": "GET",
       "path": "/comments/:id",
       "handler": "comments.findOne",
-      "config": {
-        "policies": []
-      }
-    },
-    {
-      "method": "GET",
-      "path": "/comments/byRestaurant",
-      "handler": "comments.byRestaurant",
       "config": {
         "policies": []
       }

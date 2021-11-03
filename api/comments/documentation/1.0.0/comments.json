@@ -511,7 +511,7 @@
         ]
       }
     },
-    "/comments/byRestaurant": {
+    "/comments/byrestaurant": {
       "get": {
         "deprecated": false,
         "description": "",
