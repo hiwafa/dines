@@ -31,8 +31,8 @@
       "pluginOptions": {}
     },
     "settings": {
-      "collection": "profiles",
-      "via": "theme"
+      "via": "theme",
+      "collection": "profiles"
     }
   }
 }

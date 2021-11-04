@@ -1,8 +1,28 @@
-'use strict';
+const { parseMultipartData, sanitizeEntity } = require('strapi-utils');
 
-/**
- * Read the documentation (https://strapi.io/documentation/developer-docs/latest/development/backend-customization.html#core-controllers)
- * to customize this controller
- */
+module.exports = {
+    /**
+     * Update a record.
+     *
+     * @return {Object}
+     */
 
-module.exports = {};
+    async update(ctx) {
+        const { id } = ctx.params;
+
+        let entity;
+        if (ctx.is('multipart')) {
+            const { data, files } = parseMultipartData(ctx);
+            entity = await strapi.services.profiles.update({ id }, data, {
+                files,
+            });
+        } else {
+            const pd = await strapi.services.profiles.findOne({ id });
+            entity = await strapi.services.profiles.update({ id }, {
+                numberOfVisit: parseInt(pd.numberOfVisit) + parseInt(ctx.request.body.numberOfVisit)
+            });
+        }
+
+        return sanitizeEntity(entity, { model: strapi.models.profiles });
+    },
+};

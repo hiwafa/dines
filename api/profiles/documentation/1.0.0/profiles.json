@@ -759,6 +759,10 @@
               }
             }
           },
+          "numberOfVisit": {
+            "type": "integer",
+            "default": "0"
+          },
           "published_at": {
             "type": "string",
             "format": "date-time"
@@ -785,6 +789,10 @@
           },
           "theme": {
             "type": "string"
+          },
+          "numberOfVisit": {
+            "type": "integer",
+            "default": "0"
           },
           "published_at": {
             "type": "string",
