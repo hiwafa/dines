@@ -10,7 +10,7 @@
     },
     {
       "method": "GET",
-      "path": "/comments/byrestaurant",
+      "path": "/comments/restaurant",
       "handler": "comments.byRestaurant",
       "config": {
         "policies": []
