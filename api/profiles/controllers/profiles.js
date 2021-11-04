@@ -13,16 +13,16 @@ module.exports = {
         let entity;
         if (ctx.is('multipart')) {
             const { data, files } = parseMultipartData(ctx);
-            entity = await strapi.services.profile.update({ id }, data, {
+            entity = await strapi.services.profiles.update({ id }, data, {
                 files,
             });
         } else {
-            const pd = await strapi.services.profile.findOne({ id });
-            entity = await strapi.services.profile.update({ id }, {
-                numberOfVisit: pd.numberOfVisit + 1
+            const pd = await strapi.services.profiles.findOne({ id });
+            entity = await strapi.services.profiles.update({ id }, {
+                numberOfVisit: parseInt(pd.numberOfVisit) + parseInt(ctx.request.body.numberOfVisit)
             });
         }
 
-        return sanitizeEntity(entity, { model: strapi.models.profile });
+        return sanitizeEntity(entity, { model: strapi.models.profiles });
     },
 };
