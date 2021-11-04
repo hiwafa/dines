@@ -57,6 +57,10 @@
     "theme": {
       "via": "settings",
       "model": "themes"
+    },
+    "numberOfVisit": {
+      "type": "biginteger",
+      "default": "0"
     }
   }
 }

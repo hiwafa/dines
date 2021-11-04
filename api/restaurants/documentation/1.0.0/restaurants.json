@@ -618,6 +618,9 @@
               "theme": {
                 "type": "string"
               },
+              "numberOfVisit": {
+                "type": "integer"
+              },
               "published_at": {
                 "type": "string"
               },

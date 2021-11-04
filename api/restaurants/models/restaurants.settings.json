@@ -20,8 +20,8 @@
       "type": "string"
     },
     "setting": {
-      "model": "profiles",
-      "via": "restaurant"
+      "via": "restaurant",
+      "model": "profiles"
     },
     "foods": {
       "via": "restaurant",
