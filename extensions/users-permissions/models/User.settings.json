@@ -78,7 +78,7 @@
       "collection": "comments"
     },
     "restaurant": {
-      "via": "user",
+      "via": "users",
       "model": "restaurants"
     }
   }

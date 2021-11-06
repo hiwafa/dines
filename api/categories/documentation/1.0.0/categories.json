@@ -549,8 +549,11 @@
                   "type": "string"
                 }
               },
-              "user": {
-                "type": "string"
+              "users": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
               },
               "categories": {
                 "type": "array",
