@@ -27,9 +27,9 @@
       "via": "restaurant",
       "collection": "foods"
     },
-    "user": {
+    "users": {
       "plugin": "users-permissions",
-      "model": "user",
+      "collection": "user",
       "via": "restaurant"
     },
     "categories": {

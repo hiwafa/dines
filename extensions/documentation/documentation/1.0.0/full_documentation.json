@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "11/04/2021 12:03:09 PM"
+    "x-generation-date": "11/06/2021 9:34:53 PM"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -6084,8 +6084,11 @@
                   "type": "string"
                 }
               },
-              "user": {
-                "type": "string"
+              "users": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
               },
               "categories": {
                 "type": "array",
@@ -6374,8 +6377,11 @@
                   "type": "string"
                 }
               },
-              "user": {
-                "type": "string"
+              "users": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
               },
               "categories": {
                 "type": "array",
@@ -6600,8 +6606,11 @@
                   "type": "string"
                 }
               },
-              "user": {
-                "type": "string"
+              "users": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
               },
               "categories": {
                 "type": "array",
@@ -7105,8 +7114,11 @@
                   "type": "string"
                 }
               },
-              "user": {
-                "type": "string"
+              "users": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
               },
               "categories": {
                 "type": "array",
@@ -7340,66 +7352,69 @@
               }
             }
           },
-          "user": {
-            "required": [
-              "id",
-              "username",
-              "email"
-            ],
-            "properties": {
-              "id": {
-                "type": "string"
-              },
-              "username": {
-                "type": "string"
-              },
-              "email": {
-                "type": "string"
-              },
-              "provider": {
-                "type": "string"
-              },
-              "password": {
-                "type": "string"
-              },
-              "resetPasswordToken": {
-                "type": "string"
-              },
-              "confirmationToken": {
-                "type": "string"
-              },
-              "confirmed": {
-                "type": "boolean"
-              },
-              "blocked": {
-                "type": "boolean"
-              },
-              "role": {
-                "type": "string"
-              },
-              "name": {
-                "type": "string"
-              },
-              "image": {
-                "type": "array",
-                "items": {
+          "users": {
+            "type": "array",
+            "items": {
+              "required": [
+                "id",
+                "username",
+                "email"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "username": {
+                  "type": "string"
+                },
+                "email": {
+                  "type": "string"
+                },
+                "provider": {
+                  "type": "string"
+                },
+                "password": {
+                  "type": "string"
+                },
+                "resetPasswordToken": {
+                  "type": "string"
+                },
+                "confirmationToken": {
+                  "type": "string"
+                },
+                "confirmed": {
+                  "type": "boolean"
+                },
+                "blocked": {
+                  "type": "boolean"
+                },
+                "role": {
+                  "type": "string"
+                },
+                "name": {
+                  "type": "string"
+                },
+                "image": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "comments": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "restaurant": {
+                  "type": "string"
+                },
+                "created_by": {
+                  "type": "string"
+                },
+                "updated_by": {
                   "type": "string"
                 }
-              },
-              "comments": {
-                "type": "array",
-                "items": {
-                  "type": "string"
-                }
-              },
-              "restaurant": {
-                "type": "string"
-              },
-              "created_by": {
-                "type": "string"
-              },
-              "updated_by": {
-                "type": "string"
               }
             }
           },
@@ -7595,8 +7610,11 @@
               "type": "string"
             }
           },
-          "user": {
-            "type": "string"
+          "users": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
           },
           "categories": {
             "type": "array",
@@ -8246,8 +8264,11 @@
                   "type": "string"
                 }
               },
-              "user": {
-                "type": "string"
+              "users": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
               },
               "categories": {
                 "type": "array",
