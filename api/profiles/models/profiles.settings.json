@@ -61,6 +61,9 @@
     "numberOfVisit": {
       "type": "biginteger",
       "default": "0"
+    },
+    "socialMediaLinks": {
+      "type": "json"
     }
   }
 }

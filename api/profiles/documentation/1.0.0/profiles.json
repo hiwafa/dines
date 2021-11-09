@@ -766,6 +766,9 @@
             "type": "integer",
             "default": "0"
           },
+          "socialMediaLinks": {
+            "type": "object"
+          },
           "published_at": {
             "type": "string",
             "format": "date-time"
@@ -796,6 +799,9 @@
           "numberOfVisit": {
             "type": "integer",
             "default": "0"
+          },
+          "socialMediaLinks": {
+            "type": "object"
           },
           "published_at": {
             "type": "string",

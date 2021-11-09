@@ -621,6 +621,9 @@
               "numberOfVisit": {
                 "type": "integer"
               },
+              "socialMediaLinks": {
+                "type": "object"
+              },
               "published_at": {
                 "type": "string"
               },
